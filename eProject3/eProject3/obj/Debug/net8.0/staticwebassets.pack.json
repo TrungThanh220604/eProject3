@@ -5,12 +5,24 @@
       "PackagePath": "staticwebassets\\eProject3.bundle.scp.css"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
+      "PackagePath": "staticwebassets\\css\\AdminLayOut.css"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
+      "PackagePath": "staticwebassets\\image\\Screenshot 2024-07-02 092340.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
+      "PackagePath": "staticwebassets\\js\\AdminLayOut.js"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",
