@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eProject3</title>
+    <link rel="stylesheet" href="~/css/AdminLayOut.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="~/eProject3.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> *@
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-detail">
+            <i class="fa-solid fa-user-tie"></i>
+            <span class="logo_name">ADMIN</span>
+        </div>
+        <div class="inputSearch">
+            <input type="text" placeholder="Search...">
+            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <p>MAIN NAVIGATION</p>
+        <ul class="nav-links">
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-collection'></i>
+                    <span class="link_name">Category</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Category</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-regular fa-folder"></i>
+                    <span class="link_name">Project</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Project</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-user'></i>
+                    <span class="link_name">User</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">User</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-group'></i>
+                    <span class="link_name">Partners</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Partners</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-phone'></i>
+                    <span class="link_name">Contact Us</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Contact Us</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span class="link_name">About Us</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">About Us</a></li>
+                    <li><a href="#">What we đo ?</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Career With Us</a></li>
+                    <li><a href="#">Our Achievements</a></li>
+                    <li><a href="#">Our Suporters</a></li>
+                    <li><a href="#">Read About Us</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class='bx bx-help-circle'></i>
+                    <span class="link_name">Help Center</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Help Center</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="~/image/Screenshot 2024-07-02 092340.png" alt="">
+                    </div>
+                    <div class="name-job">
+                        <span class="profile_name">Admin</span>
+                        <div class="profile-status">
+                            <i class="fa-solid fa-circle" style="color: green;font-size: 10px;"></i>
+                            <span class="status">Online</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <div class="nontifycation">
+                <button type="button" class="icon-button">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span class="icon-button__badge">2</span>
+                </button>
+                <button class="icon-button">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <button class="icon-button">
+                    <i class="fa-regular fa-flag"></i>
+                    <span class="icon-button__badge">10</span>
+                </button>
+            </div>
+        </div>
+        <!-- Body -->
+        <div class="main">
+            @RenderBody()
+        </div>
+    </section>
+    <script src="~/js/AdminLayOut.js" asp-append-version="true"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "columnDefs": [
+                    { "width": "5%", "targets": 0 },
+                    { "width": "25%", "targets": 1 },
+                    { "width": "15%", "targets": 2 },
+                    { "width": "35%", "targets": 3 },
+                    { "width": "20%", "targets": 4 }
+                ],
+                "paging": true,
+                "ordering": true,
+                "info": true
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
