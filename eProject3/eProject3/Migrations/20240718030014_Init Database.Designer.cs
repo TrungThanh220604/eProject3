@@ -12,8 +12,8 @@ using eProject3.Data;
 namespace eProject3.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240718005414_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20240718030014_Init Database")]
+    partial class InitDatabase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -272,9 +272,6 @@ namespace eProject3.Migrations
                     b.Property<int>("conversation_id")
                         .HasColumnType("int");
 
-                    b.Property<int>("conversationid")
-                        .HasColumnType("int");
-
                     b.Property<string>("message_text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -287,7 +284,7 @@ namespace eProject3.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("conversationid");
+                    b.HasIndex("conversation_id");
 
                     b.HasIndex("user_id");
 
@@ -483,9 +480,9 @@ namespace eProject3.Migrations
 
             modelBuilder.Entity("eProject3.Models.Entities.Message", b =>
                 {
-                    b.HasOne("eProject3.Models.Entities.Conversation", "conversation")
+                    b.HasOne("eProject3.Models.Entities.Conversation", "Conversation")
                         .WithMany("Messages")
-                        .HasForeignKey("conversationid")
+                        .HasForeignKey("conversation_id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -495,9 +492,9 @@ namespace eProject3.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("Conversation");
 
-                    b.Navigation("conversation");
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("eProject3.Models.Entities.Project", b =>

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace eProject3.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitDatabase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -185,7 +185,7 @@ namespace eProject3.Migrations
                         column: x => x.user_id,
                         principalTable: "Users",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.NoAction);
                 });
 
             migrationBuilder.CreateTable(
@@ -274,15 +274,14 @@ namespace eProject3.Migrations
                     message_text = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     sent_at = table.Column<DateTime>(type: "datetime2", nullable: false),
                     conversation_id = table.Column<int>(type: "int", nullable: false),
-                    conversationid = table.Column<int>(type: "int", nullable: false),
                     user_id = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Messages", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Messages_Conversations_conversationid",
-                        column: x => x.conversationid,
+                        name: "FK_Messages_Conversations_conversation_id",
+                        column: x => x.conversation_id,
                         principalTable: "Conversations",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
@@ -335,9 +334,9 @@ namespace eProject3.Migrations
                 column: "user_id");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Messages_conversationid",
+                name: "IX_Messages_conversation_id",
                 table: "Messages",
-                column: "conversationid");
+                column: "conversation_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Messages_user_id",
