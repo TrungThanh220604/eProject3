@@ -1,1 +1,0 @@
-Chào tôi chưa ăn cơm
