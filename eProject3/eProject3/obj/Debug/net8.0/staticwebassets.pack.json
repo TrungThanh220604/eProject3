@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\eProject3.bundle.scp.css"
     },
     {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
+      "PackagePath": "staticwebassets\\css\\AddCategory.css"
+    },
+    {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
       "PackagePath": "staticwebassets\\css\\AdminLayOut.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
+      "PackagePath": "staticwebassets\\css\\Categories.css"
     },
     {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",

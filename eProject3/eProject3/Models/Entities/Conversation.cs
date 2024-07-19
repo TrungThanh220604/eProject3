@@ -14,6 +14,6 @@ namespace eProject3.Models.Entities
         public int user_id {  get; set; }
         public User User { get; set; }
 
-        public ICollection<Message> Messages { get; set; }
+        public ICollection<Message>? Messages { get; set; }
     }
 }

@@ -15,11 +15,11 @@ namespace eProject3.Models.Entities
         public string? phone_number { get; set; }
         public string role { get; set; }
 
-        public ICollection<Conversation> Conversations { get; set; }
-        public ICollection<Message> Messages { get; set; }
+        public ICollection<Conversation>? Conversations { get; set; }
+        public ICollection<Message>? Messages { get; set; }
 
-        public ICollection<Like> Likes { get; set; }
+        public ICollection<Like>? Likes { get; set; }
 
-        public ICollection<Donation> Donations { get; set; }
+        public ICollection<Donation>? Donations { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "66lBqWHMhQNonkSLpMmoBnEjc3WCVi/DVIyQNST3eRo=",
+  "Hash": "sjbwJ69mkgkwXVmUyI+VQXVQbZ9wR1WS5O1VUliP7qg=",
   "Source": "eProject3",
   "BasePath": "_content/eProject3",
   "Mode": "Default",
@@ -55,6 +55,25 @@
       "OriginalItemSpec": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css"
     },
     {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/AddCategory.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddCategory.css"
+    },
+    {
       "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -72,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\AdminLayOut.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Categories.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Categories.css"
     },
     {
       "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
