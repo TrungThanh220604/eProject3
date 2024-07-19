@@ -9,8 +9,8 @@ namespace eProject3.Models.Entities
 
         public string name { get; set; }
 
-        public ICollection<AboutUsChild> AboutUsChilds { get; set; }
-        public ICollection<AboutUsImage> AboutUsImages { get; set; }
+        public ICollection<AboutUsChild>? AboutUsChilds { get; set; }
+        public ICollection<AboutUsImage>? AboutUsImages { get; set; }
 
     }
 }

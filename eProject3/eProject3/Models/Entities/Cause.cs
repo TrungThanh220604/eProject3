@@ -9,6 +9,6 @@ namespace eProject3.Models.Entities
 
         public string name { get; set; }
 
-        public ICollection<Project> Projects { get; set; }
+        public ICollection<Project>? Projects { get; set; }
     }
 }
