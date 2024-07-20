@@ -9,12 +9,40 @@
       "PackagePath": "staticwebassets\\css\\AddCategory.css"
     },
     {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddPartners.css",
+      "PackagePath": "staticwebassets\\css\\AddPartners.css"
+    },
+    {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
       "PackagePath": "staticwebassets\\css\\AdminLayOut.css"
     },
     {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
       "PackagePath": "staticwebassets\\css\\Categories.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\ContactUs_Inf.css",
+      "PackagePath": "staticwebassets\\css\\ContactUs_Inf.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
+      "PackagePath": "staticwebassets\\css\\EditCategory.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditContactUs.css",
+      "PackagePath": "staticwebassets\\css\\EditContactUs.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Partners.css",
+      "PackagePath": "staticwebassets\\css\\Partners.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
+      "PackagePath": "staticwebassets\\css\\UserContactUs.css"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
+      "PackagePath": "staticwebassets\\css\\Users.css"
     },
     {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
@@ -25,8 +53,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\6318d0ec-98fc-4720-b0d8-e3c7945f135d_05.jpg",
+      "PackagePath": "staticwebassets\\image\\6318d0ec-98fc-4720-b0d8-e3c7945f135d_05.jpg"
+    },
+    {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
       "PackagePath": "staticwebassets\\image\\Screenshot 2024-07-02 092340.png"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pn1.png",
+      "PackagePath": "staticwebassets\\image\\pn1.png"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pn2.jpg",
+      "PackagePath": "staticwebassets\\image\\pn2.jpg"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pn3.png",
+      "PackagePath": "staticwebassets\\image\\pn3.png"
+    },
+    {
+      "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pn4.png",
+      "PackagePath": "staticwebassets\\image\\pn4.png"
     },
     {
       "Id": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",

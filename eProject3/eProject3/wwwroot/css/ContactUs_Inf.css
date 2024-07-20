@@ -1,0 +1,145 @@
+﻿.tilteRight span {
+    padding-left: 4px;
+}
+
+.mainBody .contactInf {
+    width: 100%;
+    height: 100%;
+}
+
+    .mainBody .contactInf ul {
+        margin: 50px 150px;
+        list-style: none;
+        line-height: 50px;
+    }
+
+        .mainBody .contactInf ul li {
+            margin: 20px 0;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 85% 15%;
+        }
+
+            .mainBody .contactInf ul li .contactInf-text {
+                display: flex;
+                align-items: center;
+            }
+
+                .mainBody .contactInf ul li .contactInf-text i {
+                    margin-right: 10px;
+                    color: rgb(33, 33, 100);
+                    font-size: 35px;
+                }
+
+                .mainBody .contactInf ul li .contactInf-text p {
+                    font-size: 35px;
+                    white-space: nowrap;
+                }
+
+            .mainBody .contactInf ul li a {
+                display: flex;
+                font-size: 25px;
+                border: none;
+                border-radius: 10px;
+                font-weight: 600;
+                background: rgb(67, 132, 252);
+                color: #fff;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+         
+            }
+
+/* CSS để ẩn form ban đầu */
+.box-editContact {
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #636262;
+}
+
+.edit-form {
+    display: none;
+    position: fixed;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 50px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.headEdit {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+    .headEdit i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+.edit-form .textBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+    .edit-form .textBox label {
+        margin-bottom: 5px;
+    }
+
+    .edit-form .textBox input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.edit-form .btnSave button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(64, 108, 253);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+    .overlay.active,
+    .edit-form.active {
+        display: block;
+    }
+
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+

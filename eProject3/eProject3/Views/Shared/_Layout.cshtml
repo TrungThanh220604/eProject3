@@ -24,57 +24,71 @@
         <p>MAIN NAVIGATION</p>
         <ul class="nav-links">
             <li>
-                <a asp-controller="Admin" asp-action="Dashboard">
-                    <i class="fa-solid fa-border-all"></i>
+                <a asp-action="Dashboard">
+                    <i class="fa-solid fa-money-check-dollar"></i>
                     <span class="link_name">Dashboard</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Dashboard</a></li>
+                    <li><a class="link_name" href="./homeAdmin.html">Dashboard</a></li>
                 </ul>
             </li>
             <li>
-                <a asp-controller="Admin" asp-action="Categories">
+                <a asp-action="Categories">
                     <i class='bx bx-collection'></i>
-                    <span class="link_name">Category</span>
+                    <span class="link_name">Cause</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a class="link_name" href="./cause.html">Cause</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">
+                <a href="./donation.html">
+                    <i class='bx bx-money'></i>
+                    <span class="link_name">Donation statistics</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="./donation.html">Donation statistics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./project.html">
                     <i class="fa-regular fa-folder"></i>
                     <span class="link_name">Project</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Project</a></li>
+                    <li><a class="link_name" href="./project.html">Project</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">
+                <a asp-action="Users">
                     <i class='bx bx-user'></i>
                     <span class="link_name">User</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">User</a></li>
+                    <li><a class="link_name" href="./userInf.html">User</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">
+                <a asp-action="Partners">
                     <i class='bx bx-group'></i>
                     <span class="link_name">Partners</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Partners</a></li>
+                    <li><a class="link_name" href="./partner.html">Partners</a></li>
                 </ul>
             </li>
             <li>
-                <a href="">
-                    <i class='bx bx-phone'></i>
-                    <span class="link_name">Contact Us</span>
-                </a>
-                <ul class="sub-menu blank">
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-phone'></i>
+                        <span class="link_name">Contact Us</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
                     <li><a class="link_name" href="#">Contact Us</a></li>
+                    <li><a asp-action="ContactUs_Inf">Contact Us Information</a></li>
+                    <li><a asp-action="UserContactUs">Contact Us</a></li>
                 </ul>
             </li>
             <li>
@@ -97,12 +111,12 @@
                 </ul>
             </li>
             <li>
-                <a href="">
+                <a href="./helpCenter.html">
                     <i class='bx bx-help-circle'></i>
                     <span class="link_name">Help Center</span>
                 </a>
                 <ul class="sub-menu blank">
-                    <li><a class="link_name" href="#">Help Center</a></li>
+                    <li><a class="link_name" href="./helpCenter.html">Help Center</a></li>
                 </ul>
             </li>
             <li>
@@ -112,10 +126,7 @@
                     </div>
                     <div class="name-job">
                         <span class="profile_name">Admin</span>
-                        <div class="profile-status">
-                            <i class="fa-solid fa-circle" style="color: green;font-size: 10px;"></i>
-                            <span class="status">Online</span>
-                        </div>
+                        <span class="status">Online</span>
                     </div>
                     <i class='bx bx-log-out'></i>
                 </div>

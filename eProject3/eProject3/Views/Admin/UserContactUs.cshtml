@@ -1,43 +1,32 @@
 ﻿@using eProject3.Models.Entities
-@model List<Cause>
+@model List<ContactUs>
 
 @{
-    int index = 1; 
+    int index = 1;
 }
 
-<link rel="stylesheet" href="~/css/Categories.css">
+<link rel="stylesheet" href="~/css/UserContactUs.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
-
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>Categories</h1>
+        <h1>ContactUs</h1>
         <p style="color: gray; padding-left: 5px;">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px;">Categories</span>
+        <span style="padding-left: 4px;">ContactUs</span>
     </div>
 </div>
 <div class="mainContent">
-    <div class="add">
-        <a asp-controller="Admin" asp-action="AddCategory">Add</a>
-    </div>
-
-    @if (TempData["SuccessMessage"] != null)
-    {
-        <div class="alert alert-success">
-            @TempData["SuccessMessage"]
-        </div>
-    }
-
-
     <div class="container">
         <table id="example" class="display" style="width:100%">
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Name</th>
-                    <th>Action</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Message</th>
                 </tr>
             </thead>
             <tbody>
@@ -46,22 +35,21 @@
                     <tr>
                         <td>@index</td>
                         <td>@item.name</td>
-                        <td>
-                            <a asp-action="EditCategory" asp-route-id="@item.id" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
-                            <form asp-action="DeleteCategory" asp-route-id="@item.id" method="post"
-                                  onsubmit="return confirm('Are you sure you want to delete this item?');">
-                                <button class="actionBtn deleteBtn" type="submit"><i class="fas fa-trash-alt"></i>Delete</button>
-                            </form>
-                        </td>
+                        <td>@item.email</td>
+                        <td>@item.phone</td>
+                        <td>@item.Message</td>
                     </tr>
                     index++;
-                }          
+                }
+                
             </tbody>
             <tfoot>
                 <tr>
                     <th>Id</th>
-                    <th>Name</th>
-                    <th>Action</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Message</th>
                 </tr>
             </tfoot>
         </table>
@@ -74,9 +62,12 @@
     $(document).ready(function () {
         $('#example').DataTable({
             "columnDefs": [
-                { "width": "10%", "targets": 0 },
-                { "width": "70%", "targets": 1 },
-                { "width": "20%", "targets": 2 }
+                { "width": "5%", "targets": 0 },
+                { "width": "20%", "targets": 1 },
+                { "width": "15%", "targets": 2 },
+                { "width": "15%", "targets": 3 },
+                { "width": "45%", "targets": 4 },
+
             ],
             "paging": true,
             "ordering": true,

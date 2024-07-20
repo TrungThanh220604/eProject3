@@ -119,9 +119,13 @@
         pointer-events: none;
     }
 
+    .sidebar .nav-links li .sub-menu {
+        text-align: center;
+    }
+
     /* ẩn thanh */
     .sidebar .nav-links li .sub-menu {
-        padding: 6px 6px 14px 80px;
+        /* padding: 6px; */
         margin-top: -10px;
         background: rgb(59, 59, 84);
         display: none;
@@ -135,7 +139,9 @@
     /* mau chu */
     .sidebar .nav-links li .sub-menu a {
         color: #fff;
-        font-size: 15px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-around;
         padding: 5px 0;
         white-space: nowrap;
         opacity: 0.6;
@@ -145,6 +151,7 @@
         .sidebar .nav-links li .sub-menu a:hover {
             opacity: 1;
         }
+
 
     .sidebar.close .nav-links li .sub-menu {
         position: absolute;
@@ -195,12 +202,13 @@
 
     .sidebar .profile-details {
         position: fixed;
+        padding: 10px 0;
         bottom: 0;
         width: 260px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #56647e;
+        background: #56647e;
         transition: all 0.4s ease;
     }
 
@@ -236,19 +244,21 @@
     .sidebar .profile-details .profile_name {
         color: #fff;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 600;
+        padding: 5px 0;
         white-space: nowrap;
     }
 
-    .sidebar .profile-details .profile-status .status {
-        color: #fff;
-        font-size: 12px;
-        font-weight: 500;
+    .sidebar .profile-details .status {
+        color: rgb(0, 255, 0);
+        font-size: 15px;
+        font-weight: 600;
     }
 
+
     .sidebar.close .profile-details .profile_name,
-    .sidebar.close .profile-details .profile-status,
-    .sidebar.close .profile-details i {
+    .sidebar.close .profile-details .status,
+    .sidebar.close .profile-details .bx-log-out {
         display: none;
     }
 
@@ -380,7 +390,8 @@
     transition: all 0.5s ease;
 }
 
-.sidebar.close .inputSearch input, .sidebar.close p {
+.sidebar.close .inputSearch input,
+.sidebar.close p {
     display: none;
 }
 
@@ -391,7 +402,6 @@
 /* Body */
 .main {
     width: 100%;
-    /* height: 100%; */
 }
 
 .mainHead {

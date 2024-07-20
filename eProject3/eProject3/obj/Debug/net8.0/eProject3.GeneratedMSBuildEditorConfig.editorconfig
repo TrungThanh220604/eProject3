@@ -22,12 +22,40 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/AddPartners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUGFydG5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/ContactUs_Inf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFVzX0luZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/EditContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/Partners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/UserContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckNvbnRhY3RVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/APTECH/Project_Ky_3/eProject3/eProject3/eProject3/Views/Home/Index.cshtml]

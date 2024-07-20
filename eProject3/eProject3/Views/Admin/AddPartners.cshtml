@@ -1,0 +1,37 @@
+﻿@model eProject3.Controllers.AdminController.PartnerViewModel
+
+<link rel="stylesheet" href="~/css/AddPartners.css" />
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>Add Partners</h1>
+        <p style="color: gray; padding-left: 5px">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px">Add Partners</span>
+    </div>
+</div>
+<div class="mainBody">
+    <div class="form-add-cate">
+        <form asp-controller="Admin" asp-action="AddPartners" method="post" enctype="multipart/form-data">
+            <label asp-for="name">Partners Name</label>
+            <input asp-for="name" class="inputAddCate" type="text" placeholder="Partners Name..." />
+            <span asp-validation-for="name" style="color: red"></span>
+
+            <label  asp-for="description">Description</label>
+            <input asp-for="description" class="inputAddCate" type="text" placeholder="Description..." />
+            <span asp-validation-for="description" style="color: red"></span>
+
+            @* <label asp-for="logo">Logo</label>
+            <input  asp-for="logo" class="image" type="file" name="Choosefile">
+            <span asp-validation-for="logo" style="color: red"></span> *@
+
+            <label for="logo">Chọn logo</label>
+            <input type="file" name="logo" class="form-control" id="logo">
+            <span asp-validation-for="logo" class="text-danger"></span>
+
+            <input class="btnAddCate" type="submit" value="Add" />
+        </form>
+    </div>
+</div>

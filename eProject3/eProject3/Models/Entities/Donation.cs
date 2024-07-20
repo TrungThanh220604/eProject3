@@ -14,6 +14,8 @@ namespace eProject3.Models.Entities
 
         public string payment_type { get; set; }
 
+        public string? message { get; set; }
+
         public DateTime expiration_date { get; set; }
 
         public string CVV { get; set; }
