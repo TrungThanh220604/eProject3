@@ -1,0 +1,100 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* footer*/
+footer {
+    background: #dadada80;
+    width: 100%;
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.foot {
+    display: flex;
+}
+
+    .foot .logo-Inf {
+        width: 45%;
+    }
+
+    .foot .aboutUs-Inf {
+        width: 25%;
+    }
+
+    .foot .contactUs-Inf {
+        width: 30%;
+    }
+
+    .foot .logo-Inf,
+    .foot .aboutUs-Inf,
+    .foot .contactUs-Inf {
+        padding: 5px 30px;
+        line-height: 25px;
+    }
+
+
+        .foot .logo-Inf .content,
+        .foot .logo-Inf .footer-link,
+        .foot .aboutUs-Inf ul,
+        .contactUs-Inf ul {
+            padding: 20px 0;
+        }
+
+        .foot .logo-Inf .logo {
+            display: flex;
+        }
+
+            .foot .logo-Inf .logo .logo-icon {
+                color: rgb(0, 221, 52);
+                font-size: 28px;
+                font-weight: 800;
+                /* margin-left: -6px; */
+            }
+
+        .foot .logo-Inf .logo-name {
+            font-family: "Poppins", sans-serif;
+            font-size: 25px;
+            font-weight: 800;
+            /* margin-top: 12px; */
+        }
+
+.footer-link ul,
+.contactUs-Inf ul,
+.aboutUs-Inf ul {
+    list-style: none;
+}
+
+.contactUs-Inf h2,
+.aboutUs-Inf h2 {
+    color: #000000;
+    font-weight: 600;
+}
+
+.aboutUs-Inf .sub-menu li a,
+.contactUs-Inf ul li,
+.logo-Inf .text p {
+    font-weight: 400;
+    color: #000000;
+}
+
+.footer-link ul {
+    display: flex;
+    justify-content: center;
+}
+
+    .footer-link ul li {
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        padding: 8px;
+        margin: 0 10px;
+    }

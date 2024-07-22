@@ -9,6 +9,30 @@
       "PackagePath": "staticwebassets\\css\\AdminLayOut.css"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login2.css",
+      "PackagePath": "staticwebassets\\css\\Login2.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserFooter.css",
+      "PackagePath": "staticwebassets\\css\\UserFooter.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserHeader.css",
+      "PackagePath": "staticwebassets\\css\\UserHeader.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserLayout.css",
+      "PackagePath": "staticwebassets\\css\\UserLayout.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -17,12 +41,112 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\1.png",
+      "PackagePath": "staticwebassets\\image\\1.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\2.png",
+      "PackagePath": "staticwebassets\\image\\2.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\3ce2e79d1b06bb58e2178-768x1024.jpg",
+      "PackagePath": "staticwebassets\\image\\3ce2e79d1b06bb58e2178-768x1024.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\NBTT1-e1664447215874.jpeg",
+      "PackagePath": "staticwebassets\\image\\NBTT1-e1664447215874.jpeg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
       "PackagePath": "staticwebassets\\image\\Screenshot 2024-07-02 092340.png"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\To-chuc-su-kien-tu-thien.jpg",
+      "PackagePath": "staticwebassets\\image\\To-chuc-su-kien-tu-thien.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\anhHopTac.jpg",
+      "PackagePath": "staticwebassets\\image\\anhHopTac.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\bia.jpg",
+      "PackagePath": "staticwebassets\\image\\bia.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
+      "PackagePath": "staticwebassets\\image\\cach-to-chuc-chuong-trinh-tu-thien.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh1.jpg",
+      "PackagePath": "staticwebassets\\image\\dvdh1.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh2.png",
+      "PackagePath": "staticwebassets\\image\\dvdh2.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh3.png",
+      "PackagePath": "staticwebassets\\image\\dvdh3.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh4.jpg",
+      "PackagePath": "staticwebassets\\image\\dvdh4.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh5.jpg",
+      "PackagePath": "staticwebassets\\image\\dvdh5.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh6.png",
+      "PackagePath": "staticwebassets\\image\\dvdh6.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh7.png",
+      "PackagePath": "staticwebassets\\image\\dvdh7.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh8.png",
+      "PackagePath": "staticwebassets\\image\\dvdh8.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh9.png",
+      "PackagePath": "staticwebassets\\image\\dvdh9.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\lamviec.jpeg",
+      "PackagePath": "staticwebassets\\image\\lamviec.jpeg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro1.jpg",
+      "PackagePath": "staticwebassets\\image\\pro1.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro2.png",
+      "PackagePath": "staticwebassets\\image\\pro2.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro3.jpg",
+      "PackagePath": "staticwebassets\\image\\pro3.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\vung-cao-5-12320354.jpg",
+      "PackagePath": "staticwebassets\\image\\vung-cao-5-12320354.jpg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
       "PackagePath": "staticwebassets\\js\\AdminLayOut.js"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
+      "PackagePath": "staticwebassets\\js\\UserHeader.js"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserLayOut.js",
+      "PackagePath": "staticwebassets\\js\\UserLayOut.js"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",

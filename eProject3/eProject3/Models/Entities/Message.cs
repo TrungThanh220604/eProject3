@@ -18,7 +18,7 @@ namespace eProject3.Models.Entities
         public Conversation Conversation { get; set; }
 
         [ForeignKey("User")]
-        public int user_id { get; set; }
+        public string user_id { get; set; }
         public User User { get; set; }
     }
 }

@@ -9,7 +9,7 @@ namespace eProject3.Models.Entities
         public int id { get; set; }
 
         [ForeignKey("User")]
-        public int user_id { get; set; }
+        public string user_id { get; set; }
         public User User { get; set; }
 
         [ForeignKey("Project")]

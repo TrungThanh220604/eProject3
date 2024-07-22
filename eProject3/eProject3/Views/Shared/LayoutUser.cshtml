@@ -1,5 +1,160 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - eProject3</title>
+    <link rel="stylesheet" href="~/css/UserFooter.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/UserHeader.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/eProject3.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="headWeb">
+        <div class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="../view/User.html" class="logo">
+                        <p class="logo-name">NGO Website</p>
+                        <i class='bx bx-leaf logo-icon'></i>
+                    </a>
+                </li>
+                <li class="navbar-item link">
+                    <a href="../view/User.html">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li class="navbar-item link">
+                    <a href="../view/category.html">
+                        <i class='bx bx-money'></i>
+                        <p>Donate</p>
+                    </a>
+                </li>
+                <li class="navbar-item link">
+                    <a href="../view/helpsCenter.html">
+                        <i class='bx bx-help-circle'></i>
+                        <p>Help Center</p>
+                    </a>
+                </li>
+                <li class="navbar-item link">
+                    <a href="#" class="icon-link" onclick="toggleMenuDropdown(event)">
+                        <i class="fa-solid fa-circle-info" style="padding-right: 5px;"></i>
+                        <span class="link_name">About Us</span>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </a>
+                    <ul id="menuDropdown" class="sub-menu">
+                        <li><a href="../view/aboutUs1.html">What we đo ?</a></li>
+                        <li><a href="../view/aboutUs2.html">Our Mission</a></li>
+                        <li><a href="../view/aboutUs3.html">Our Team</a></li>
+                        <li><a href="../view/aboutUs4.html">Career With Us</a></li>
+                        <li><a href="../view/aboutUs5.html">Our Achievements</a></li>
+                        <li><a href="../view/aboutUs6.html">Our Suporters</a></li>
+                        <li><a href="../view/aboutUs7.html">Read About Us</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item link">
+                    <a href="../view/ourPartners.html">
+                        <i class='bx bx-group'></i>
+                        <p>Our Partners</p>
+                    </a>
+                </li>
+                <li class="navbar-item identity">
+                     <partial name="_LoginPartial" />
+                </li>
+            </ul>
+        </div>
+    </header>
+        <!-- Body -->
+    <div class="main">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="logo-Inf">
+                <div class="text">
+                    <div style="display: flex; justify-content: center;">
+                        <a href="../view/User.html" class="logo">
+                            <p class="logo-name">NGO Website</p>
+                            <i class='bx bx-leaf logo-icon'></i>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <p>
+                            The ‘choices’ we make today shape our future “Changing Our Futures” mission is to share the
+                            principles which help people make the “right choice“ when confronted with real-life issues.
+                        </p>
+                        <p>
+                            Our mission is to make people more 'Happy', 'Successful', and ‘Relevant' in this
+                            fast-changing
+                            world. We are creating a framework in which people learn to make the right choices so that
+                            they
+                            don’t have problems in the future.
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-link">
+                    <ul>
+                        <li class="footer-link-item">
+                            <a href="https://www.facebook.com/">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="https://www.instagram.com/">
+                                <i class="fa-brands fa-instagram" style="color: rgb(253, 121, 143);"></i>
+                            </a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="https://twitter.com/i/flow/login">
+                                <i class="fa-brands fa-twitter" style="color: rgb(0, 255, 255);"></i>
+                            </a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="https://www.youtube.com/">
+                                <i class="fa-brands fa-youtube" style="color: rgb(255, 0, 0);"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aboutUs-Inf">
+                <h2>About Us</h2>
+                <ul class="sub-menu">
+                    <li><a href="#">What we đo ?</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Career With Us</a></li>
+                    <li><a href="#">Our Achievements</a></li>
+                    <li><a href="#">Our Suporters</a></li>
+                    <li><a href="#">Read About Us</a></li>
+                </ul>
+            </div>
+            <div class="contactUs-Inf">
+                <h2>Contact Us</h2>
+                <ul style="line-height: 35px;">
+                    <li>
+                        <i class="icon-color fa-solid fa-location-dot"
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>175 Tay Son, Trung Liet, Dong Da, Ha
+                        Noi
+                    </li>
+                    <li>
+                        <i class="icon-color fa-solid fa-phone"
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>(+84) 33579920
+                    </li>
+                    <li>
+                        <i class="icon-color fa-regular fa-envelope"
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>ThuyLoi@e.tlu.edu.vn
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="~/js/UserHeader.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
