@@ -11,9 +11,9 @@ namespace eProject3.Models.Entities
         public string status { get; set; }
 
         [ForeignKey("User")]
-        public int user_id {  get; set; }
+        public string user_id {  get; set; }
         public User User { get; set; }
 
-        public ICollection<Message> Messages { get; set; }
+        public ICollection<Message>? Messages { get; set; }
     }
 }

@@ -1,0 +1,133 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #d7d7d7a7;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img-container {
+    width: 50%;
+    height: 100%;
+    background-image: url('/image/vung-cao-5-12320354.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.forms-container {
+    width: 50%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.account-field,
+.password-field {
+    margin: 15px 0;
+}
+
+.textAccount,
+.textPassword {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .textAccount i,
+    .textPassword i {
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+
+    .textAccount span,
+    .textPassword span {
+        flex: 1;
+        font-size: 1.2rem;
+    }
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+    .input-field input {
+        flex: 1;
+        border: none;
+        background: transparent;
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .input-field span {
+        margin-left: 10px;
+        font-size: 1.2rem;
+    }
+
+.text-dangerSpan {
+    color: red !important;
+    display: flex;
+    
+}
+
+.btnLogin {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgb(137, 255, 90);
+    color: #eeeeee;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    .btnLogin:hover {
+        background: rgb(120, 255, 67);
+    }
+
+.btnRegister {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .btnRegister a {
+        color: rgb(29, 29, 255);
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+#forgot-password,
+#register-link {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #262626;
+    text-decoration: none;
+}
+
+    #forgot-password:hover,
+    #register-link:hover {
+        color: rgb(29, 29, 255);
+    }

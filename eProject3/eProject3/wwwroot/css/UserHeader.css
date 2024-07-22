@@ -1,0 +1,198 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+.navbar .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(191, 191, 191, 0.566);
+}
+
+    .navbar .navbar-list .navbar-item {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+.navbar-item .btnAdmin p {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.navbar .navbar-list .navbar-item a,
+.icon-link {
+    display: flex;
+    color: #535353;
+    font-weight: 800;
+}
+
+.navbar .navbar-list .navbar-item .logo {
+    display: flex;
+}
+
+.navbar .navbar-list .navbar-item .logo-icon {
+    font-size: 28px;
+    color: rgb(0, 221, 52);
+}
+
+.navbar .navbar-list .navbar-item .logo-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+}
+
+.navbar-item.link i {
+    padding-right: 5px;
+}
+
+.navbar .navbar-list .navbar-item.link {
+    transition: all 0.5s ease-in;
+}
+
+    .navbar .navbar-list .navbar-item.link :hover {
+        color: #007c11bc;
+    }
+
+.navbar .navbar-item .sub-menu {
+    list-style: none;
+    display: none;
+    position: relative;
+}
+
+.navbar .navbar-list .navbar-item .btnAdmin img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* dropdown */
+.navbar .navbar-list .navbar-item .btnAdmin i,
+.navbar .navbar-item .icon-link i {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: all 0.5s ease;
+}
+
+.navbar .navbar-list li.showMenu i.arrow {
+    transform: rotate(-180deg);
+}
+
+.navbar .navbar-item .sub-menu {
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: #fdfdfd;
+    z-index: 99;
+    margin: 352px 60px 0 0;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #fdfdfd;
+    min-width: 126px;
+    z-index: 99;
+    top: 0;
+    right: 3;
+    margin-top: 62px;
+    border-radius: 5px;
+}
+
+    /* .dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    right: 6px;
+    width: 15px;
+    height: 24px;
+    background: linear-gradient(135deg,
+        #ffffff 100%,
+        transparent 50%,
+        transparent);
+    transform: rotate(45deg);
+  } */
+
+    .navbar .navbar-item .sub-menu a,
+    .dropdown-content a {
+        padding: 10px 16px;
+        display: block;
+        border-radius: 5px;
+    }
+
+
+
+/* slide ở các trang */
+.slideInf {
+    position: relative;
+    background-image: url("../img/lamviec.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 120px 30px 70px 30px;
+    color: #fff;
+}
+
+    .slideInf::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0000005e;
+        z-index: 1;
+    }
+
+    .slideInf > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .slideInf span {
+        font-weight: 700;
+    }
+
+.navbar-nav {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+    .navbar-nav .nav-item {
+        display: flex;
+        align-items: center;
+    }
+
+        .navbar-nav .nav-item.identity a {
+            padding: 10px 15px;
+            margin-right: 10px;
+            text-decoration: none;
+            color: #535353;
+            font-weight: 800;
+        }
+
+            .navbar-nav .nav-item.identity a:hover {
+                color: #007c11bc;
+            }
+

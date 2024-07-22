@@ -24,10 +24,10 @@ namespace eProject3.Models.Entities
 
         public Cause Cause { get; set; }
 
-        public ICollection<Like> Likes { get; set; }
+        public ICollection<Like>? Likes { get; set; }
 
-        public ICollection<Donation> Donations { get; set; }
+        public ICollection<Donation>? Donations { get; set; }
 
-        public ICollection<Gallery> Galleries { get; set; }
+        public ICollection<Gallery>? Galleries { get; set; }
     }
 }

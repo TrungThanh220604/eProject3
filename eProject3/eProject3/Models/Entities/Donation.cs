@@ -18,8 +18,10 @@ namespace eProject3.Models.Entities
 
         public string CVV { get; set; }
 
+        public string? message { get; set; }
+
         [ForeignKey("User")]
-        public int user_id { get; set; }
+        public string user_id { get; set; }
         public User User { get; set; }
 
         [ForeignKey("Project")]

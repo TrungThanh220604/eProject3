@@ -1,0 +1,244 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserLayout.css" asp-append-version="true" />
+
+<div class="slider">
+    <div class="myslide fade">
+        <img class="imgSlide" src="~/image/vung-cao-5-12320354.jpg" style="width: 100%; height: 100%;">
+    </div>
+
+    <div class="myslide fade">
+        <img class="imgSlide" src="~/image/To-chuc-su-kien-tu-thien.jpg" style="width: 100%; height: 100%;">
+    </div>
+
+    <div class="myslide fade">
+        <img class="imgSlide" src="~/image/anhHopTac.jpg" style="width: 100%; height: 100%;">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)"><i class='bx bx-chevron-left'></i></a>
+    <a class="next" onclick="plusSlides(1)"><i class='bx bx-chevron-right'></i></a>
+
+    <div class="dotsbox" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
+<div class="containerProducts">
+    <h1>The project is raising funds for charity</h1>
+    <p style="margin-bottom: 20px;">Please choose to accompany the project that interests you</p>
+    <div class="products">
+        <a href="../view/productDetail.html" class="product-card">
+            <div class="image">
+                <img src="~/image/pro1.jpg" alt="...">
+                <span class="label">Children</span>
+            </div>
+            <div class="details">
+                <p class="title">For Vietnamese Stature Foundation</p>
+                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
+                <!-- <div class="scale-full">
+                    <div class="scale-real" id="scale-real"></div>
+                </div> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="amount">1,700,540 vnd</p>
+                    <!-- <p class="progress">7.1%</p> -->
+                </div>
+                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
+                <div class="target">
+                    <p>Time start: <span class="time">01-01-2000</span></p>
+                    <p>Time end: <span class="time">01-01-2000</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="../view/productDetail.html" class="product-card">
+            <div class="image">
+                <img src="~/image/pro2.png" alt="...">
+                <span class="label">Children</span>
+            </div>
+            <div class="details">
+                <p class="title">For Vietnamese Stature Foundation</p>
+                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
+                <!-- <div class="scale-full">
+                    <div class="scale-real" id="scale-real"></div>
+                </div> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="amount">1,700,540 vnd</p>
+                    <!-- <p class="progress">50.1%</p> -->
+                </div>
+                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
+                <div class="target">
+                    <p>Time start: <span class="time">01-01-2000</span></p>
+                    <p>Time end: <span class="time">01-01-2000</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="../view/productDetail.html" class="product-card">
+            <div class="image">
+                <img src="~/image/pro3.jpg" alt="...">
+                <span class="label">Children</span>
+            </div>
+            <div class="details">
+                <p class="title">For Vietnamese Stature Foundation</p>
+                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
+                <!-- <div class="scale-full">
+                    <div class="scale-real" id="scale-real"></div>
+                </div> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="amount">1,700,540 vnd</p>
+                    <!-- <p class="progress">90.1%</p> -->
+                </div>
+                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
+                <div class="target">
+                    <p>Time start: <span class="time">01-01-2000</span></p>
+                    <p>Time end: <span class="time">01-01-2000</span></p>
+                </div>
+            </div>
+        </a>
+        <a href="../view/productDetail.html" class="product-card">
+            <div class="image">
+                <img src="~/image/vung-cao-5-12320354.jpg" alt="...">
+                <span class="label">Children</span>
+            </div>
+            <div class="details">
+                <p class="title">For Vietnamese Stature Foundation</p>
+                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
+                <!-- <div class="scale-full">
+                    <div class="scale-real" id="scale-real"></div>
+                </div> -->
+                <div style="display: flex; justify-content: space-between;">
+                    <p class="amount">1,700,540 vnd</p>
+                    <!-- <p class="progress">7.1%</p> -->
+                </div>
+                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
+                <div class="target">
+                    <p>Time start: <span class="time">01-01-2000</span></p>
+                    <p>Time end: <span class="time">01-01-2000</span></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <a href="../view/category.html"><button class="see-more">See more</button></a>
+</div>
+
+<div class="containerNumber">
+    <h1 style="font-size: 40px;">The numbers speak</h1>
+    <div class="listNumber">
+        <ul>
+            <li>
+                <p>Project</p>
+                <h3>50</h3>
+            </li>
+            <li>
+                <p>Emissary</p>
+                <h3>100</h3>
+            </li>
+            <li>
+                <p>Organization</p>
+                <h3>30</h3>
+            </li>
+            <li>
+                <p>Number of supporters</p>
+                <h3>30</h3>
+            </li>
+            <li>
+                <p>Donate</p>
+                <h3>1.83 Tỷ USD</h3>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="containerInf">
+    <div class="imgInf">
+        <img src="~/image/lamviec.jpeg" alt="..." style="width: 100%; height: 100%;">
+    </div>
+    <div class="textInf">
+        <h2 style="font-size: 30px; font-weight: 900;">What is NGO Website ?</h2>
+        <p class="text-inf">
+            NGO is the platform that creates online communities of interest, trust and
+            transparency. Recognized
+            as Top 3 best Digital Transformation problems for community projects, National Digital
+            Transformation Solution Search Competition 2022 and Marketing Campaign for Sustainable Development
+            at the Marketing Awards for Development 2022 .
+        </p>
+
+        <p class="text-inf">
+            NGO is used by reputable organizations such as: Vietnam Red Cross, Vietnam
+            Children's Protection
+            Fund, Hope Fund, Vietnam Stature Fund, Upland Area Fund, Childhood Enhancement Charity Fund and many
+            other organizations.
+        </p>
+
+        <p class="text-inf">
+            NGO is technologically supported by FPT Smart Cloud, Comartek, Viettel Money and
+            VNPay, ensuring
+            stable application operation and diverse and safe payment methods.
+        </p>
+    </div>
+</div>
+
+<div class="ourPartner">
+    <h2 style="font-size: 30px; font-weight: 900; text-align: center; padding-bottom: 20px;">Our partners</h2>
+    <div class="listImgPartners">
+        <ul>
+            <li><img src="~/image/dvdh1.jpg" alt="" style="width: 50px; height: 50px;"></li>
+            <li><img src="~/image/dvdh2.png" alt="" style="width: 50px; height: 50px;"></li>
+            <li><img src="~/image/dvdh6.png" alt="" style="width: 100px; height: 40px;"></li>
+            <li><img src="~/image/dvdh7.png" alt="" style="width: 100px; height: 40px;"></li>
+            <li><img src="~/image/dvdh8.png" alt="" style="width: 50px; height: 50px;"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="contactUs">
+    <h2 style="font-size: 30px; font-weight: 900; text-align: center; padding-bottom: 20px;">Contact Us</h2>
+    <div class="contactUs-content">
+        <form action="">
+            <div style="display: flex;">
+                <div class="fullname" style="padding-right: 20px;">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+            </div>
+            <div class="phone">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone">
+            </div>
+            <div class="message">
+                <label for="message">Message</label>
+                <textarea name="" id="message"></textarea>
+            </div>
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+        <div class="contactInf">
+            <p>Contact Infomation</p>
+            <ul style="line-height: 35px;">
+                <li>
+                    <i class="icon-color fa-solid fa-location-dot"
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>175 Tay Son, Trung Liet, Dong
+                    Da, Ha
+                    Noi
+                </li>
+                <li>
+                    <i class="icon-color fa-solid fa-phone"
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>(+84) 33579920
+                </li>
+                <li>
+                    <i class="icon-color fa-regular fa-envelope"
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>ThuyLoi@e.tlu.edu.vn
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script src="~/js/UserLayOut.js" asp-append-version="true"></script>
