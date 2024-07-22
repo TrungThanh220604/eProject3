@@ -1,0 +1,58 @@
+﻿@model eProject3.Controllers.AdminController.PartnerViewModel
+
+<link rel="stylesheet" href="~/css/EditPartner.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>Edit Partners</h1>
+        <p style="color: gray; padding-left: 5px">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px">Edit Partners</span>
+    </div>
+</div>
+<div class="mainBody">
+    <div class="form-add-cate">
+        <form asp-action="EditPartner" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="id" />
+            <input type="hidden" asp-for="ExistingLogo" />
+
+            <label asp-for="name">Partners Name</label>
+            <input asp-for="name" class="inputAddCate"  type="text"/>
+            <span asp-validation-for="name" style="color: red"></span>
+
+            <label asp-for="description">Description</label>
+            <input asp-for="description" class="inputAddCate" type="text" placeholder="Description..." />
+            <span asp-validation-for="description" style="color: red"></span>
+
+            <p>Old logo</p>
+            <div>
+                @if (Model.ExistingLogo != null)
+                {
+                    <img src="~/imagePartners/@Model.ExistingLogo" alt="Current Logo" style="max-width: 200px; margin-top: 10px; margin-bottom: 10px;" />
+                }
+            </div>
+
+            <label for="logo">New Logo</label>
+            <input type="file" name="logo" id="logo" class="form-control" onchange="previewImage(event)">
+            <span asp-validation-for="logo" class="text-danger"></span>
+
+            <img id="logo-preview" src="#" alt="Logo Preview" style="display: none; max-width: 200px; margin-top: 10px;" />
+
+            <input class="btnAddCate" type="submit" value="Update" />
+        </form>
+    </div>
+</div>
+
+<script>
+    function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+            var output = document.getElementById('logo-preview');
+            output.src = reader.result;
+            output.style.display = 'block';
+        }
+        reader.readAsDataURL(event.target.files[0]);
+    }
+</script>

@@ -1,0 +1,51 @@
+﻿
+@model IEnumerable<eProject3.Controllers.AdminController.DonationViewModel>
+
+<link rel="stylesheet" href="~/css/DonationList.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Donation </span>
+    </div>
+</div>
+<div class="mainbody">
+    <span>Project types: </span> <span>@ViewBag.CauseName</span>
+    @if (ViewBag.Message != null)
+    {
+        <h1 style="color: red;">@ViewBag.Message</h1>
+    }
+    else
+    {
+        <div class="listCard">
+            @foreach (var item in Model)
+            {
+                <a asp-action="DonationDetail" asp-route-proId="@item.Id" class="product-card">
+                    <div class="image">
+                        <img src="~/imageProjects/@item.FirstImage" alt="...">
+                        <span class="label">@ViewBag.CauseName</span>
+                    </div>
+                    <div class="details">
+                        <p class="title">@item.Name</p>
+                        <h3>@item.Description</h3>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <p class="amount">@item.Amount $</p>
+                        </div>
+
+                        <div class="target">
+                            <p>Time start: <span class="time">@item.Timestart.ToString("dd-MM-yyyy")</span></p>
+                            <p>Time end: <span class="time">@item.Timeend.ToString("dd-MM-yyyy")</span></p>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    }
+
+    
+</div>

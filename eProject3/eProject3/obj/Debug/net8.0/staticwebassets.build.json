@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "YFUPBx6xObbq9ZKRwtE2Dnmxom5sltplfX+PmABVxh4=",
+=======
+  "Hash": "+LPpEQ4UUm0fAJlykf4jb4UXPX1EDQjf3BGOoMFagZQ=",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
   "Source": "eProject3",
   "BasePath": "_content/eProject3",
   "Mode": "Default",
@@ -10,13 +14,14 @@
     {
       "Name": "eProject3\\wwwroot",
       "Source": "eProject3",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\DELL\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.7\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
@@ -1196,9 +1201,12 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eProject3.styles.css",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eProject3.styles.css",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "eProject3.styles.css",
       "AssetKind": "All",
@@ -1211,13 +1219,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eProject3.styles.css"
+      "OriginalItemSpec": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\bundle\\eProject3.styles.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css",
       "SourceId": "eProject3",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "eProject3.bundle.scp.css",
       "AssetKind": "All",
@@ -1230,13 +1238,51 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css"
+      "OriginalItemSpec": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/AddCategory.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddCategory.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddPartners.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/AddPartners.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\AddPartners.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "css/AdminLayOut.css",
       "AssetKind": "All",
@@ -1252,6 +1298,7 @@
       "OriginalItemSpec": "wwwroot\\css\\AdminLayOut.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1310,9 +1357,202 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Categories.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Categories.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\ContactUs_Inf.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/ContactUs_Inf.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ContactUs_Inf.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationDetail.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/DonationDetail.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DonationDetail.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationList.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/DonationList.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\DonationList.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Donations.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Donations.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Donations.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/EditCategory.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EditCategory.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditContactUs.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/EditContactUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EditContactUs.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditPartner.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/EditPartner.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EditPartner.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Partners.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Partners.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Partners.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Projects.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Projects.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Projects.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1328,6 +1568,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserFooter.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1386,9 +1627,50 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\favicon.ico",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/UserContactUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\UserContactUs.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/Users.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Users.css"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\favicon.ico",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1404,6 +1686,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\1.png",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1785,9 +2068,12 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "image/Screenshot 2024-07-02 092340.png",
       "AssetKind": "All",
@@ -1803,6 +2089,7 @@
       "OriginalItemSpec": "wwwroot\\image\\Screenshot 2024-07-02 092340.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\To-chuc-su-kien-tu-thien.jpg",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1842,9 +2129,202 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\c485d5fd-077c-45e8-8137-738b119f70dd_05.jpg",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/c485d5fd-077c-45e8-8137-738b119f70dd_05.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\c485d5fd-077c-45e8-8137-738b119f70dd_05.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/pn1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\pn1.png"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn2.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/pn2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\pn2.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn3.png",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/pn3.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\pn3.png"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn4.png",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/pn4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\pn4.png"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/Hoang.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\Hoang.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro1.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/pro1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\pro1.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro2.png",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/pro2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\pro2.png"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro3.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/pro3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\pro3.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\vung-cao-5-12320354.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/vung-cao-5-12320354.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\vung-cao-5-12320354.jpg"
+    },
+    {
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "js/AdminLayOut.js",
       "AssetKind": "All",
@@ -1860,6 +2340,7 @@
       "OriginalItemSpec": "wwwroot\\js\\AdminLayOut.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\login.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1880,9 +2361,12 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1898,6 +2382,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1937,9 +2422,12 @@
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+=======
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+>>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1955,10 +2443,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1974,10 +2462,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1993,10 +2481,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2012,10 +2500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2031,10 +2519,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2050,10 +2538,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2069,10 +2557,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2088,10 +2576,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2107,10 +2595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2126,10 +2614,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2145,10 +2633,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -2164,10 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -2183,10 +2671,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2202,10 +2690,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2221,10 +2709,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2240,10 +2728,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2259,10 +2747,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2278,10 +2766,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2297,10 +2785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2316,10 +2804,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2335,10 +2823,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2354,10 +2842,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2373,10 +2861,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2392,10 +2880,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2411,10 +2899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2430,10 +2918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2449,10 +2937,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2468,10 +2956,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2487,10 +2975,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2506,10 +2994,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2525,10 +3013,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2544,10 +3032,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2563,10 +3051,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2582,10 +3070,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2601,10 +3089,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2620,10 +3108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2639,10 +3127,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2658,10 +3146,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2677,10 +3165,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2696,10 +3184,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2715,10 +3203,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2734,10 +3222,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2753,10 +3241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2772,10 +3260,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2791,10 +3279,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2810,10 +3298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2829,10 +3317,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2848,10 +3336,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2867,10 +3355,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2886,10 +3374,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2905,10 +3393,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2924,10 +3412,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2943,10 +3431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2962,10 +3450,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2981,10 +3469,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -3000,10 +3488,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "ContentRoot": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

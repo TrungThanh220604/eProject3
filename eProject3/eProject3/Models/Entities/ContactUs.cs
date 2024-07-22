@@ -13,5 +13,7 @@ namespace eProject3.Models.Entities
         public string email { get; set; }
 
         public string Message { get; set; }
+
+        public string name { get; set; }
     }
 }

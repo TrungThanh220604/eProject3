@@ -1,0 +1,46 @@
+﻿@using eProject3.Models.Entities
+@model List<ContactUsEdit>
+
+@{
+    int index = 1;
+}
+<link rel="stylesheet" href="~/css/ContactUs_Inf.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span>Contact Us ></span>
+        <span>Contact Us Infomation</span>
+    </div>
+</div>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<div class="mainBody">
+    <div class="contactInf">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li>
+                    <div class="contactInf-text">
+                        <p><b>@item.title: </b></p>
+                        <p>@item.description</p>
+                    </div>
+                    <a asp-action="EditContactUs" asp-route-id="@item.id">
+                        <i class='bx bxs-edit'></i>
+                        <span>Edit</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

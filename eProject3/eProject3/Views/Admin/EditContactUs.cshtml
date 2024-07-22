@@ -1,0 +1,31 @@
+﻿@using eProject3.Models.Entities
+@model ContactUsEdit
+<link rel="stylesheet" href="~/css/EditContactUs.css" />
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>Edit ContactUS</h1>
+        <p style="color: gray; padding-left: 5px">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px">Edit ContactUS</span>
+    </div>
+</div>
+<div class="mainBody">
+    <div class="form-add-cate">
+        <form asp-action="EditContactUs" method="post">
+            <input type="hidden" asp-for="id" />
+            <label asp-for="title">Địa chỉ</label>
+            <input asp-for="title" class="inputAddCate" type="text" />
+            <span asp-validation-for="title" style="color: red"></span>
+
+            <label asp-for="description">Hà Nội</label>
+            <input asp-for="description" class="inputAddCate" type="text" />
+            <span asp-validation-for="description" style="color: red"></span>
+
+            <input class="btnAddCate" type="submit" value="Update" />
+            <a asp-action="ContactUs_Inf" class="btn btn-secondary">Back to List</a>
+        </form>
+    </div>
+</div>
