@@ -1,4 +1,5 @@
-﻿* {
+﻿
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -264,8 +265,8 @@
 
 .home-section {
     position: relative;
-    background: #e4e9f7;
-    height: 100vh;
+    height: 100%;
+    /* background: #e4e9f7; */
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
@@ -430,13 +431,14 @@
 
 .card {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #cccccccc;
     border-radius: 8px;
     box-shadow: 2px 4px 8px rgba(56, 36, 36, 0.1);
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 15px;
-    width: 220px;
+    width: calc(25% - 15px);
     transition: transform 0.3s;
 }
 
@@ -451,20 +453,18 @@
     }
 
 .card-content h2 {
-    font-size: 25px;
+    font-size: 30px;
     color: #333;
 }
 
     .card-content h2.text-center {
         font-size: 25px;
         color: #333;
-        text-align: center;
     }
 
 .card-content p {
-    font-size: 18px;
+    font-size: 20px;
     color: #474747;
     margin: 0;
-    text-align: center;
     margin-bottom: 5px;
 }
