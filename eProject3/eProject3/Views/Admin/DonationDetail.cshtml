@@ -1,0 +1,100 @@
+﻿@model eProject3.Controllers.AdminController.DonationViewModel
+
+@{
+    int index = 1;
+}
+
+<link rel="stylesheet" href="~/css/DonationDetail.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>Donation</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Donation</span>
+    </div>
+</div>
+<div class="mainContent">
+    <div class="project-info">
+        <div class="project-details">
+            <img src="~/imageProjects/@Model.FirstImage" alt="Ảnh dự án">
+            <div class="details">
+                <p><strong>Project Name:</strong> @Model.Name</p>
+                <p><strong>Cause:</strong> @ViewBag.cateName</p>
+                <p><strong>Total amount of donation:</strong> @Model.Amount $</p>
+                <p><strong>Onwer:</strong> @Model.Owner</p>
+                <p><strong>Owner Tel:</strong> @Model.OwnerTel</p>
+                <p><strong>Time Start:</strong> @Model.Timestart.ToString("dd-MM-yyyy")</p>
+                <p><strong>Time End:</strong> @Model.Timeend.ToString("dd-MM-yyyy")</p>
+                <p><strong>Status:</strong> @Model.Status</p>
+                <p><strong>Number of donations:</strong> @Model.NumberOfDonations</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Amount</th>
+                    <th>Credit card number</th>
+                    <th>Payment Type</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in ViewBag.userDonation)
+                {
+                    <tr>
+                        <td>@index</td>
+                        <td>@(item.User.first_name + " " + item.User.last_name)</td>
+                        <td>@item.User.email</td>
+                        <td>@item.amount</td>
+                        <td>@item.credit_card</td>
+                        <td>@item.payment_type</td>
+                        <td>@item.message</td>
+                    </tr>
+                    index++;
+                }               
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Id</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Amount</th>
+                    <th>Credit card number</th>
+                    <th>Payment Type</th>
+                    <th>Message</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            "columnDefs": [
+                { "width": "5%", "targets": 0 },
+                { "width": "20%", "targets": 1 },
+                { "width": "15%", "targets": 2 },
+                { "width": "10%", "targets": 3 },
+                { "width": "15%", "targets": 4 },
+                { "width": "10%", "targets": 5 },
+                { "width": "15%", "targets": 6 },
+
+            ],
+            "paging": true,
+            "ordering": true,
+            "info": true
+        });
+    });
+</script>

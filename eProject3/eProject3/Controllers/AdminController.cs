@@ -44,7 +44,7 @@ namespace eProject3.Controllers
                 TempData["SuccessMessage"] = "Added category successfully!";
                 return RedirectToAction(nameof(Categories));
             }
-            return View(cause); 
+            return View(cause);
         }
 
         [HttpPost]
@@ -161,7 +161,10 @@ namespace eProject3.Controllers
             public IFormFile? logo { get; set; }
 
             public string? description { get; set; }
+
+            public string? ExistingLogo { get; set; }
         }
+
 
         [HttpPost]
         public async Task<IActionResult> AddPartners(PartnerViewModel model)
@@ -170,26 +173,21 @@ namespace eProject3.Controllers
             {
                 if (model.logo != null && model.logo.Length > 0)
                 {
-                    // Đường dẫn tới thư mục uploads trong wwwroot
-                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "image");
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagePartners");
 
-                    // Đảm bảo thư mục tồn tại
                     if (!Directory.Exists(uploadPath))
                     {
                         Directory.CreateDirectory(uploadPath);
                     }
 
-                    // Tạo tên file duy nhất để tránh ghi đè
                     string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(model.logo.FileName);
                     string filePath = Path.Combine(uploadPath, uniqueFileName);
 
-                    // Lưu file
                     using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         await model.logo.CopyToAsync(fileStream);
                     }
 
-                    // Tạo và lưu đối tượng Partner sau khi upload file
                     Partner partner = new Partner
                     {
                         name = model.name,
@@ -219,14 +217,208 @@ namespace eProject3.Controllers
                 return NotFound();
             }
 
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagePartners");
+
+            string filePath = Path.Combine(uploadPath, partner.logo);
+
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+
             _context.Partners.Remove(partner);
             await _context.SaveChangesAsync();
             TempData["SuccessMessage"] = "Deleted partner successfully!";
             return RedirectToAction(nameof(Partners));
         }
 
+        [HttpGet]
+        public async Task<IActionResult> EditPartner(int id)
+        {
+            var partner = await _context.Partners.FindAsync(id);
+            if (partner == null)
+            {
+                return NotFound();
+            }
 
+            var model = new PartnerViewModel
+            {
+                id = partner.id,
+                name = partner.name,
+                description = partner.description,
+                ExistingLogo = partner.logo
+            };
 
+            return View(model);
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> EditPartner(PartnerViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var partner = await _context.Partners.FindAsync(model.id);
+                if (partner == null)
+                {
+                    return NotFound();
+                }
+
+                partner.name = model.name;
+                partner.description = model.description;
+
+                if (model.logo != null && model.logo.Length > 0)
+                {
+                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imagePartners");
+
+                    if (!Directory.Exists(uploadPath))
+                    {
+                        Directory.CreateDirectory(uploadPath);
+                    }
+
+                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(model.logo.FileName);
+                    string filePath = Path.Combine(uploadPath, uniqueFileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await model.logo.CopyToAsync(fileStream);
+                    }
+
+                    if (!string.IsNullOrEmpty(model.ExistingLogo))
+                    {
+                        var oldFilePath = Path.Combine(uploadPath, model.ExistingLogo);
+                        if (System.IO.File.Exists(oldFilePath))
+                        {
+                            System.IO.File.Delete(oldFilePath);
+                        }
+                    }
+
+                    partner.logo = uniqueFileName;
+                }
+
+                _context.Update(partner);
+                await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Edit Partners successfull!";
+                return RedirectToAction(nameof(Partners));
+            }
+            return View(model);
+        }
+
+        //Donations
+        public async Task<IActionResult> Donations()
+        {
+            var categories = await _context.Causes.ToListAsync();
+            return View(categories);
+        }
+
+        public async Task<IActionResult> DonationList(int causeId)
+        {
+            var cause = await _context.Causes
+            .Where(c => c.id == causeId)
+            .FirstOrDefaultAsync();
+            ViewBag.CauseName = cause?.name;
+
+            var projects = await _context.Projects
+            .Where(p => p.cause_id == causeId)
+            .Include(p => p.Cause)
+            .ToListAsync();
+
+            if (projects == null || !projects.Any())
+            {
+                ViewBag.Message = "There's no project";
+            }
+
+            var projectViewModels = new List<DonationViewModel>();
+
+            foreach (var project in projects)
+            {
+                var firstGalleryImage = await _context.Galleries
+                    .Where(g => g.project_id == project.id)
+                    .Select(g => g.image)
+                    .FirstOrDefaultAsync();
+
+                double totalAmount = await _context.Donations
+                    .Where(d => d.project_id == project.id)
+                    .SumAsync(d => d.amount);
+
+                var projectViewModel = new DonationViewModel
+                {
+                    Id = project.id,
+                    Name = project.name,
+                    Description = project.description,
+                    Owner = project.owner,
+                    OwnerTel = project.ownerTel,
+                    Timestart = project.timestart,
+                    Timeend = project.timeend,
+                    FirstImage = firstGalleryImage,
+                    Amount = totalAmount
+                };
+
+                projectViewModels.Add(projectViewModel);
+            }
+
+            return View(projectViewModels);
+
+        }
+
+        public async Task<IActionResult> DonationDetail(int proId)
+        {
+            var project = await _context.Projects.FirstOrDefaultAsync(p => p.id == proId);
+            var firstGalleryImage = await _context.Galleries
+                .Where(g => g.project_id == proId)
+                .Select(g => g.image)
+                .FirstOrDefaultAsync();
+            var category = await _context.Causes.FirstOrDefaultAsync(c => c.id == project.cause_id);
+            ViewBag.cateName = category.name;
+            int numOfDonate = await _context.Donations.Where(d => d.project_id == proId).CountAsync();
+            double totalAmount = await _context.Donations
+                .Where(d => d.project_id == proId)
+                .SumAsync(d => d.amount);
+
+            var projectViewModel = new DonationViewModel
+            {
+                Id = project.id,
+                Name = project.name,
+                Description = project.description,
+                Owner = project.owner,
+                OwnerTel = project.ownerTel,
+                Timestart = project.timestart,
+                Timeend = project.timeend,
+                Status = project.status,
+                FirstImage = firstGalleryImage,
+                NumberOfDonations = numOfDonate,
+                Amount = totalAmount
+
+            };
+
+            ViewBag.userDonation = await _context.Donations
+            .Where(d => d.project_id == proId)
+            .Include(d => d.User)
+            .ToListAsync();
+
+            return View(projectViewModel);
+        }
+
+        public class DonationViewModel
+        {
+            public int Id { get; set; }
+            public int? NumberOfDonations { get; set; }
+            public string Name { get; set; }
+            public string? Description { get; set; }
+            public string? Owner { get; set; }
+            public string? OwnerTel { get; set; }
+            public double? Amount { get; set; }
+            public string? Status { get; set; }
+            public DateTime Timestart { get; set; }
+            public DateTime Timeend { get; set; }
+            public string? FirstImage { get; set; } 
+        }
+
+        //Project
+        public async Task<IActionResult> Projects()
+        {
+            var projects = await _context.Projects.Include(p => p.Cause).ToListAsync();
+
+            return View(projects);
+        }
     }
 }
