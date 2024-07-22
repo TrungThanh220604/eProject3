@@ -1,479 +1,479 @@
 {
   "Files": [
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\eProject3.bundle.scp.css",
       "PackagePath": "staticwebassets\\eProject3.bundle.scp.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
       "PackagePath": "staticwebassets\\css\\AddCategory.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddPartners.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddPartners.css",
       "PackagePath": "staticwebassets\\css\\AddPartners.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
       "PackagePath": "staticwebassets\\css\\AdminLayOut.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Categories.css",
       "PackagePath": "staticwebassets\\css\\Categories.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\ContactUs_Inf.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\ContactUs_Inf.css",
       "PackagePath": "staticwebassets\\css\\ContactUs_Inf.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationDetail.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationDetail.css",
       "PackagePath": "staticwebassets\\css\\DonationDetail.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationList.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\DonationList.css",
       "PackagePath": "staticwebassets\\css\\DonationList.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Donations.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Donations.css",
       "PackagePath": "staticwebassets\\css\\Donations.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
       "PackagePath": "staticwebassets\\css\\EditCategory.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditContactUs.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditContactUs.css",
       "PackagePath": "staticwebassets\\css\\EditContactUs.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditPartner.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditPartner.css",
       "PackagePath": "staticwebassets\\css\\EditPartner.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
       "PackagePath": "staticwebassets\\css\\Login.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login2.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login2.css",
       "PackagePath": "staticwebassets\\css\\Login2.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Partners.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Partners.css",
       "PackagePath": "staticwebassets\\css\\Partners.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Projects.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Projects.css",
       "PackagePath": "staticwebassets\\css\\Projects.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
       "PackagePath": "staticwebassets\\css\\UserContactUs.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserFooter.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserFooter.css",
       "PackagePath": "staticwebassets\\css\\UserFooter.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserHeader.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserHeader.css",
       "PackagePath": "staticwebassets\\css\\UserHeader.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserLayout.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserLayout.css",
       "PackagePath": "staticwebassets\\css\\UserLayout.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
       "PackagePath": "staticwebassets\\css\\Users.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\register.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\029c73d3-6113-434e-b3d5-26dbc25ef5d2_06.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\029c73d3-6113-434e-b3d5-26dbc25ef5d2_06.jpg",
       "PackagePath": "staticwebassets\\imagePartners\\029c73d3-6113-434e-b3d5-26dbc25ef5d2_06.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
       "PackagePath": "staticwebassets\\imagePartners\\pn1.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn2.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn2.jpg",
       "PackagePath": "staticwebassets\\imagePartners\\pn2.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn3.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn3.png",
       "PackagePath": "staticwebassets\\imagePartners\\pn3.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn4.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn4.png",
       "PackagePath": "staticwebassets\\imagePartners\\pn4.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\Hoang.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro1.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro1.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\pro1.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro2.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro2.png",
       "PackagePath": "staticwebassets\\imageProjects\\pro2.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro3.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro3.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\pro3.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\vung-cao-5-12320354.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\vung-cao-5-12320354.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\vung-cao-5-12320354.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\1.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\1.png",
       "PackagePath": "staticwebassets\\image\\1.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\2.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\2.png",
       "PackagePath": "staticwebassets\\image\\2.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\3ce2e79d1b06bb58e2178-768x1024.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\3ce2e79d1b06bb58e2178-768x1024.jpg",
       "PackagePath": "staticwebassets\\image\\3ce2e79d1b06bb58e2178-768x1024.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\NBTT1-e1664447215874.jpeg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\NBTT1-e1664447215874.jpeg",
       "PackagePath": "staticwebassets\\image\\NBTT1-e1664447215874.jpeg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\Screenshot 2024-07-02 092340.png",
       "PackagePath": "staticwebassets\\image\\Screenshot 2024-07-02 092340.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\To-chuc-su-kien-tu-thien.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\To-chuc-su-kien-tu-thien.jpg",
       "PackagePath": "staticwebassets\\image\\To-chuc-su-kien-tu-thien.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\anhHopTac.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\anhHopTac.jpg",
       "PackagePath": "staticwebassets\\image\\anhHopTac.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\bia.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\bia.jpg",
       "PackagePath": "staticwebassets\\image\\bia.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
       "PackagePath": "staticwebassets\\image\\cach-to-chuc-chuong-trinh-tu-thien.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh1.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh1.jpg",
       "PackagePath": "staticwebassets\\image\\dvdh1.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh2.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh2.png",
       "PackagePath": "staticwebassets\\image\\dvdh2.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh3.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh3.png",
       "PackagePath": "staticwebassets\\image\\dvdh3.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh4.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh4.jpg",
       "PackagePath": "staticwebassets\\image\\dvdh4.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh5.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh5.jpg",
       "PackagePath": "staticwebassets\\image\\dvdh5.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh6.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh6.png",
       "PackagePath": "staticwebassets\\image\\dvdh6.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh7.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh7.png",
       "PackagePath": "staticwebassets\\image\\dvdh7.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh8.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh8.png",
       "PackagePath": "staticwebassets\\image\\dvdh8.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh9.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\dvdh9.png",
       "PackagePath": "staticwebassets\\image\\dvdh9.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\lamviec.jpeg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\lamviec.jpeg",
       "PackagePath": "staticwebassets\\image\\lamviec.jpeg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro1.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro1.jpg",
       "PackagePath": "staticwebassets\\image\\pro1.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro2.png",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro2.png",
       "PackagePath": "staticwebassets\\image\\pro2.png"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro3.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\pro3.jpg",
       "PackagePath": "staticwebassets\\image\\pro3.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\vung-cao-5-12320354.jpg",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\image\\vung-cao-5-12320354.jpg",
       "PackagePath": "staticwebassets\\image\\vung-cao-5-12320354.jpg"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\AdminLayOut.js",
       "PackagePath": "staticwebassets\\js\\AdminLayOut.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
       "PackagePath": "staticwebassets\\js\\UserHeader.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserLayOut.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserLayOut.js",
       "PackagePath": "staticwebassets\\js\\UserLayOut.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\login.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

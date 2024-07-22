@@ -425,5 +425,10 @@ namespace eProject3.Controllers
 
             return View(projects);
         }
+
+        public async Task<IActionResult> Duc1()
+        {
+            return View();
+        }
     }
 }
