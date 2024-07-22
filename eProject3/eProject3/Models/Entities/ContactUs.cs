@@ -14,6 +14,5 @@ namespace eProject3.Models.Entities
 
         public string Message { get; set; }
 
-        public string name { get; set; }
     }
 }

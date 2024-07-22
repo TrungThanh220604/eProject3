@@ -28,7 +28,6 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Phone</th>
-                    <th>Role</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,10 +37,9 @@
                         <td>@index</td>
                         <td>@item.first_name</td>
                         <td>@item.last_name</td>
-                        <td>@item.email</td>
+                        <td>@item.Email</td>
                         <td>@item.address</td>
                         <td>@item.phone_number</td>
-                        <td>@(item.role == "1" ? "User" : "Admin")</td>
                     </tr>
                     index++;
                 }
@@ -54,7 +52,6 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Phone</th>
-                    <th>Role</th>
                 </tr>
             </tfoot>
         </table>

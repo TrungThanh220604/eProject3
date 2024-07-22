@@ -1,13 +1,12 @@
-<<<<<<< HEAD
+
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-=======
 ﻿using eProject3.Data;
 using eProject3.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
->>>>>>> 4609e8232625758eb9df8eea721299f6e7b2a646
+
 
 namespace eProject3.Controllers
 {

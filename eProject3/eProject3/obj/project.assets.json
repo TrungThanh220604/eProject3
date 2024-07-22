@@ -8905,19 +8905,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
+      "projectUniqueName": "D:\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
       "projectName": "eProject3",
-      "projectPath": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\APTECH\\Project_Ky_3\\eProject3\\eProject3\\eProject3\\obj\\",
+      "projectPath": "D:\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\eProject3\\eProject3\\eProject3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

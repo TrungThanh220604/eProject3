@@ -20,7 +20,6 @@ namespace eProject3.Models.Entities
 
         public string CVV { get; set; }
 
-        public string? message { get; set; }
 
         [ForeignKey("User")]
         public string user_id { get; set; }
