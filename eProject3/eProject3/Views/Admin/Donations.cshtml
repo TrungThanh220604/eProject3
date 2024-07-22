@@ -1,0 +1,30 @@
+﻿@using eProject3.Models.Entities
+@model List<Cause>
+
+@{
+    int index = 1;
+}
+
+<link rel="stylesheet" href="~/css//Donations.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Donation statistics</span>
+    </div>
+</div>
+<div class="mainbody">
+    <span>List Categories</span>
+    <div class="listCard">
+        @foreach (var item in Model)
+        {
+            <a asp-action="DonationList" asp-route-causeId="@item.id" class="cardCate">
+                <span class="cardCate-text">@item.name</span>
+            </a>
+        }     
+    </div>
+</div>

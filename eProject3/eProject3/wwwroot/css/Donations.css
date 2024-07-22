@@ -1,0 +1,46 @@
+﻿.mainbody {
+    margin: 25px;
+}
+
+    .mainbody span {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+.listCard {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.cardCate {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(56, 36, 36, 0.1);
+    transition: transform 0.3s;
+}
+
+    .cardCate:hover {
+        transform: translateY(-10px);
+    }
+
+    .cardCate i {
+        font-size: 40px;
+        color: #449ad7;
+        margin-right: 15px;
+    }
+
+    .cardCate .cardCate-text {
+        font-size: 25px;
+        color: #333;
+        text-align: center;
+        font-weight: 700;
+    }
