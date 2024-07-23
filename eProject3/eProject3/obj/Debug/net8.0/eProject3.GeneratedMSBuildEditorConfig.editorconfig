@@ -78,12 +78,44 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs7.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/eProject3/eProject3/eProject3/Views/Admin/AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/eProject3/eProject3/eProject3/Views/Admin/AddPartners.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUGFydG5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/AddProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvamVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/eProject3/eProject3/eProject3/Views/Admin/Categories.cshtml]
@@ -122,8 +154,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhcnRuZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/eProject3/eProject3/eProject3/Views/Admin/EditProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2plY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/getIdUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZ2V0SWRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/eProject3/eProject3/eProject3/Views/Admin/Partners.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/Admin/ProjectDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvamVjdERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/eProject3/eProject3/eProject3/Views/Admin/Projects.cshtml]

@@ -1,0 +1,48 @@
+﻿@model eProject3.Models.Entities.AboutUs
+
+<link rel="stylesheet" href="~/css/AboutUs2.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Dashboard</span>
+    </div>
+</div>
+<div class="mainBody">
+    <h1>Our mission</h1>
+    <div class="content">
+        <h5>My chalenger</h5>
+        <div class="content-2">
+            @if (ViewBag.FirstImage != null)
+            {
+                <img src="~/imageAboutUs/@ViewBag.FirstImage.image" alt="Image" />
+            }
+            else
+            {
+                <p>No images available.</p>
+            }
+
+            <ul>
+                @foreach (var child in Model.AboutUsChilds)
+                {
+                    <li class="list-content-parent">@child.title:</li>
+                    <ul>
+                        <li class="list-content-child" style="list-style: inside;">
+                            @child.content
+                        </li>
+                    </ul>
+                }
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="pagination">
+
+    </div> -->
+</div>
+<div class="btn">
+    <button class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</button>
+</div>

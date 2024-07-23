@@ -1,0 +1,55 @@
+﻿.mainBody {
+    display: block;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.412);
+}
+
+    .mainBody h1 {
+        font-size: 35px;
+        padding-top: 10px;
+    }
+
+    .mainBody .content {
+        margin: 30px;
+    }
+
+        .mainBody .content .content-text {
+            text-align: justify;
+            padding: 5px 0;
+            line-height: 20px;
+        }
+
+    .mainBody ul {
+        margin: 5px 20px;
+    }
+
+    .mainBody .list-content-parent {
+        list-style: decimal;
+        font-weight: 700;
+    }
+
+
+.btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+    .btn .actionBtn {
+        padding: 10px 20px;
+        background: rgb(43, 255, 43);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .btn .actionBtn i {
+            margin-right: 10px;
+        }
+
+    .btn button:hover {
+        opacity: 0.9;
+    }

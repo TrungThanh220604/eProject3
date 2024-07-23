@@ -5,12 +5,44 @@
       "PackagePath": "staticwebassets\\eProject3.bundle.scp.css"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs1.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs1.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs2.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs2.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs3.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs3.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs4.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs4.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs5.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs5.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs6.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs6.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AboutUs7.css",
+      "PackagePath": "staticwebassets\\css\\AboutUs7.css"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddCategory.css",
       "PackagePath": "staticwebassets\\css\\AddCategory.css"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddPartners.css",
       "PackagePath": "staticwebassets\\css\\AddPartners.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AddProject.css",
+      "PackagePath": "staticwebassets\\css\\AddProject.css"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\AdminLayOut.css",
@@ -47,6 +79,10 @@
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditPartner.css",
       "PackagePath": "staticwebassets\\css\\EditPartner.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditProject.css",
+      "PackagePath": "staticwebassets\\css\\EditProject.css"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
@@ -97,8 +133,28 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\029c73d3-6113-434e-b3d5-26dbc25ef5d2_06.jpg",
-      "PackagePath": "staticwebassets\\imagePartners\\029c73d3-6113-434e-b3d5-26dbc25ef5d2_06.jpg"
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Duc.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Duc.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Nam.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Nam.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\OurMission.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\OurMission.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Thanh.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Thanh.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\WhatWeDo.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\WhatWeDo.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg",
+      "PackagePath": "staticwebassets\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
@@ -117,8 +173,16 @@
       "PackagePath": "staticwebassets\\imagePartners\\pn4.png"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6ee5694b-c7e2-42ed-b01d-489c2d221af9_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\6ee5694b-c7e2-42ed-b01d-489c2d221af9_hoang2.jpg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\Hoang.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\eacc72e0-0621-4c0f-94c6-f528afd7efae_viem1.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\eacc72e0-0621-4c0f-94c6-f528afd7efae_viem1.jpg"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\pro1.jpg",

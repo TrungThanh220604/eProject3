@@ -1,0 +1,10 @@
+﻿@using eProject3.Models.Entities
+@model List<Gallery>
+
+
+<h1>hello tôi là pro detail</h1>
+@* <div><img src="~/imageProjects/giay1.png" alt="abc"></div> *@
+@foreach (var item in Model)
+{
+    <div><img style="width: 150px" src="~/imageProjects/@item.image" alt="abc"></div>
+}

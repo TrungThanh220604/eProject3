@@ -20,7 +20,7 @@
 </div>
 <div class="mainContent">
     <div class="add">
-        <button>Add</button>
+        <a asp-action="AddProject">Add</a>
     </div>
     <div class="container">
         <table id="example" class="display" style="width:100%">
@@ -47,13 +47,19 @@
                         </td>
 
                         <td>
-                            <button class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</button>
-                            <button class="actionBtn deleteBtn"><i class="fas fa-trash-alt"></i>Delete</button>
-                            <button class="actionBtn viewBtn"><i class="fas fa-eye"></i>View</button>
+                            <a asp-action="EditProject" asp-route-id="@item.id" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
+                            @* <button class="actionBtn deleteBtn"><i class="fas fa-trash-alt"></i>Delete</button> *@
+                            <form asp-action="DeleteProject" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@item.id" />
+                                <button type="submit" class="actionBtn deleteBtn" onclick="return confirm('Are you sure you want to delete this project?');">
+                                    <i class="fas fa-trash-alt"></i>Delete
+                                </button>
+                            </form>
+                            <a asp-action="ProjectDetail" asp-route-proId="@item.id" class="actionBtn viewBtn"><i class="fas fa-eye"></i>View</a>
                         </td>
                     </tr>
                     index++;
-                }  
+                }
             </tbody>
             <tfoot>
                 <tr>

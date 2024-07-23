@@ -1,0 +1,29 @@
+﻿
+<link rel="stylesheet" href="~/css/AboutUs3.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Dashboard</span>
+    </div>
+</div>
+<div class="mainBody">
+    <h1>Founding team</h1>
+    <div class="teamMember">
+        @foreach (var child in Model.AboutUsImages)
+        {
+            <div class="teamMember-item">
+                <img src="~/imageAboutUs/@child.image" alt="Image" />
+                <p>Member</p>
+            </div>
+        }
+        
+    </div>
+</div>
+<div class="btn">
+    <button class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</button>
+</div>

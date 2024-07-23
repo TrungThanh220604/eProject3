@@ -1,0 +1,55 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.mainBody {
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.412);
+}
+
+    .mainBody .teamMember {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px;
+    }
+
+        .mainBody .teamMember .teamMember-item img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .mainBody .teamMember .teamMember-item p {
+            font-weight: 700;
+        }
+
+.btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+    .btn .actionBtn {
+        padding: 10px 20px;
+        background: rgb(43, 255, 43);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .btn .actionBtn i {
+            margin-right: 10px;
+        }
+
+        .btn .actionBtn:hover {
+            opacity: 0.9;
+        }
