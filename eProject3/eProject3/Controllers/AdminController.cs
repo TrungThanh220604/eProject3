@@ -450,7 +450,7 @@ namespace eProject3.Controllers
 
         public class ProjectViewModel
         {
-            public int? Id { get; set; } // Thêm Id cho phương thức POST
+            public int? Id { get; set; } 
 
             [Required(ErrorMessage = "Project name is required.")]
             public string Name { get; set; }
@@ -473,7 +473,7 @@ namespace eProject3.Controllers
 
             public IFormFileCollection? Images { get; set; }
 
-            public List<string>? ExistingImages { get; set; } // Thêm thuộc tính này để lưu trữ danh sách hình ảnh hiện tại
+            public List<string>? ExistingImages { get; set; }  
 
         }
 
@@ -574,7 +574,6 @@ namespace eProject3.Controllers
                 return NotFound();
             }
 
-            // Delete all associated images from the server
             foreach (var gallery in project.Galleries)
             {
                 var imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", gallery.image);
@@ -584,10 +583,8 @@ namespace eProject3.Controllers
                 }
             }
 
-            // Remove galleries from database
             _context.Galleries.RemoveRange(project.Galleries);
 
-            // Remove project from database
             _context.Projects.Remove(project);
 
             await _context.SaveChangesAsync();
@@ -600,7 +597,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> EditProject(int id)
         {
             var project = await _context.Projects
-                .Include(p => p.Galleries) // Đưa thông tin hình ảnh vào model
+                .Include(p => p.Galleries) 
                 .FirstOrDefaultAsync(p => p.id == id);
             if (project == null)
             {
@@ -617,7 +614,7 @@ namespace eProject3.Controllers
                 TimeStart = project.timestart,
                 TimeEnd = project.timeend,
                 CauseId = project.cause_id,
-                ExistingImages = project.Galleries.Select(g => g.image).ToList() // Thêm danh sách hình ảnh hiện tại
+                ExistingImages = project.Galleries.Select(g => g.image).ToList() 
             };
 
             ViewBag.Categories = _context.Causes.ToList();
@@ -634,14 +631,14 @@ namespace eProject3.Controllers
             }
 
             var project = await _context.Projects
-                .Include(p => p.Galleries) // Đưa thông tin hình ảnh vào model
+                .Include(p => p.Galleries) 
                 .FirstOrDefaultAsync(p => p.id == id);
             if (project == null)
             {
                 return NotFound();
             }
 
-            // Cập nhật thông tin của dự án
+           
             project.name = model.Name;
             project.description = model.Description;
             project.owner = model.Owner;
@@ -666,10 +663,8 @@ namespace eProject3.Controllers
 
             _context.Projects.Update(project);
 
-            // Nếu có hình ảnh mới, xóa tất cả hình ảnh cũ và thêm hình ảnh mới
             if (model.Images != null && model.Images.Count > 0)
             {
-                // Xóa tất cả hình ảnh cũ
                 var existingImages = _context.Galleries.Where(g => g.project_id == project.id).ToList();
                 foreach (var image in existingImages)
                 {
@@ -682,7 +677,6 @@ namespace eProject3.Controllers
 
                 _context.Galleries.RemoveRange(existingImages);
 
-                // Xử lý hình ảnh mới
                 foreach (var formFile in model.Images)
                 {
                     if (formFile.Length > 0)
@@ -704,7 +698,6 @@ namespace eProject3.Controllers
                     }
                 }
             }
-            // Nếu không có hình ảnh mới, chỉ cập nhật dự án
             else
             {
                 // Không làm gì thêm về hình ảnh
