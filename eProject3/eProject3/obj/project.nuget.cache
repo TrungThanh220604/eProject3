@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ew7d/98x+W3XhhC5SIf7rrSvaoI/CqLbqgwyp4ED2KsanOfHl97x1wjSIo8eQPT1FfcbvQN0Tu2QOLoRKaUIcg==",
+  "dgSpecHash": "wLuIupZ9G+F3t4tUNoxe+gU/aArW4Z09++9Eh//T0OK8+qEfc6BWfYk4HErGxIBtguOfihE8InWHu3zKXiCKsw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
+  "projectFilePath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

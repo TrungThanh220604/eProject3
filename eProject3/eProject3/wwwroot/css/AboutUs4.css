@@ -1,0 +1,99 @@
+﻿.mainBody {
+    display: block;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.412);
+}
+
+    .mainBody h1 {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .mainBody .content {
+        margin: 30px;
+    }
+
+        .mainBody .content .content-text {
+            text-align: justify;
+            padding: 5px;
+            line-height: 20px;
+        }
+
+    .mainBody h4 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .mainBody ul {
+        margin: 5px 20px;
+    }
+
+    .mainBody .list-content-parent {
+        list-style: decimal;
+        font-weight: 700;
+    }
+
+    .mainBody .content button {
+        padding: 5px 30px;
+        border: none;
+        border-radius: 50px;
+        background: rgb(66, 255, 66);
+        color: #fff;
+        font-weight: 800;
+        margin: 20px 0;
+        cursor: pointer;
+    }
+
+        .mainBody .content button:hover {
+            background: rgb(10, 149, 10);
+            color: #fff;
+        }
+
+    .mainBody .content i {
+        display: flex;
+        align-items: center;
+        font-size: 30px;
+        color: rgb(36, 145, 255);
+        /* position: absolute; */
+        left: -40px;
+        animation: arrowMove 2s infinite;
+    }
+
+@keyframes arrowMove {
+    0% {
+        left: -40px;
+    }
+
+    50% {
+        left: 2px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+    .btn .actionBtn {
+        padding: 10px 20px;
+        background: rgb(43, 255, 43);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .btn .actionBtn i {
+            margin-right: 10px;
+        }
+
+    .btn button:hover {
+        opacity: 0.9;
+    }

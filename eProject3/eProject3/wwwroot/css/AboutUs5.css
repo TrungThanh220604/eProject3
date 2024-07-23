@@ -1,0 +1,106 @@
+﻿.mainBody {
+    display: block;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.412);
+}
+
+    .mainBody h1 {
+        font-size: 35px;
+        padding-top: 10px;
+    }
+
+    .mainBody .content {
+        margin: 20px;
+    }
+
+    .mainBody .content-text {
+        text-align: justify;
+        line-height: 20px;
+    }
+
+.containerNumber {
+    position: relative;
+    text-align: center;
+    background-image: url("../img/anhHopTac.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+    .containerNumber::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(53, 53, 53, 0.5);
+        z-index: 1;
+    }
+
+    .containerNumber > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .containerNumber .listNumber ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+        .containerNumber .listNumber ul li {
+            padding: 20px;
+        }
+
+            .containerNumber .listNumber ul li p {
+                font-size: 20px;
+            }
+
+            .containerNumber .listNumber ul li h3 {
+                margin-top: 10px;
+                font-size: 25px;
+            }
+
+.mainBody h5 {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.mainBody .list-text {
+    margin: 5px 20px;
+}
+
+.mainBody .list-content-parent {
+    list-style: decimal;
+    font-weight: 700;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: right;
+    margin-right: 25px;
+}
+
+    .btn .actionBtn {
+        padding: 10px 20px;
+        background: rgb(43, 255, 43);
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+    }
+
+        .btn .actionBtn i {
+            margin-right: 10px;
+        }
+
+    .btn button:hover {
+        opacity: 0.9;
+    }

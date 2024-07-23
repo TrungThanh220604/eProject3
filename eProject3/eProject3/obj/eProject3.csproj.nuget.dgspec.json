@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\eProject3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\eProject3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
         "projectName": "eProject3",
-        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy_3\\eProject3\\eProject3\\eProject3\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\eProject3_2\\eProject3\\eProject3\\eProject3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

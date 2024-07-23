@@ -1,0 +1,39 @@
+﻿@model eProject3.Models.Entities.AboutUs
+
+<link rel="stylesheet" href="~/css/AboutUs6.css">
+
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>DASHBOARD</h1>
+        <p style="color: gray; padding-left: 5px;">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px;">Dashboard</span>
+    </div>
+</div>
+<div class="mainBody">
+    <h1>Our supporters</h1>
+    <div class="content">
+        @if (ViewBag.FirstContent != null)
+        {
+            <p class="content-text">
+                @ViewBag.FirstContent.content
+            </p>
+        }
+        
+        <h5>Charity organization</h5>
+        <ul>
+            @foreach (var item in Model.AboutUsImages)
+            {
+                <li>
+                    <img src="~/imageAboutUs/@item.image" alt="Image" />
+                </li>
+            }
+        </ul>
+       
+    </div>
+</div>
+<div class="btn">
+    <button class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</button>
+</div>

@@ -1,11 +1,12 @@
 
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-﻿using eProject3.Data;
+using eProject3.Data;
 using eProject3.Models.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 
 namespace eProject3.Controllers
@@ -13,10 +14,12 @@ namespace eProject3.Controllers
     [Authorize(Roles = "admin")]
     public class AdminController : Controller
     {
+        private readonly UserManager<User> _userManager;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ApplicationDbContext _context;
-        public AdminController(ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
+        public AdminController(UserManager<User> userManager, ApplicationDbContext context, IWebHostEnvironment webHostEnvironment)
         {
+            _userManager = userManager;
             _context = context;
             _webHostEnvironment = webHostEnvironment;
         }
@@ -415,8 +418,21 @@ namespace eProject3.Controllers
             public string? Status { get; set; }
             public DateTime Timestart { get; set; }
             public DateTime Timeend { get; set; }
-            public string? FirstImage { get; set; } 
+            public string? FirstImage { get; set; }
         }
+
+        //public async Task<IActionResult> getIdUser()
+        //{
+        //    var user = await _userManager.GetUserAsync(User);
+        //    var userId = user?.Id;
+        //    var roles = await _userManager.GetRolesAsync(user);
+
+        //    ViewBag.UserId = userId;
+        //    ViewBag.Roles = roles;
+
+        //    return View();
+        //}
+
 
         //Project
         public async Task<IActionResult> Projects()
@@ -426,9 +442,389 @@ namespace eProject3.Controllers
             return View(projects);
         }
 
-        public async Task<IActionResult> Duc1()
+        public async Task<IActionResult> AddProject()
         {
+            ViewBag.Categories = await _context.Causes.ToListAsync();
             return View();
         }
+
+        public class ProjectViewModel
+        {
+            public int? Id { get; set; } // Thêm Id cho phương thức POST
+
+            [Required(ErrorMessage = "Project name is required.")]
+            public string Name { get; set; }
+
+            public string Description { get; set; }
+
+            public string Owner { get; set; }
+
+            [Phone(ErrorMessage = "Invalid phone number.")]
+            public string OwnerTel { get; set; }
+
+            [Required(ErrorMessage = "Time Start is required.")]
+            public DateTime TimeStart { get; set; }
+
+            [Required(ErrorMessage = "Time End is required.")]
+            public DateTime TimeEnd { get; set; }
+
+            [Required(ErrorMessage = "Category is required.")]
+            public int CauseId { get; set; }
+
+            public IFormFileCollection? Images { get; set; }
+
+            public List<string>? ExistingImages { get; set; } // Thêm thuộc tính này để lưu trữ danh sách hình ảnh hiện tại
+
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> AddProject(ProjectViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var currentTime = DateTime.Now;
+                string status;
+                if (currentTime < model.TimeStart)
+                {
+                    status = "UPCOMING";
+                }
+                else if (currentTime >= model.TimeStart && currentTime <= model.TimeEnd)
+                {
+                    status = "STILL WORKING";
+                }
+                else
+                {
+                    status = "FINISHED";
+                }
+
+                var project = new Project
+                {
+                    name = model.Name,
+                    description = model.Description,
+                    owner = model.Owner,
+                    ownerTel = model.OwnerTel,
+                    timestart = model.TimeStart,
+                    timeend = model.TimeEnd,
+                    cause_id = model.CauseId,
+                    status = status
+                };
+
+                _context.Projects.Add(project);
+                await _context.SaveChangesAsync();
+
+                if (model.Images != null && model.Images.Count > 0)
+                {
+                    foreach (var formFile in model.Images)
+                    {
+                        if (formFile.Length > 0)
+                        {
+                            string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(formFile.FileName);
+                            var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", uniqueFileName);
+                            using (var stream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await formFile.CopyToAsync(stream);
+                            }
+
+                            var gallery = new Gallery
+                            {
+                                image = uniqueFileName,
+                                project_id = project.id
+                            };
+
+                            _context.Galleries.Add(gallery);
+                        }
+                    }
+
+                    await _context.SaveChangesAsync();
+                }
+
+                return RedirectToAction("Projects");
+            }
+
+            ViewBag.Categories = _context.Causes.ToList();
+            return View(model);
+        }
+
+        public async Task<IActionResult> ProjectDetail(int proId)
+        {
+            if (proId == null)
+            {
+                return NotFound();
+            }
+
+            var project = await _context.Galleries.Where(g => g.project_id == proId).ToListAsync();
+            if (project == null)
+            {
+                return NotFound();
+            }
+            return View(project);
+        }
+
+        // Action to delete project
+        [HttpPost]
+        public async Task<IActionResult> DeleteProject(int id)
+        {
+            var project = await _context.Projects
+                .Include(p => p.Galleries)
+                .FirstOrDefaultAsync(p => p.id == id);
+
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            // Delete all associated images from the server
+            foreach (var gallery in project.Galleries)
+            {
+                var imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", gallery.image);
+                if (System.IO.File.Exists(imagePath))
+                {
+                    System.IO.File.Delete(imagePath);
+                }
+            }
+
+            // Remove galleries from database
+            _context.Galleries.RemoveRange(project.Galleries);
+
+            // Remove project from database
+            _context.Projects.Remove(project);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Projects");
+        }
+
+        //Edit project
+        [HttpGet]
+        public async Task<IActionResult> EditProject(int id)
+        {
+            var project = await _context.Projects
+                .Include(p => p.Galleries) // Đưa thông tin hình ảnh vào model
+                .FirstOrDefaultAsync(p => p.id == id);
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            var model = new ProjectViewModel
+            {
+                Id = project.id,
+                Name = project.name,
+                Description = project.description,
+                Owner = project.owner,
+                OwnerTel = project.ownerTel,
+                TimeStart = project.timestart,
+                TimeEnd = project.timeend,
+                CauseId = project.cause_id,
+                ExistingImages = project.Galleries.Select(g => g.image).ToList() // Thêm danh sách hình ảnh hiện tại
+            };
+
+            ViewBag.Categories = _context.Causes.ToList();
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditProject(ProjectViewModel model, int id)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Categories = _context.Causes.ToList();
+                return View(model);
+            }
+
+            var project = await _context.Projects
+                .Include(p => p.Galleries) // Đưa thông tin hình ảnh vào model
+                .FirstOrDefaultAsync(p => p.id == id);
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            // Cập nhật thông tin của dự án
+            project.name = model.Name;
+            project.description = model.Description;
+            project.owner = model.Owner;
+            project.ownerTel = model.OwnerTel;
+            project.timestart = model.TimeStart;
+            project.timeend = model.TimeEnd;
+            project.cause_id = model.CauseId;
+
+            var currentTime = DateTime.Now;
+            if (currentTime < model.TimeStart)
+            {
+                project.status = "UPCOMING";
+            }
+            else if (currentTime >= model.TimeStart && currentTime <= model.TimeEnd)
+            {
+                project.status = "STILL WORKING";
+            }
+            else
+            {
+                project.status = "FINISHED";
+            }
+
+            _context.Projects.Update(project);
+
+            // Nếu có hình ảnh mới, xóa tất cả hình ảnh cũ và thêm hình ảnh mới
+            if (model.Images != null && model.Images.Count > 0)
+            {
+                // Xóa tất cả hình ảnh cũ
+                var existingImages = _context.Galleries.Where(g => g.project_id == project.id).ToList();
+                foreach (var image in existingImages)
+                {
+                    var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", image.image);
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
+                _context.Galleries.RemoveRange(existingImages);
+
+                // Xử lý hình ảnh mới
+                foreach (var formFile in model.Images)
+                {
+                    if (formFile.Length > 0)
+                    {
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(formFile.FileName);
+                        var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", uniqueFileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await formFile.CopyToAsync(stream);
+                        }
+
+                        var gallery = new Gallery
+                        {
+                            image = uniqueFileName,
+                            project_id = project.id
+                        };
+
+                        _context.Galleries.Add(gallery);
+                    }
+                }
+            }
+            // Nếu không có hình ảnh mới, chỉ cập nhật dự án
+            else
+            {
+                // Không làm gì thêm về hình ảnh
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Projects");
+        }
+
+        //AboutUs
+        public async Task<IActionResult> AboutUs1(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .Include(a => a.AboutUsImages)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            var firstImage = aboutUs.AboutUsImages.FirstOrDefault();
+
+            ViewBag.FirstImage = firstImage;
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs2(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .Include(a => a.AboutUsImages)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            var firstImage = aboutUs.AboutUsImages.FirstOrDefault();
+
+            ViewBag.FirstImage = firstImage;
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs3(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsImages)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs4(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs5(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs6(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .Include(a => a.AboutUsImages)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            var firstContent = aboutUs.AboutUsChilds.FirstOrDefault();
+
+            ViewBag.FirstContent = firstContent;
+            return View(aboutUs);
+        }
+
+        public async Task<IActionResult> AboutUs7(int id)
+        {
+            var aboutUs = await _context.AboutUses
+            .Include(a => a.AboutUsChilds)
+            .FirstOrDefaultAsync(a => a.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            return View(aboutUs);
+        }
+
     }
 }

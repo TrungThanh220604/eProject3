@@ -1,0 +1,104 @@
+﻿@model eProject3.Controllers.AdminController.ProjectViewModel
+
+<link rel="stylesheet" href="~/css/AddProject.css" />
+<div class="mainHead">
+    <div class="tilteLeft">
+        <h1>Edit Project</h1>
+        <p style="color: gray; padding-left: 5px">Version 2.0</p>
+    </div>
+    <div class="tilteRight">
+        <span>Home ></span>
+        <span style="padding-left: 4px">Edit Project</span>
+    </div>
+</div>
+<div class="mainBody">
+    <div class="form-add-pro">
+        <form asp-action="EditProject" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="Id" value="@Model.Id" />
+
+            <label for="proName">Project name</label>
+            <input value="@(Model?.Name ?? string.Empty)" class="inputAddPro" type="text" id="proName" name="Name" placeholder="Project name...">
+            <span asp-validation-for="Name" class="text-danger" style="color: red"></span>
+
+            <label for="des">Description</label>
+            <input value="@(Model?.Description ?? string.Empty)" class="inputAddPro" type="text" id="des" name="Description" placeholder="Description..">
+
+            <label for="OwnerName">Owner Name</label>
+            <input value="@(Model?.Owner ?? string.Empty)" class="inputAddPro" type="text" id="OwnerName" name="Owner" placeholder="Owner Name..">
+
+            <label for="phone">Owner Telephone</label>
+            <input value="@(Model?.OwnerTel ?? string.Empty)" class="inputAddPro" type="text" id="phone" name="OwnerTel" placeholder="Owner Telephone..">
+            <span asp-validation-for="OwnerTel" class="text-danger" style="color: red"></span>
+
+            <label for="TimeStart">Time Start:</label>
+            <input value="@(Model?.TimeStart.ToString("yyyy-MM-dd") ?? string.Empty)" class="txtDate" type="date" id="TimeStart" name="TimeStart">
+            <span asp-validation-for="TimeStart" class="text-danger" style="color: red"></span>
+
+            <label for="TimeEnd">Time End:</label>
+            <input value="@(Model?.TimeEnd.ToString("yyyy-MM-dd") ?? string.Empty)" class="txtDate" type="date" id="TimeEnd" name="TimeEnd">
+            <span asp-validation-for="TimeEnd" class="text-danger" style="color: red"></span>
+            <br>
+            <label for="cate">Category Name</label>
+            <select class="dropPro" id="cate" name="CauseId">
+                @foreach (var item in ViewBag.Categories)
+                {
+                    <option value="@item.id" >@item.name</option>
+                }
+            </select>
+
+            <div id="existingImages">
+                @foreach (var image in Model.ExistingImages)
+                {
+                    <div class="existing-image">
+                        <img src="~/imageProjects/@image" alt="Image" style="width: 100px; height: 100px;" />
+                        <input type="hidden" name="ExistingImages" value="@image" />
+                    </div>
+                }
+            </div>
+
+            <div id="fileInputsContainer">
+                <div class="file-input-container">
+                    <input class="image" type="file" name="Images">
+                    <button type="button" class="btnThemFile">Thêm file ảnh</button>
+                </div>
+            </div>
+
+            <input class="btnAddPro" type="submit" value="Save">
+        </form>
+    </div>
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const fileInputsContainer = document.getElementById('fileInputsContainer');
+
+        function addFileInput() {
+            const newFileInput = document.createElement('input');
+            newFileInput.setAttribute('type', 'file');
+            newFileInput.setAttribute('class', 'image');
+            newFileInput.setAttribute('name', 'Images');
+
+            const deleteButton = document.createElement('button');
+            deleteButton.type = 'button';
+            deleteButton.textContent = 'Xóa';
+            deleteButton.classList.add('btnXoaFile');
+
+            deleteButton.addEventListener('click', function () {
+                newInputContainer.remove();
+            });
+
+            const newInputContainer = document.createElement('div');
+            newInputContainer.classList.add('file-input-container');
+            newInputContainer.appendChild(newFileInput);
+            newInputContainer.appendChild(deleteButton);
+
+            fileInputsContainer.appendChild(newInputContainer);
+        }
+
+        document.querySelector('.btnThemFile').addEventListener('click', function (event) {
+            event.preventDefault();
+            addFileInput();
+        });
+    });
+</script>
