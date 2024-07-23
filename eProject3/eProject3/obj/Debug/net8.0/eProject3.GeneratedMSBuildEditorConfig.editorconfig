@@ -17,215 +17,215 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = eProject3
 build_property.RootNamespace = eProject3
-build_property.ProjectDir = C:\Users\ASUS\OneDrive\Máy tính\eProject3_2\eProject3\eProject3\eProject3\
+build_property.ProjectDir = D:\eProject3\eProject3\eProject3\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ASUS\OneDrive\Máy tính\eProject3_2\eProject3\eProject3\eProject3
+build_property.MSBuildProjectDirectory = D:\eProject3\eProject3\eProject3
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRGVsZXRlUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcUGVyc29uYWxEYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/eProject3/eProject3/eProject3/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs1.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs2.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs3.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs4.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs4.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs5.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs5.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs6.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs6.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AboutUs7.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs7.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AddCategory.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AddCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AddPartners.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AddPartners.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUGFydG5lcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/AddProject.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/AddProject.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkUHJvamVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Categories.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Categories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcmllcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/ContactUs_Inf.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/ContactUs_Inf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFVzX0luZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Dashboard.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/DonationDetail.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/DonationDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9uYXRpb25EZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/DonationList.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/DonationList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9uYXRpb25MaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Donations.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Donations.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRG9uYXRpb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/EditCategory.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/EditContactUs.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/EditContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENvbnRhY3RVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/EditPartner.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/EditPartner.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFBhcnRuZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/EditProject.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/EditProject.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFByb2plY3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/getIdUser.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/getIdUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cZ2V0SWRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Partners.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Partners.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydG5lcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/ProjectDetail.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/ProjectDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvamVjdERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Projects.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Projects.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvamVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/UserContactUs.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/UserContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckNvbnRhY3RVcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Admin/Users.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Admin/Users.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Home/Index.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Home/Privacy.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/Error.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/LayoutLogin.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/LayoutUser.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/LayoutUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXExheW91dFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/_LoginPartial.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/_LoginPartial2.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/_LoginPartial2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/User/HomePage.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/User/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/_ViewImports.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/_ViewStart.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/OneDrive/Máy tính/eProject3_2/eProject3/eProject3/eProject3/Views/Shared/_Layout.cshtml]
+[D:/eProject3/eProject3/eProject3/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-edcf3cjy7p
