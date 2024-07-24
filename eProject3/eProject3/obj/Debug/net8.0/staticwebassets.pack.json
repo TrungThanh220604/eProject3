@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\css\\Donations.css"
     },
     {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditAboutUs.css",
+      "PackagePath": "staticwebassets\\css\\EditAboutUs.css"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
       "PackagePath": "staticwebassets\\css\\EditCategory.css"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditProject.css",
       "PackagePath": "staticwebassets\\css\\EditProject.css"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\HelpCenter.css",
+      "PackagePath": "staticwebassets\\css\\HelpCenter.css"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
@@ -133,6 +141,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Duc.jpg",
       "PackagePath": "staticwebassets\\imageAboutUs\\Duc.jpg"
     },
@@ -141,20 +153,20 @@
       "PackagePath": "staticwebassets\\imageAboutUs\\Nam.jpg"
     },
     {
-      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\OurMission.jpg",
-      "PackagePath": "staticwebassets\\imageAboutUs\\OurMission.jpg"
-    },
-    {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Thanh.png",
       "PackagePath": "staticwebassets\\imageAboutUs\\Thanh.png"
     },
     {
-      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\WhatWeDo.png",
-      "PackagePath": "staticwebassets\\imageAboutUs\\WhatWeDo.png"
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\b881d6b1-8530-489c-ba04-21f09cf799aa_06.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\b881d6b1-8530-489c-ba04-21f09cf799aa_06.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg",
       "PackagePath": "staticwebassets\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\d44b1d7c-6dbe-4908-949a-d9b25f8f7d68_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imagePartners\\d44b1d7c-6dbe-4908-949a-d9b25f8f7d68_hoang2.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
@@ -171,6 +183,10 @@
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn4.png",
       "PackagePath": "staticwebassets\\imagePartners\\pn4.png"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6ee5694b-c7e2-42ed-b01d-489c2d221af9_hoang2.jpg",

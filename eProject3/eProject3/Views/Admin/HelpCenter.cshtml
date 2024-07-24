@@ -1,0 +1,124 @@
+﻿@model IEnumerable<eProject3.Controllers.AdminController.ConversationViewModel>
+<link rel="stylesheet" href="~/css/HelpCenter.css">
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .active-block {
+        background-color: #dddddd; /* Thay đổi màu nền tại đây */
+    }
+
+</style>
+<div class="leftSide">
+    <div class="header">
+        <div class="userimg">
+            @* <img src="../img/Screenshot 2024-07-05 110143.png" alt="" class="cover"> *@
+        </div>
+        <ul class="nav_icons">
+            <li><i class='bx bx-scan'></i></li>
+            <li><i class='bx bx-message-rounded-dots'></i></li>
+            <li><i class='bx bx-dots-vertical-rounded'></i></li>
+        </ul>
+    </div>
+    <!-- Search  -->
+    <div class="search_chat">
+        <div>
+            <input type="text" placeholder="Search or start new chat">
+            <i class='bx bx-search-alt-2'></i>
+        </div>
+    </div>
+    <!--  -->
+    <div class="chatlist">
+        @foreach (var conversation in Model)
+        {
+            <a asp-action="ConversationMessages" asp-route-id="@conversation.Id" asp-route-selected="@conversation.Id">
+                <div class="block" data-id="@conversation.Id">
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>@conversation.UserName</h4>
+                            <p class="time">
+                                @(conversation.LastMessageTime.HasValue
+                                    ? conversation.LastMessageTime.Value.ToString("dd/MM/yyyy HH:mm")
+                                    : "No messages")
+                            </p>
+                            <p>
+                                @(conversation.Status == "1" ? "Đã trả lời" : "Chưa trả lời")
+                            </p>
+
+                        </div>
+                        <div class="message_p">
+                            <p>@conversation.LastMessage</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        }
+    </div>
+
+
+</div>
+<div class="rightSide">
+    <div class="header">
+        <div class="imgText">
+            <div class="userimg">
+                @* <img src="../img/Screenshot 2024-07-05 110143.png" alt="" class="cover"> *@
+            </div>
+            <h4>Nam<br><span style="color: rgb(0, 255, 0); font-size: 12px; font-weight: 600;">Online</span></h4>
+        </div>
+        <ul class="nav_icons">
+            <li><i class='bx bx-search-alt-2'></i></li>
+            <li><i class='bx bx-dots-vertical-rounded'></i></li>
+        </ul>
+    </div>
+
+    @if (ViewBag.Messages != null)
+    {
+        <div class="chatbox" id="chatbox">
+            @foreach (var message in ViewBag.Messages)
+            {
+                <div class="message @(message.IsMyMessage ? "my_msg" : "friend_msg")">
+                    <p>@message.MessageText<br><span>@message.SentAt.ToString("HH:mm")</span></p>
+                </div>
+            }
+        </div>
+
+        <!-- CHAT INPUT -->
+        <div class="chat_input">
+            <form asp-action="SendMessage" method="post">
+                <input type="hidden" name="conversationId" value="@ViewBag.ConversationId" />
+                <input type="text" name="messageText" placeholder="Type a message">
+                <button type="submit">
+                    <i class='bx bxs-send' style="color: rgb(0, 179, 255);"></i>
+                </button>
+            </form>
+        </div>
+
+    }
+
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var selectedId = urlParams.get('selected');
+
+        if (selectedId) {
+            var blocks = document.querySelectorAll('.chatlist .block');
+            blocks.forEach(function (block) {
+                if (block.getAttribute('data-id') === selectedId) {
+                    block.classList.add('active-block');
+                }
+            });
+        }
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var chatbox = document.getElementById('chatbox');
+        if (chatbox) {
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    });
+</script>
