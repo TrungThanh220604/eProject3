@@ -17,13 +17,13 @@
         <div class="navbar">
             <ul class="navbar-list">
                 <li class="navbar-item">
-                    <a href="../view/User.html" class="logo">
+                    <a asp-controller="User" asp-action="HomePage" class="logo">
                         <p class="logo-name">NGO Website</p>
                         <i class='bx bx-leaf logo-icon'></i>
                     </a>
                 </li>
                 <li class="navbar-item link">
-                    <a href="../view/User.html">
+                    <a asp-controller="User" asp-action="HomePage">
                         <i class="fa-solid fa-house"></i>
                         <p>Home</p>
                     </a>
@@ -47,17 +47,17 @@
                         <i class='bx bxs-chevron-down arrow'></i>
                     </a>
                     <ul id="menuDropdown" class="sub-menu">
-                        <li><a href="../view/aboutUs1.html">What we đo ?</a></li>
-                        <li><a href="../view/aboutUs2.html">Our Mission</a></li>
-                        <li><a href="../view/aboutUs3.html">Our Team</a></li>
-                        <li><a href="../view/aboutUs4.html">Career With Us</a></li>
-                        <li><a href="../view/aboutUs5.html">Our Achievements</a></li>
-                        <li><a href="../view/aboutUs6.html">Our Suporters</a></li>
-                        <li><a href="../view/aboutUs7.html">Read About Us</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs1">What we do ?</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs2">Our Mission</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs3">Our Team</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs4">Career With Us</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs5">Our Achievements</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs6">Our Suporters</a></li>
+                        <li><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
                     </ul>
                 </li>
                 <li class="navbar-item link">
-                    <a href="../view/ourPartners.html">
+                    <a asp-action="OurPartner">
                         <i class='bx bx-group'></i>
                         <p>Our Partners</p>
                     </a>
@@ -125,13 +125,13 @@
             <div class="aboutUs-Inf">
                 <h2>About Us</h2>
                 <ul class="sub-menu">
-                    <li><a href="#">What we đo ?</a></li>
-                    <li><a href="#">Our Mission</a></li>
-                    <li><a href="#">Our Team</a></li>
-                    <li><a href="#">Career With Us</a></li>
-                    <li><a href="#">Our Achievements</a></li>
-                    <li><a href="#">Our Suporters</a></li>
-                    <li><a href="#">Read About Us</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs1">What we do ?</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs2">Our Mission</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs3">Our Team</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs4">Career With Us</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs5">Our Achievements</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs6">Our Suporters</a></li>
+                    <li><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
                 </ul>
             </div>
             <div class="contactUs-Inf">

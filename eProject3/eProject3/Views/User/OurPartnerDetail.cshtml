@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Our Partner";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserPartnerDetail.css" asp-append-version="true" />
+<div class="slideInf">
+    <h 1 style="font-size: 35px; margin-bottom: 10px;">
+        Our Partners</h1>
+        <span>Home/Our Partners/</span><span>@ViewBag.Partner.name</span>
+</div>
+<div class="main2">
+    <div class="partnerImg">
+        <img src="~/imagePartners/@ViewBag.Partner.logo" alt="">
+        <p>@ViewBag.Partner.name</p>
+    </div>
+    <div class="partnerInf">
+        <h1 class="partnerTitle">@ViewBag.Partner.name</h1>
+        <p>
+           @ViewBag.Partner.description
+        </p>
+    </div>
+</div>

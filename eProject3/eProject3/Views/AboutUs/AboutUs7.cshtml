@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Read About Us";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserAboutUs7.css" asp-append-version="true" />
+
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/About Us/</span> <span>Read About Us</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="aboutUs-menu">
+        <div class="list-menu">
+            <ul class="menus">
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs1">What we do?</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs2">Our mission</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs3">Our team</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs4">Career with us</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs5">Our achievements</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs6">Our supporters</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutUs-content">
+        <h1>Read About Us</h1>
+        <div class="content">
+            <p class="content-text">
+                At NGO.vn, we believe that everyone deserves a better life and necessary support
+                in difficult times. We were founded with the mission of connecting charities, philanthropists and
+                the community to create an environment of comprehensive support, helping difficult situations and
+                bringing hope to people.
+            </p>
+            <ul>
+                @foreach (var aboutUs in ViewBag.AboutUs)
+                {
+                    <li class="list-content-parent">@aboutUs.title</li>
+                    <p class="content-text">
+                        @aboutUs.content
+                    </p>
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>

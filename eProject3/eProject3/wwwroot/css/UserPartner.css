@@ -1,0 +1,40 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main2 {
+    text-align: center;
+    margin: 100px;
+}
+
+    .main2 p {
+        font-size: 17px;
+        padding-bottom: 50px;
+    }
+
+    .main2 .list-partners ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+        .main2 .list-partners ul a {
+            color: #000;
+            font-weight: 600;
+            margin: 0 50px;
+            width: 200px;
+        }
+
+        .main2 .list-partners ul img {
+            width: 100px;
+            height: 80px;
+        }
+

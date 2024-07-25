@@ -78,6 +78,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzMi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs5.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzNS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs6.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzNi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/AboutUs/AboutUs7.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRVc1xBYm91dFVzNy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/eProject3/eProject3/eProject3/Views/Admin/AboutUs1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVczEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -216,6 +244,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/eProject3/eProject3/eProject3/Views/User/HomePage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxIb21lUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/User/OurPartner.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPdXJQYXJ0bmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/eProject3/eProject3/eProject3/Views/User/OurPartnerDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxPdXJQYXJ0bmVyRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/eProject3/eProject3/eProject3/Views/_ViewImports.cshtml]

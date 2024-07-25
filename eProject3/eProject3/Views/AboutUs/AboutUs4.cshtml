@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Career With Us";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserAboutUs4.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/About Us/</span> <span>Career with us</span>
+</div>
+<div class="main2">
+    <div class="aboutUs-menu">
+        <div class="list-menu">
+            <ul class="menus">
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs1">What we do?</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs2">Our mission</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs3">Our team</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs4">Career with us</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs5">Our achievements</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs6">Our supporters</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutUs-content">
+        <h1>Career with us</h1>
+        <div class="content">
+            <p class="content-text">
+                Joining NGO.vn is not only that you are working, but you are contributing to
+                creating positive change in society. We believe that every employee is an important piece of our
+                noble mission - bringing hope and support to people in difficult circumstances.
+            </p>
+            <h4>Benefits of Working at NGO.vn</h4>
+            <ul>
+                @foreach (var aboutUs in ViewBag.AboutUs)
+                {
+                    <li class="list-content-parent">@aboutUs.title</li>
+                    <ul>
+                        <li class="list-content-child" style="list-style: inside;">
+                            @aboutUs.content
+                        </li>
+                    </ul>
+                }
+            </ul>
+            <p class="content-text" style="font-weight: bold; margin-top: 30px;">
+                If you are passionate about volunteer work and want
+                to build a better community, enter NGO.vn. We always welcome new talents, ready to join us in
+                carrying out this noble mission.
+            </p>
+            <div style="display: flex; justify-content: center; position: relative;">
+                <i class="bx bx-right-arrow-alt"></i>
+                <button>Join Us</button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -5,6 +5,7 @@
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
 }
+
 <link rel="stylesheet" href="~/css/UserLayout.css" asp-append-version="true" />
 
 <div class="slider">
@@ -186,11 +187,10 @@
     <h2 style="font-size: 30px; font-weight: 900; text-align: center; padding-bottom: 20px;">Our partners</h2>
     <div class="listImgPartners">
         <ul>
-            <li><img src="~/image/dvdh1.jpg" alt="" style="width: 50px; height: 50px;"></li>
-            <li><img src="~/image/dvdh2.png" alt="" style="width: 50px; height: 50px;"></li>
-            <li><img src="~/image/dvdh6.png" alt="" style="width: 100px; height: 40px;"></li>
-            <li><img src="~/image/dvdh7.png" alt="" style="width: 100px; height: 40px;"></li>
-            <li><img src="~/image/dvdh8.png" alt="" style="width: 50px; height: 50px;"></li>
+            @foreach (var partner in ViewBag.Partner)
+            {
+                <li><img src="~/imagePartners/@partner.logo" alt="" style="width: auto; height: 50px; min-width: 65px; max-width: 140px"></li>
+            }
         </ul>
     </div>
 </div>
