@@ -109,7 +109,39 @@
       "PackagePath": "staticwebassets\\css\\Projects.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
+=======
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs1.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs1.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs2.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs2.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs3.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs3.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs4.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs4.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs5.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs5.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs6.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs6.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserAboutUs7.css",
+      "PackagePath": "staticwebassets\\css\\UserAboutUs7.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserContactUs.css",
+>>>>>>> main
       "PackagePath": "staticwebassets\\css\\UserContactUs.css"
     },
     {
@@ -125,7 +157,19 @@
       "PackagePath": "staticwebassets\\css\\UserLayout.css"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
+=======
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserPartner.css",
+      "PackagePath": "staticwebassets\\css\\UserPartner.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\UserPartnerDetail.css",
+      "PackagePath": "staticwebassets\\css\\UserPartnerDetail.css"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Users.css",
+>>>>>>> main
       "PackagePath": "staticwebassets\\css\\Users.css"
     },
     {
@@ -141,11 +185,23 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg",
       "PackagePath": "staticwebassets\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Duc.jpg",
+=======
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\1.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\1.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\2.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\2.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Duc.jpg",
+>>>>>>> main
       "PackagePath": "staticwebassets\\imageAboutUs\\Duc.jpg"
     },
     {
@@ -153,6 +209,7 @@
       "PackagePath": "staticwebassets\\imageAboutUs\\Nam.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Thanh.png",
       "PackagePath": "staticwebassets\\imageAboutUs\\Thanh.png"
     },
@@ -170,6 +227,73 @@
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
+=======
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\OurMission.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\OurMission.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Screenshot 2024-07-02 092340.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Screenshot 2024-07-02 092340.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Screenshot 2024-07-24 181239.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Screenshot 2024-07-24 181239.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Thanh.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\Thanh.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\To-chuc-su-kien-tu-thien.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\To-chuc-su-kien-tu-thien.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\WhatWeDo.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\WhatWeDo.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\dvdh3.png",
+      "PackagePath": "staticwebassets\\imageAboutUs\\dvdh3.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\dvdh4.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\dvdh4.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\dvdh5.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\dvdh5.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\lamviec.jpeg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\lamviec.jpeg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg",
+      "PackagePath": "staticwebassets\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\92a08a54-4712-4aa6-939e-b553dc97e625_dvdh6.png",
+      "PackagePath": "staticwebassets\\imagePartners\\92a08a54-4712-4aa6-939e-b553dc97e625_dvdh6.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\ae8fbe0c-3c61-447c-95c8-555ea898c704_dvdh7.png",
+      "PackagePath": "staticwebassets\\imagePartners\\ae8fbe0c-3c61-447c-95c8-555ea898c704_dvdh7.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\e3bcad55-8706-41b7-a396-e1deafcd1731_dvdh2.png",
+      "PackagePath": "staticwebassets\\imagePartners\\e3bcad55-8706-41b7-a396-e1deafcd1731_dvdh2.png"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\fd87f191-f8fd-4427-987f-927f55c86acb_dvdh1.jpg",
+      "PackagePath": "staticwebassets\\imagePartners\\fd87f191-f8fd-4427-987f-927f55c86acb_dvdh1.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\pn1.png",
+>>>>>>> main
       "PackagePath": "staticwebassets\\imagePartners\\pn1.png"
     },
     {
@@ -313,7 +437,15 @@
       "PackagePath": "staticwebassets\\js\\AdminLayOut.js"
     },
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\ProjectKy3_3\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
+=======
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserAboutUs.js",
+      "PackagePath": "staticwebassets\\js\\UserAboutUs.js"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\js\\UserHeader.js",
+>>>>>>> main
       "PackagePath": "staticwebassets\\js\\UserHeader.js"
     },
     {

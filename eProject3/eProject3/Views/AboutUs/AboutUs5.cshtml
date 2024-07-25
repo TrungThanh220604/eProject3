@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Our Achievements";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserAboutUs5.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/About Us/</span> <span>Our achievements</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="aboutUs-menu">
+        <div class="list-menu">
+            <ul class="menus">
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs1">What we do?</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs2">Our mission</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs3">Our team</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs4">Career with us</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs5">Our achievements</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs6">Our supporters</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutUs-content">
+        <h1>Our achievements</h1>
+        <div class="content">
+            <p class="content-text">
+                At NGO.vn, we are proud of our achievements in our journey of supporting the
+                community and bringing hope to people in difficult circumstances. The memorable milestones below are
+                testament to our continuous efforts and the trust of the community.
+            </p>
+            <img src="~/imageAboutUs/@ViewBag.AboutUsImage[0].image" />
+            <h5>Awards and Recognition</h5>
+            <ul class="list-text">
+                @foreach (var aboutUs in ViewBag.AboutUs)
+                {
+                <li class="list-content-parent" style="margin-bottom: 7px">@aboutUs.title</li>
+                <ul>
+                    <li class="list-content-child" style="list-style: inside; margin-bottom: 20px">@aboutUs.content</li>
+                </ul>
+                }
+            </ul>
+        </div>
+    </div>
+
+</div>

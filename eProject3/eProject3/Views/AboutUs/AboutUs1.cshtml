@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "What we do?";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserAboutUs1.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/About Us/</span> <span>What we do ?</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="aboutUs-menu">
+        <div class="list-menu">
+            <ul class="menus">
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs1">What we do?</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs2">Our mission</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs3">Our team</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs4">Career with us</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs5">Our achievements</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs6">Our supporters</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutUs-content">
+        <h1>What we do ?</h1>
+        <div class="content">
+            @foreach (var aboutUs1 in ViewBag.aboutUs.AboutUsChilds)
+            {
+                <p class="content-text">
+                    @aboutUs1.content
+                </p>
+            }
+            <img src="~/imageAboutUs/@ViewBag.AboutUsImage.image" alt="">
+        </div>
+    </div>
+
+</div>

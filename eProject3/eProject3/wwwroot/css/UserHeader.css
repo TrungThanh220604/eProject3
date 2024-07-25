@@ -145,7 +145,7 @@ header {
 /* slide ở các trang */
 .slideInf {
     position: relative;
-    background-image: url("../img/lamviec.jpeg");
+    background-image: url("~/image/1.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

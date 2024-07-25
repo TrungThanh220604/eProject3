@@ -1,0 +1,43 @@
+﻿.main2 {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 50px 80px;
+}
+
+    .main2 .partnerImg {
+        /* padding: 0 50px; */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 120px;
+        margin-right: 30px;
+    }
+
+        .main2 .partnerImg img {
+            width: auto;
+            max-width: 530px;
+            height: 130px;
+        }
+
+        .main2 .partnerImg p {
+            font-size: 23px;
+            font-weight: 700;
+        }
+
+    .main2 .partnerInf {
+        font-size: 17px;
+        text-align: justify;
+    }
+
+        .main2 .partnerInf .title {
+            font-weight: 700;
+        }
+
+        .main2 .partnerInf .title-number {
+            list-style: decimal;
+        }
+
+        .main2 .partnerInf .list-text {
+            list-style: inside;
+            padding-left: 20px;
+        }

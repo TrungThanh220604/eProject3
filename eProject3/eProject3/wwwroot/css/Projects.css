@@ -131,7 +131,7 @@
     margin-bottom: 10px;
 }
 
-    .add button {
+    .add a {
         padding: 12px 50px;
         font-size: 16px;
         height: 40px;
@@ -141,9 +141,10 @@
         border-radius: 6px;
         cursor: pointer;
         transition: background-color 0.3s;
+        text-decoration: none;
     }
 
-        .add button:hover {
+        .add a:hover {
             background-color: #0056b3;
         }
 

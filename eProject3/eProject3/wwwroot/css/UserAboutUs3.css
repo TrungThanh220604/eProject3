@@ -1,0 +1,81 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main2 {
+    display: flex;
+    width: 100%;
+}
+
+.aboutUs-menu {
+    width: 30%;
+}
+
+.aboutUs-content {
+    width: 70%;
+}
+
+.main2 .aboutUs-menu {
+    width: 260px;
+    height: inherit;
+    padding: 20px 0;
+    border-right: 2px solid #b8b8b8b4;
+}
+
+.main2 .list-menu .menus {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+    .main2 .list-menu .menus .menu-item {
+        padding: 20px 0;
+        border-bottom: 1px solid #767676;
+        text-align: center;
+    }
+
+        .main2 .list-menu .menus .menu-item:hover {
+            background: #bdbdbd;
+            color: #fff;
+            cursor: pointer;
+        }
+
+    .main2 .list-menu .menus a {
+        color: #000;
+    }
+
+.aboutUs-content {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin: 60px;
+}
+
+    .aboutUs-content .teamMember {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 50px;
+        text-align: center;
+    }
+
+        .aboutUs-content .teamMember .teamMember-item img {
+            border-radius: 50%;
+            width: 110px;
+            height: 110px;
+            margin-bottom: 10px;
+            object-fit: cover;
+            text-align: center;
+        }
+
+        .aboutUs-content .teamMember .teamMember-item p {
+            font-weight: 700;
+            text-align: center;
+        }

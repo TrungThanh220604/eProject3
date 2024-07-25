@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Our Team";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserAboutUs3.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/About Us/</span> <span>Our team</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="aboutUs-menu">
+        <div class="list-menu">
+            <ul class="menus">
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs1">What we do?</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs2">Our mission</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs3">Our team</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs4">Career with us</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs5">Our achievements</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs6">Our supporters</a></li>
+                <li class="menu-item"><a asp-controller="AboutUs" asp-action="AboutUs7">Read About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="aboutUs-content">
+        <h1>Founding team</h1>
+        <div class="teamMember">
+            @for (int i = 0; i < ViewBag.AboutUs.Count-1; i++){
+                <div class="teamMember-item">
+                    @if (ViewBag.AboutUsImage != null && i < ViewBag.AboutUsImage.Count && ViewBag.AboutUsImage[i] != null)
+                    {
+                        <img src="~/imageAboutUs/@ViewBag.AboutUsImage[i].image" alt="">
+                    }
+                    <p>@ViewBag.AboutUs[i].content</p>
+            </div>
+            }
+        </div>
+        <h1>Legal advisor</h1>
+        <div class="teamMember">
+            <div class="teamMember-item">
+                <img src="~/imageAboutUs/@ViewBag.AboutUsImage[ViewBag.AboutUs.Count-1].image" alt="">
+                <p>@ViewBag.AboutUs[ViewBag.AboutUs.Count-1].content</p>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,124 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main2 {
+    display: flex;
+    width: 100%;
+}
+
+.aboutUs-menu {
+    width: 30%;
+}
+
+.aboutUs-content {
+    width: 70%;
+}
+
+ .aboutUs-menu {
+    width: 260px;
+    height: inherit;
+    padding: 20px 0;
+    border-right: 2px solid #b8b8b8b4;
+}
+
+ .list-menu .menus {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+ .list-menu .menus .menu-item {
+        padding: 20px 0;
+        border-bottom: 1px solid #767676;
+        text-align: center;
+    }
+
+  .list-menu .menus .menu-item:hover {
+            background: #bdbdbd;
+            color: #fff;
+            cursor: pointer;
+        }
+
+ .list-menu .menus a {
+        color: #000;
+    }
+
+.main2 .aboutUs-content {
+    margin: 0 40px;
+}
+
+    .main2 .aboutUs-content h1 {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+
+    .main2 .aboutUs-content .content {
+        margin: 30px;
+    }
+
+        .main2 .aboutUs-content .content .content-text {
+            text-align: justify;
+            padding: 5px;
+            line-height: 20px;
+        }
+
+.aboutUs-content h4 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.aboutUs-content ul {
+    margin: 5px 20px;
+}
+
+.aboutUs-content .list-content-parent {
+    list-style: decimal;
+    font-weight: 700;
+}
+
+.aboutUs-content button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 50px;
+    background: rgb(66, 255, 66);
+    color: #fff;
+    font-weight: 800;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+    .aboutUs-content button:hover {
+        background: rgb(10, 149, 10);
+        color: #fff;
+    }
+
+.aboutUs-content i {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(36, 145, 255);
+    /* position: absolute; */
+    left: -40px;
+    animation: arrowMove 2s infinite;
+}
+
+@keyframes arrowMove {
+    0% {
+        left: -40px;
+    }
+
+    50% {
+        left: 2px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
