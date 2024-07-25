@@ -1015,6 +1015,13 @@ namespace eProject3.Controllers
             public bool IsMyMessage { get; set; }
         }
 
+        //check admin
+        private async Task<bool> IsUserAdminAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            return user != null && await _userManager.IsInRoleAsync(user, "admin");
+        }
+
         public async Task<IActionResult> ConversationMessages(int id)
         {
             //helpcenter
@@ -1044,13 +1051,24 @@ namespace eProject3.Controllers
                 return NotFound();
             }
 
-            var viewModel2 = conversation.Messages
-                .Select(m => new MessageViewModel
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var viewModel2 = new List<MessageViewModel>();
+            foreach (var message in conversation.Messages)
+            {
+                var isMyMessage = message.user_id == currentUserId;
+                if (!isMyMessage)
                 {
-                    MessageText = m.message_text,
-                    SentAt = m.sent_at,
-                    IsMyMessage = m.user_id == User.FindFirstValue(ClaimTypes.NameIdentifier)
-                }).ToList();
+                    isMyMessage = await IsUserAdminAsync(message.user_id);
+                }
+
+                viewModel2.Add(new MessageViewModel
+                {
+                    MessageText = message.message_text,
+                    SentAt = message.sent_at,
+                    IsMyMessage = isMyMessage
+                });
+            }
 
             ViewBag.Messages = viewModel2;
             ViewBag.ConversationId = id;
