@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
+using static eProject3.Controllers.AdminController;
 
 
 namespace eProject3.Controllers
@@ -24,8 +26,15 @@ namespace eProject3.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Dashboard()
+        public async Task<IActionResult> Dashboard()
         {
+            var amount = await _context.Donations.SumAsync(d => d.amount);
+            var numOfProj = await _context.Projects.CountAsync();
+            var numOfDonation = await _context.Donations.CountAsync();
+
+            ViewBag.Amount = amount;
+            ViewBag.NumOfProj = numOfProj;
+            ViewBag.NumOfDonation = numOfDonation;
             return View();
         }
 
@@ -35,7 +44,6 @@ namespace eProject3.Controllers
             var categories = await _context.Causes.ToListAsync();
             return View(categories);
         }
-
 
         public IActionResult AddCategory()
         {
@@ -99,10 +107,38 @@ namespace eProject3.Controllers
         }
 
         //Users
+        public class UserRoleViewModel
+        {
+            public string Id { get; set; }
+            public string FirstName { get; set; }
+            public string LastName { get; set; }
+            public string Email { get; set; }
+            public string Address { get; set; }
+            public string PhoneNumber { get; set; }
+            public string Roles { get; set; }
+        }
+
         public async Task<IActionResult> Users()
         {
             var users = await _context.Users.ToListAsync();
-            return View(users);
+            var userRoles = new List<UserRoleViewModel>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user);
+                userRoles.Add(new UserRoleViewModel
+                {
+                    Id = user.Id,
+                    FirstName = user.first_name,
+                    LastName = user.last_name,
+                    Email = user.Email,
+                    Address = user.address,
+                    PhoneNumber = user.phone_number,
+                    Roles = string.Join(", ", roles)
+                });
+            }
+
+            return View(userRoles);
         }
 
         //User ContactUs
@@ -172,7 +208,6 @@ namespace eProject3.Controllers
 
             public string? ExistingLogo { get; set; }
         }
-
 
         [HttpPost]
         public async Task<IActionResult> AddPartners(PartnerViewModel model)
@@ -365,7 +400,6 @@ namespace eProject3.Controllers
             }
 
             return View(projectViewModels);
-
         }
 
         public async Task<IActionResult> DonationDetail(int proId)
@@ -377,6 +411,7 @@ namespace eProject3.Controllers
                 .FirstOrDefaultAsync();
             var category = await _context.Causes.FirstOrDefaultAsync(c => c.id == project.cause_id);
             ViewBag.cateName = category.name;
+            ViewBag.CauseId = category.id;
             int numOfDonate = await _context.Donations.Where(d => d.project_id == proId).CountAsync();
             double totalAmount = await _context.Donations
                 .Where(d => d.project_id == proId)
@@ -395,7 +430,6 @@ namespace eProject3.Controllers
                 FirstImage = firstGalleryImage,
                 NumberOfDonations = numOfDonate,
                 Amount = totalAmount
-
             };
 
             ViewBag.userDonation = await _context.Donations
@@ -421,24 +455,10 @@ namespace eProject3.Controllers
             public string? FirstImage { get; set; }
         }
 
-        //public async Task<IActionResult> getIdUser()
-        //{
-        //    var user = await _userManager.GetUserAsync(User);
-        //    var userId = user?.Id;
-        //    var roles = await _userManager.GetRolesAsync(user);
-
-        //    ViewBag.UserId = userId;
-        //    ViewBag.Roles = roles;
-
-        //    return View();
-        //}
-
-
         //Project
         public async Task<IActionResult> Projects()
         {
             var projects = await _context.Projects.Include(p => p.Cause).ToListAsync();
-
             return View(projects);
         }
 
@@ -450,7 +470,7 @@ namespace eProject3.Controllers
 
         public class ProjectViewModel
         {
-            public int? Id { get; set; } 
+            public int? Id { get; set; }
 
             [Required(ErrorMessage = "Project name is required.")]
             public string Name { get; set; }
@@ -473,10 +493,8 @@ namespace eProject3.Controllers
 
             public IFormFileCollection? Images { get; set; }
 
-            public List<string>? ExistingImages { get; set; }  
-
+            public List<string>? ExistingImages { get; set; }
         }
-
 
         [HttpPost]
         public async Task<IActionResult> AddProject(ProjectViewModel model)
@@ -512,6 +530,7 @@ namespace eProject3.Controllers
 
                 _context.Projects.Add(project);
                 await _context.SaveChangesAsync();
+                TempData["SuccessMessage"] = "Added project successfully!";
 
                 if (model.Images != null && model.Images.Count > 0)
                 {
@@ -588,7 +607,7 @@ namespace eProject3.Controllers
             _context.Projects.Remove(project);
 
             await _context.SaveChangesAsync();
-
+            TempData["SuccessMessage"] = "Delete project successfully!";
             return RedirectToAction("Projects");
         }
 
@@ -597,7 +616,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> EditProject(int id)
         {
             var project = await _context.Projects
-                .Include(p => p.Galleries) 
+                .Include(p => p.Galleries)
                 .FirstOrDefaultAsync(p => p.id == id);
             if (project == null)
             {
@@ -614,7 +633,7 @@ namespace eProject3.Controllers
                 TimeStart = project.timestart,
                 TimeEnd = project.timeend,
                 CauseId = project.cause_id,
-                ExistingImages = project.Galleries.Select(g => g.image).ToList() 
+                ExistingImages = project.Galleries.Select(g => g.image).ToList()
             };
 
             ViewBag.Categories = _context.Causes.ToList();
@@ -631,14 +650,14 @@ namespace eProject3.Controllers
             }
 
             var project = await _context.Projects
-                .Include(p => p.Galleries) 
+                .Include(p => p.Galleries)
                 .FirstOrDefaultAsync(p => p.id == id);
             if (project == null)
             {
                 return NotFound();
             }
 
-           
+
             project.name = model.Name;
             project.description = model.Description;
             project.owner = model.Owner;
@@ -704,7 +723,7 @@ namespace eProject3.Controllers
             }
 
             await _context.SaveChangesAsync();
-
+            TempData["SuccessMessage"] = "Update project successfully!";
             return RedirectToAction("Projects");
         }
 
@@ -817,6 +836,275 @@ namespace eProject3.Controllers
             }
 
             return View(aboutUs);
+        }
+
+        //edit aboutUs
+        public class AboutUsViewModel
+        {
+            public int? Id { get; set; }
+            public string? Name { get; set; }
+            public List<AboutUsChildViewModel>? AboutUsChildren { get; set; }
+            public IFormFileCollection? Images { get; set; }
+            public List<string>? ExistingImages { get; set; } = new List<string>();
+
+            public string? SourcePage { get; set; }
+        }
+
+        public class AboutUsChildViewModel
+        {
+            public int? Id { get; set; }
+
+            [Required(ErrorMessage = "Title is required.")]
+            public string? Title { get; set; }
+
+            [Required(ErrorMessage = "Content is required.")]
+            public string? Content { get; set; }
+        }
+
+        public async Task<IActionResult> EditAboutUs(int id, string sourcePage)
+        {
+            var aboutUs = await _context.AboutUses
+               .Include(a => a.AboutUsChilds)
+               .Include(a => a.AboutUsImages)
+               .FirstOrDefaultAsync(m => m.id == id);
+
+            if (aboutUs == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new AboutUsViewModel
+            {
+                Id = aboutUs.id,
+                Name = aboutUs.name,
+                AboutUsChildren = aboutUs.AboutUsChilds.Select(c => new AboutUsChildViewModel
+                {
+                    Id = c.id,
+                    Title = c.title,
+                    Content = c.content
+                }).ToList(),
+                ExistingImages = aboutUs.AboutUsImages.Select(g => g.image).ToList(),
+                SourcePage = sourcePage
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditAboutUs(int id, AboutUsViewModel viewModel)
+        {
+            if (id != viewModel.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var aboutUs = await _context.AboutUses
+                        .Include(a => a.AboutUsChilds)
+                        .Include(a => a.AboutUsImages)
+                        .FirstOrDefaultAsync(m => m.id == id);
+
+                    if (aboutUs == null)
+                    {
+                        return NotFound();
+                    }
+
+                    if (viewModel.AboutUsChildren != null)
+                    {
+                        foreach (var child in viewModel.AboutUsChildren)
+                        {
+                            var existingChild = aboutUs.AboutUsChilds.FirstOrDefault(c => c.id == child.Id);
+                            if (existingChild != null)
+                            {
+                                existingChild.title = child.Title;
+                                existingChild.content = child.Content;
+                            }
+                        }
+                    }
+
+                    if (viewModel.Images != null && viewModel.Images.Count > 0)
+                    {
+                        var existingImages = _context.AboutUsImages.Where(a => a.about_id == aboutUs.id).ToList();
+                        foreach (var image in existingImages)
+                        {
+                            var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageAboutUs", image.image);
+                            if (System.IO.File.Exists(filePath))
+                            {
+                                System.IO.File.Delete(filePath);
+                            }
+                        }
+                        _context.AboutUsImages.RemoveRange(existingImages);
+
+                        foreach (var formFile in viewModel.Images)
+                        {
+                            if (formFile.Length > 0)
+                            {
+                                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(formFile.FileName);
+                                var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageAboutUs", uniqueFileName);
+                                using (var stream = new FileStream(filePath, FileMode.Create))
+                                {
+                                    await formFile.CopyToAsync(stream);
+                                }
+
+                                var aboutUsImage = new AboutUsImage
+                                {
+                                    image = uniqueFileName,
+                                    about_id = aboutUs.id
+                                };
+
+                                _context.AboutUsImages.Add(aboutUsImage);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // Không làm gì thêm về hình ảnh
+                    }
+
+                    await _context.SaveChangesAsync();
+                    TempData["SuccessMessage"] = "Update AboutUs successfully!";
+                    return RedirectToAction(viewModel.SourcePage, new { id = viewModel.Id });
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    return NotFound();
+                }
+            }
+            return View(viewModel);
+        }
+
+        //Help center
+        public class ConversationViewModel
+        {
+            public int? Id { get; set; }
+            public string? UserName { get; set; }
+            public string? LastMessage { get; set; }
+            public DateTime? LastMessageTime { get; set; }
+            public string? Status { get; set; }
+        }
+
+        public async Task<IActionResult> HelpCenter()
+        {
+            //helpcenter
+            var conversations = await _context.Conversations
+                .Include(c => c.Messages)
+                .Include(c => c.User)
+                .ToListAsync();
+
+            var viewModel = conversations.Select(c => new ConversationViewModel
+            {
+                Id = c.id,
+                UserName = c.User.UserName,
+                LastMessage = c.Messages.LastOrDefault()?.message_text,
+                LastMessageTime = c.Messages.LastOrDefault()?.sent_at,
+                Status = c.status
+            }).ToList();
+            viewModel = viewModel.OrderByDescending(vm => vm.LastMessageTime).ToList();
+
+            return View(viewModel);
+        }
+
+        public class MessageViewModel
+        {
+            public string MessageText { get; set; }
+            public DateTime SentAt { get; set; }
+            public bool IsMyMessage { get; set; }
+        }
+
+        //check admin
+        private async Task<bool> IsUserAdminAsync(string userId)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            return user != null && await _userManager.IsInRoleAsync(user, "admin");
+        }
+
+        public async Task<IActionResult> ConversationMessages(int id)
+        {
+            //helpcenter
+            var conversations = await _context.Conversations
+                .Include(c => c.Messages)
+                .Include(c => c.User)
+                .ToListAsync();
+
+            var viewModel = conversations.Select(c => new ConversationViewModel
+            {
+                Id = c.id,
+                UserName = c.User.UserName,
+                LastMessage = c.Messages.LastOrDefault()?.message_text,
+                LastMessageTime = c.Messages.LastOrDefault()?.sent_at,
+                Status = c.status
+            }).ToList();
+            viewModel = viewModel.OrderByDescending(vm => vm.LastMessageTime).ToList();
+
+            //ConversationMessages
+            var conversation = await _context.Conversations
+                .Include(c => c.Messages)
+                .Include(c => c.User)
+                .FirstOrDefaultAsync(c => c.id == id);
+
+            if (conversation == null)
+            {
+                return NotFound();
+            }
+
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var viewModel2 = new List<MessageViewModel>();
+            foreach (var message in conversation.Messages)
+            {
+                var isMyMessage = message.user_id == currentUserId;
+                if (!isMyMessage)
+                {
+                    isMyMessage = await IsUserAdminAsync(message.user_id);
+                }
+
+                viewModel2.Add(new MessageViewModel
+                {
+                    MessageText = message.message_text,
+                    SentAt = message.sent_at,
+                    IsMyMessage = isMyMessage
+                });
+            }
+
+            ViewBag.Messages = viewModel2;
+            ViewBag.ConversationId = id;
+            ViewBag.Status = conversation.status;
+            return View("HelpCenter", viewModel);
+        }
+
+        //Admin Reply
+        [HttpPost]
+        public async Task<IActionResult> SendMessage(int conversationId, string messageText)
+        {
+            if (string.IsNullOrEmpty(messageText))
+            {
+                return RedirectToAction("ConversationMessages", new { id = conversationId });
+            }
+
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var message = new Message
+            {
+                conversation_id = conversationId,
+                user_id = userId,
+                message_text = messageText,
+                sent_at = DateTime.Now
+            };
+
+            _context.Messages.Add(message);
+
+            var conversation = await _context.Conversations.FirstOrDefaultAsync(c => c.id == conversationId);
+            if (conversation != null)
+            {
+                conversation.status = "1";
+            }
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("ConversationMessages", new { id = conversationId, selected = conversationId });
         }
 
     }

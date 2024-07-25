@@ -31,7 +31,7 @@
     margin-right: 25px;
 }
 
-    .btn button {
+    .btn a {
         padding: 10px 20px;
         background: rgb(43, 255, 43);
         color: #fff;
@@ -41,11 +41,11 @@
         border-radius: 5px;
     }
 
-        .btn button i {
+        .btn a i {
             margin-right: 10px;
         }
 
-        .btn button:hover {
+        .btn a:hover {
             opacity: 0.9;
         }
 
@@ -86,4 +86,17 @@
 .mainBody .content-2 .list-content-parent {
     list-style: decimal;
     font-weight: 700;
+}
+
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
 }

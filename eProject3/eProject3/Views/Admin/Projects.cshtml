@@ -22,6 +22,14 @@
     <div class="add">
         <a asp-action="AddProject">Add</a>
     </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
     <div class="container">
         <table id="example" class="display" style="width:100%">
             <thead>

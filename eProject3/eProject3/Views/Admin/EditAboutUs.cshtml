@@ -1,6 +1,6 @@
-﻿@model eProject3.Controllers.AdminController.ProjectViewModel
+﻿@model eProject3.Controllers.AdminController.AboutUsViewModel
 
-<link rel="stylesheet" href="~/css/AddProject.css" />
+<link rel="stylesheet" href="~/css//EditAboutUs.css" />
 @* Css button back *@
 <style>
     .btn {
@@ -34,59 +34,43 @@
         margin: 10px;
     }
 </style>
-
-<a asp-action="Projects" class="btn btn-primary back-button">Back</a>
-
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>Edit Project</h1>
+        <h1>About Us</h1>
         <p style="color: gray; padding-left: 5px">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px">Edit Project</span>
+        <span style="padding-left: 4px">About Us</span>
     </div>
 </div>
+
+<div>
+    <a asp-action="@Model.SourcePage" asp-route-id="@Model.Id" class="btn btn-primary back-button">Back</a>
+</div>
+
 <div class="mainBody">
-    <div class="form-add-pro">
-        <form asp-action="EditProject" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="Id" value="@Model.Id" />
+    <div class="form-add-cate">
+        <form asp-action="EditAboutUs" method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="SourcePage" />
+            @for (int i = 0; i < Model.AboutUsChildren.Count; i++)
+            {
+                <label asp-for="AboutUsChildren[i].Title"></label>
+                <input asp-for="AboutUsChildren[i].Title" class="inputAddCate" id="Title" type="text" placeholder="Title..." />
+                <span style="color: red" asp-validation-for="AboutUsChildren[i].Title" class="text-danger"></span>
 
-            <label for="proName">Project name</label>
-            <input value="@(Model?.Name ?? string.Empty)" class="inputAddPro" type="text" id="proName" name="Name" placeholder="Project name...">
-            <span asp-validation-for="Name" class="text-danger" style="color: red"></span>
-
-            <label for="des">Description</label>
-            <input value="@(Model?.Description ?? string.Empty)" class="inputAddPro" type="text" id="des" name="Description" placeholder="Description..">
-
-            <label for="OwnerName">Owner Name</label>
-            <input value="@(Model?.Owner ?? string.Empty)" class="inputAddPro" type="text" id="OwnerName" name="Owner" placeholder="Owner Name..">
-
-            <label for="phone">Owner Telephone</label>
-            <input value="@(Model?.OwnerTel ?? string.Empty)" class="inputAddPro" type="text" id="phone" name="OwnerTel" placeholder="Owner Telephone..">
-            <span asp-validation-for="OwnerTel" class="text-danger" style="color: red"></span>
-
-            <label for="TimeStart">Time Start:</label>
-            <input value="@(Model?.TimeStart.ToString("yyyy-MM-dd") ?? string.Empty)" class="txtDate" type="date" id="TimeStart" name="TimeStart">
-            <span asp-validation-for="TimeStart" class="text-danger" style="color: red"></span>
-
-            <label for="TimeEnd">Time End:</label>
-            <input value="@(Model?.TimeEnd.ToString("yyyy-MM-dd") ?? string.Empty)" class="txtDate" type="date" id="TimeEnd" name="TimeEnd">
-            <span asp-validation-for="TimeEnd" class="text-danger" style="color: red"></span>
-            <br>
-            <label for="cate">Category Name</label>
-            <select class="dropPro" id="cate" name="CauseId">
-                @foreach (var item in ViewBag.Categories)
-                {
-                    <option value="@item.id" >@item.name</option>
-                }
-            </select>
+                <label asp-for="AboutUsChildren[i].Content"></label>
+                <input asp-for="AboutUsChildren[i].Content" class="inputAddCate" id="Description" type="text" placeholder="Description..." />
+                <span style="color: red" asp-validation-for="AboutUsChildren[i].Content" class="text-danger"></span>
+                
+                <input type="hidden" asp-for="AboutUsChildren[i].Id" />
+            }
 
             <div id="existingImages">
                 @foreach (var image in Model.ExistingImages)
                 {
                     <div class="existing-image">
-                        <img src="~/imageProjects/@image" alt="Image" style="width: 100px; height: 100px;" />
+                        <img src="~/imageAboutUs/@image" alt="Image" style="width: 100px; height: 100px;" />
                         <input type="hidden" name="ExistingImages" value="@image" />
                     </div>
                 }
@@ -99,11 +83,12 @@
                 </div>
             </div>
 
-            <input class="btnAddPro" type="submit" value="Save">
+            <input class="btnAddCate" type="submit" value="Save" />
         </form>
+
+        
     </div>
 </div>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
