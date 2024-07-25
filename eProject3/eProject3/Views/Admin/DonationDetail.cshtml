@@ -4,6 +4,40 @@
     int index = 1;
 }
 
+@* Css button back *@
+<style>
+    .btn {
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 0.25rem;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    .back-button {
+        margin: 10px;
+    }
+</style>
+
 <link rel="stylesheet" href="~/css/DonationDetail.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
@@ -17,6 +51,9 @@
         <span style="padding-left: 4px;">Donation</span>
     </div>
 </div>
+
+<a asp-action="DonationList" asp-route-causeId="@ViewBag.CauseId" class="btn btn-primary back-button">Back</a>
+
 <div class="mainContent">
     <div class="project-info">
         <div class="project-details">

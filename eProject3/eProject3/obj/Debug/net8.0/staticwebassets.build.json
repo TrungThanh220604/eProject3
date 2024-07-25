@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1zpqQTop4xOzZwlZbBmu0ytY/qvr+X0pZfQH9K78qQY=",
+  "Hash": "lmniQFklMFGqTpEZarFszP600p4h8W6npjoGDJ3Sd30=",
   "Source": "eProject3",
   "BasePath": "_content/eProject3",
   "Mode": "Default",
@@ -1537,6 +1537,25 @@
       "OriginalItemSpec": "wwwroot\\css\\Donations.css"
     },
     {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditAboutUs.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/EditAboutUs.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\EditAboutUs.css"
+    },
+    {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\EditCategory.css",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -1611,6 +1630,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\EditProject.css"
+    },
+    {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\HelpCenter.css",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "css/HelpCenter.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\HelpCenter.css"
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\css\\Login.css",
@@ -2468,6 +2506,25 @@
       "OriginalItemSpec": "wwwroot\\imageAboutUs\\1.png"
     },
     {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageAboutUs/1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageAboutUs\\1894632d-245f-42c4-ba2e-926b17353ff9_hoang2.jpg"
+    },
+    {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\2.png",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -2485,6 +2542,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imageAboutUs\\2.png"
+    },
+    {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\b881d6b1-8530-489c-ba04-21f09cf799aa_06.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageAboutUs/b881d6b1-8530-489c-ba04-21f09cf799aa_06.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageAboutUs\\b881d6b1-8530-489c-ba04-21f09cf799aa_06.jpg"
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
@@ -2620,25 +2696,6 @@
       "OriginalItemSpec": "wwwroot\\imageAboutUs\\Nam.jpg"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\OurMission.jpg",
-      "SourceId": "eProject3",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
-      "BasePath": "_content/eProject3",
-      "RelativePath": "imageAboutUs/OurMission.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imageAboutUs\\OurMission.jpg"
-    },
-    {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Screenshot 2024-07-02 092340.png",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -2715,12 +2772,12 @@
       "OriginalItemSpec": "wwwroot\\imageAboutUs\\To-chuc-su-kien-tu-thien.jpg"
     },
     {
-      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\WhatWeDo.png",
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\09567d23-7d7f-4abc-adb3-507afada30a4_05.jpg",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
       "BasePath": "_content/eProject3",
-      "RelativePath": "imageAboutUs/WhatWeDo.png",
+      "RelativePath": "imagePartners/09567d23-7d7f-4abc-adb3-507afada30a4_05.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2731,7 +2788,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imageAboutUs\\WhatWeDo.png"
+      "OriginalItemSpec": "wwwroot\\imagePartners\\09567d23-7d7f-4abc-adb3-507afada30a4_05.jpg"
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\7cb40a2b-7f16-4b90-a23f-baf1fd4fbe62_05.jpg",
@@ -2789,6 +2846,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagePartners\\ae8fbe0c-3c61-447c-95c8-555ea898c704_dvdh7.png"
+    },
+    {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\d44b1d7c-6dbe-4908-949a-d9b25f8f7d68_hoang2.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imagePartners/d44b1d7c-6dbe-4908-949a-d9b25f8f7d68_hoang2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagePartners\\d44b1d7c-6dbe-4908-949a-d9b25f8f7d68_hoang2.jpg"
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imagePartners\\e3bcad55-8706-41b7-a396-e1deafcd1731_dvdh2.png",
@@ -2905,6 +2981,25 @@
       "OriginalItemSpec": "wwwroot\\imagePartners\\pn4.png"
     },
     {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg"
+    },
+    {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6ee5694b-c7e2-42ed-b01d-489c2d221af9_hoang2.jpg",
       "SourceId": "eProject3",
       "SourceType": "Discovered",
@@ -2922,6 +3017,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imageProjects\\6ee5694b-c7e2-42ed-b01d-489c2d221af9_hoang2.jpg"
+    },
+    {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\770a6b8d-5545-4169-90a4-dc346a478d06_hoang2.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/770a6b8d-5545-4169-90a4-dc346a478d06_hoang2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\770a6b8d-5545-4169-90a4-dc346a478d06_hoang2.jpg"
+    },
+    {
+      "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\e469f3fa-ed9c-455a-8393-f4bcaae5365b_viem1.jpg",
+      "SourceId": "eProject3",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\",
+      "BasePath": "_content/eProject3",
+      "RelativePath": "imageProjects/e469f3fa-ed9c-455a-8393-f4bcaae5365b_viem1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imageProjects\\e469f3fa-ed9c-455a-8393-f4bcaae5365b_viem1.jpg"
     },
     {
       "Identity": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\eacc72e0-0621-4c0f-94c6-f528afd7efae_viem1.jpg",

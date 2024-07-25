@@ -1,5 +1,5 @@
 ﻿@using eProject3.Models.Entities
-@model List<User>
+@model List<eProject3.Controllers.AdminController.UserRoleViewModel>
 @{
     int index = 1;
 }
@@ -28,6 +28,7 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Phone</th>
+                    <th>Role</th>
                 </tr>
             </thead>
             <tbody>
@@ -35,11 +36,12 @@
                 {
                     <tr>
                         <td>@index</td>
-                        <td>@item.first_name</td>
-                        <td>@item.last_name</td>
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
                         <td>@item.Email</td>
-                        <td>@item.address</td>
-                        <td>@item.phone_number</td>
+                        <td>@item.Address</td>
+                        <td>@item.PhoneNumber</td>
+                        <td>@item.Roles</td>
                     </tr>
                     index++;
                 }
@@ -52,6 +54,7 @@
                     <th>Email</th>
                     <th>Address</th>
                     <th>Phone</th>
+                    <th>Role</th>
                 </tr>
             </tfoot>
         </table>
