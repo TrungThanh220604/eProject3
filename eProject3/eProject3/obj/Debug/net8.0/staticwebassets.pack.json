@@ -221,6 +221,14 @@
       "PackagePath": "staticwebassets\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg"
     },
     {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\d2181632-a1a2-45cf-b89f-b69f532e7d56_viem1.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\d2181632-a1a2-45cf-b89f-b69f532e7d56_viem1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\d2ede632-b959-499e-8fac-d744ee0d6093_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\d2ede632-b959-499e-8fac-d744ee0d6093_hoang2.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\dvdh3.png",
       "PackagePath": "staticwebassets\\imageAboutUs\\dvdh3.png"
     },
@@ -281,6 +289,14 @@
       "PackagePath": "staticwebassets\\imagePartners\\pn4.png"
     },
     {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\3df888a1-a008-4af2-967b-95a8b791c56a_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\3df888a1-a008-4af2-967b-95a8b791c56a_hoang2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\3ed25b53-56ed-47ef-9a06-5b4fc64bef8d_viem1.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\3ed25b53-56ed-47ef-9a06-5b4fc64bef8d_viem1.jpg"
+    },
+    {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg"
     },
@@ -295,6 +311,10 @@
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\Hoang.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\b79a2273-c8c9-4969-8d4a-f35f08e27445_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\b79a2273-c8c9-4969-8d4a-f35f08e27445_hoang2.jpg"
     },
     {
       "Id": "C:\\Users\\ASUS\\OneDrive\\Máy tính\\My_Check\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\e469f3fa-ed9c-455a-8393-f4bcaae5365b_viem1.jpg",

@@ -145,9 +145,7 @@
             event.preventDefault();
             addFileInput();
         });
-    });
 
-    document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('.btnXoaFile').forEach(button => {
             button.addEventListener('click', function () {
                 const imageId = this.getAttribute('data-id');
@@ -161,7 +159,8 @@
                     })
                         .then(response => {
                             if (response.ok) {
-                                this.parentElement.remove();
+                                // Reload the page after successful deletion
+                                window.location.reload();
                             } else {
                                 alert('Có lỗi xảy ra khi xóa ảnh.');
                             }
@@ -170,5 +169,6 @@
             });
         });
     });
+
 
 </script>
