@@ -189,6 +189,10 @@
       "PackagePath": "staticwebassets\\imageAboutUs\\2.png"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\83868f87-37b9-4da8-a078-4bc746cad598_05.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\83868f87-37b9-4da8-a078-4bc746cad598_05.jpg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\Duc.jpg",
       "PackagePath": "staticwebassets\\imageAboutUs\\Duc.jpg"
     },
@@ -219,6 +223,10 @@
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg",
       "PackagePath": "staticwebassets\\imageAboutUs\\cach-to-chuc-chuong-trinh-tu-thien.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\cdb48a22-e5f3-4fc1-a6d8-5a755333500f_06.jpg",
+      "PackagePath": "staticwebassets\\imageAboutUs\\cdb48a22-e5f3-4fc1-a6d8-5a755333500f_06.jpg"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageAboutUs\\dvdh3.png",
@@ -281,6 +289,14 @@
       "PackagePath": "staticwebassets\\imagePartners\\pn4.png"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\3df888a1-a008-4af2-967b-95a8b791c56a_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\3df888a1-a008-4af2-967b-95a8b791c56a_hoang2.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\3ed25b53-56ed-47ef-9a06-5b4fc64bef8d_viem1.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\3ed25b53-56ed-47ef-9a06-5b4fc64bef8d_viem1.jpg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\6988109e-017b-4ca6-85c4-7b98edc48c09_hoang2.jpg"
     },
@@ -293,8 +309,24 @@
       "PackagePath": "staticwebassets\\imageProjects\\770a6b8d-5545-4169-90a4-dc346a478d06_hoang2.jpg"
     },
     {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\893fadf6-21ea-42e7-9641-468e6cbdbe82_05.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\893fadf6-21ea-42e7-9641-468e6cbdbe82_05.jpg"
+    },
+    {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\Hoang.jpg",
       "PackagePath": "staticwebassets\\imageProjects\\Hoang.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\b2188794-867d-483d-9d34-6e085445fcf6_06.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\b2188794-867d-483d-9d34-6e085445fcf6_06.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\b79a2273-c8c9-4969-8d4a-f35f08e27445_hoang2.jpg",
+      "PackagePath": "staticwebassets\\imageProjects\\b79a2273-c8c9-4969-8d4a-f35f08e27445_hoang2.jpg"
+    },
+    {
+      "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\bc996857-ca5f-4c9c-bc3c-e28634c65f3d_giay1.png",
+      "PackagePath": "staticwebassets\\imageProjects\\bc996857-ca5f-4c9c-bc3c-e28634c65f3d_giay1.png"
     },
     {
       "Id": "D:\\eProject3\\eProject3\\eProject3\\wwwroot\\imageProjects\\e469f3fa-ed9c-455a-8393-f4bcaae5365b_viem1.jpg",

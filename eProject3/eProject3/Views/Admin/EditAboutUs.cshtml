@@ -66,22 +66,21 @@
                 <input type="hidden" asp-for="AboutUsChildren[i].Id" />
             }
 
-            <div id="existingImages">
-                @foreach (var image in Model.ExistingImages)
-                {
-                    <div class="existing-image">
-                        <img src="~/imageAboutUs/@image" alt="Image" style="width: 100px; height: 100px;" />
-                        <input type="hidden" name="ExistingImages" value="@image" />
-                    </div>
-                }
-            </div>
-
-            <div id="fileInputsContainer">
-                <div class="file-input-container">
-                    <input class="image" type="file" name="Images">
-                    <button type="button" class="btnThemFile">Thêm file ảnh</button>
+            @if (Model.AboutUsImages != null && Model.AboutUsImages.Count > 0)
+            {
+                <div>
+                    <h3>About Us Images</h3>
+                    @for (int i = 0; i < Model.AboutUsImages.Count; i++)
+                    {
+                        <div>
+                            <img src="~/imageAboutUs/@Model.AboutUsImages[i].Image" alt="Image" style="max-width: 200px; max-height: 200px;" />
+                            <input type="file" asp-for="AboutUsImages[i].NewImage" />
+                            <input type="hidden" asp-for="AboutUsImages[i].Id" />
+                        </div>
+                    }
                 </div>
-            </div>
+            }
+            
 
             <input class="btnAddCate" type="submit" value="Save" />
         </form>
@@ -90,36 +89,3 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const fileInputsContainer = document.getElementById('fileInputsContainer');
-
-        function addFileInput() {
-            const newFileInput = document.createElement('input');
-            newFileInput.setAttribute('type', 'file');
-            newFileInput.setAttribute('class', 'image');
-            newFileInput.setAttribute('name', 'Images');
-
-            const deleteButton = document.createElement('button');
-            deleteButton.type = 'button';
-            deleteButton.textContent = 'Xóa';
-            deleteButton.classList.add('btnXoaFile');
-
-            deleteButton.addEventListener('click', function () {
-                newInputContainer.remove();
-            });
-
-            const newInputContainer = document.createElement('div');
-            newInputContainer.classList.add('file-input-container');
-            newInputContainer.appendChild(newFileInput);
-            newInputContainer.appendChild(deleteButton);
-
-            fileInputsContainer.appendChild(newInputContainer);
-        }
-
-        document.querySelector('.btnThemFile').addEventListener('click', function (event) {
-            event.preventDefault();
-            addFileInput();
-        });
-    });
-</script>

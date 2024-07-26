@@ -468,33 +468,7 @@ namespace eProject3.Controllers
             return View();
         }
 
-        public class ProjectViewModel
-        {
-            public int? Id { get; set; }
-
-            [Required(ErrorMessage = "Project name is required.")]
-            public string Name { get; set; }
-
-            public string Description { get; set; }
-
-            public string Owner { get; set; }
-
-            [Phone(ErrorMessage = "Invalid phone number.")]
-            public string OwnerTel { get; set; }
-
-            [Required(ErrorMessage = "Time Start is required.")]
-            public DateTime TimeStart { get; set; }
-
-            [Required(ErrorMessage = "Time End is required.")]
-            public DateTime TimeEnd { get; set; }
-
-            [Required(ErrorMessage = "Category is required.")]
-            public int CauseId { get; set; }
-
-            public IFormFileCollection? Images { get; set; }
-
-            public List<string>? ExistingImages { get; set; }
-        }
+       
 
         [HttpPost]
         public async Task<IActionResult> AddProject(ProjectViewModel model)
@@ -565,21 +539,6 @@ namespace eProject3.Controllers
             return View(model);
         }
 
-        public async Task<IActionResult> ProjectDetail(int proId)
-        {
-            if (proId == null)
-            {
-                return NotFound();
-            }
-
-            var project = await _context.Galleries.Where(g => g.project_id == proId).ToListAsync();
-            if (project == null)
-            {
-                return NotFound();
-            }
-            return View(project);
-        }
-
         // Action to delete project
         [HttpPost]
         public async Task<IActionResult> DeleteProject(int id)
@@ -633,11 +592,50 @@ namespace eProject3.Controllers
                 TimeStart = project.timestart,
                 TimeEnd = project.timeend,
                 CauseId = project.cause_id,
-                ExistingImages = project.Galleries.Select(g => g.image).ToList()
+                ProjectImages = project.Galleries.Select(i => new GalleryViewModel
+                {
+                    Id = i.id,
+                    Image = i.image
+                }).ToList()
             };
 
             ViewBag.Categories = _context.Causes.ToList();
             return View(model);
+        }
+
+        public class ProjectViewModel
+        {
+            public int? Id { get; set; }
+
+            [Required(ErrorMessage = "Project name is required.")]
+            public string Name { get; set; }
+
+            public string Description { get; set; }
+
+            public string Owner { get; set; }
+
+            [Phone(ErrorMessage = "Invalid phone number.")]
+            public string OwnerTel { get; set; }
+
+            [Required(ErrorMessage = "Time Start is required.")]
+            public DateTime TimeStart { get; set; }
+
+            [Required(ErrorMessage = "Time End is required.")]
+            public DateTime TimeEnd { get; set; }
+
+            [Required(ErrorMessage = "Category is required.")]
+            public int CauseId { get; set; }
+
+            public IFormFileCollection? Images { get; set; }
+
+            public List<GalleryViewModel>? ProjectImages { get; set; }
+        }
+
+        public class GalleryViewModel
+        {
+            public int? Id { get; set; }
+            public string? Image { get; set; }
+            public IFormFile? NewImage { get; set; }
         }
 
         [HttpPost]
@@ -656,7 +654,6 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
 
             project.name = model.Name;
             project.description = model.Description;
@@ -682,20 +679,9 @@ namespace eProject3.Controllers
 
             _context.Projects.Update(project);
 
+            //add image
             if (model.Images != null && model.Images.Count > 0)
             {
-                var existingImages = _context.Galleries.Where(g => g.project_id == project.id).ToList();
-                foreach (var image in existingImages)
-                {
-                    var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", image.image);
-                    if (System.IO.File.Exists(filePath))
-                    {
-                        System.IO.File.Delete(filePath);
-                    }
-                }
-
-                _context.Galleries.RemoveRange(existingImages);
-
                 foreach (var formFile in model.Images)
                 {
                     if (formFile.Length > 0)
@@ -717,14 +703,71 @@ namespace eProject3.Controllers
                     }
                 }
             }
-            else
+
+            //edit image
+            if (model.ProjectImages != null)
             {
-                // Không làm gì thêm về hình ảnh
+                foreach (var imageViewModel in model.ProjectImages)
+                {
+                    var existingImage = project.Galleries.FirstOrDefault(i => i.id == imageViewModel.Id);
+                    if (existingImage != null)
+                    {
+                        if (imageViewModel.NewImage != null)
+                        {
+                            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects");
+
+                            if (!Directory.Exists(uploadPath))
+                            {
+                                Directory.CreateDirectory(uploadPath);
+                            }
+
+                            string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageViewModel.NewImage.FileName);
+                            string filePath = Path.Combine(uploadPath, uniqueFileName);
+
+                            using (var fileStream = new FileStream(filePath, FileMode.Create))
+                            {
+                                await imageViewModel.NewImage.CopyToAsync(fileStream);
+                            }
+
+                            if (!string.IsNullOrEmpty(existingImage.image))
+                            {
+                                var oldFilePath = Path.Combine(uploadPath, existingImage.image);
+                                if (System.IO.File.Exists(oldFilePath))
+                                {
+                                    System.IO.File.Delete(oldFilePath);
+                                }
+                            }
+
+                            existingImage.image = uniqueFileName;
+                        }
+                    }
+                }
             }
 
             await _context.SaveChangesAsync();
             TempData["SuccessMessage"] = "Update project successfully!";
             return RedirectToAction("Projects");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteImage(int id)
+        {
+            var image = await _context.Galleries.FindAsync(id);
+            if (image == null)
+            {
+                return NotFound();
+            }
+
+            var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageProjects", image.image);
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+
+            _context.Galleries.Remove(image);
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }
 
         //AboutUs
@@ -844,10 +887,15 @@ namespace eProject3.Controllers
             public int? Id { get; set; }
             public string? Name { get; set; }
             public List<AboutUsChildViewModel>? AboutUsChildren { get; set; }
-            public IFormFileCollection? Images { get; set; }
-            public List<string>? ExistingImages { get; set; } = new List<string>();
-
             public string? SourcePage { get; set; }
+            public List<AboutUsImageViewModel>? AboutUsImages { get; set; }
+        }
+
+        public class AboutUsImageViewModel
+        {
+            public int? Id { get; set; }
+            public string? Image { get; set; }
+            public IFormFile? NewImage { get; set; }
         }
 
         public class AboutUsChildViewModel
@@ -883,8 +931,13 @@ namespace eProject3.Controllers
                     Title = c.title,
                     Content = c.content
                 }).ToList(),
-                ExistingImages = aboutUs.AboutUsImages.Select(g => g.image).ToList(),
-                SourcePage = sourcePage
+                SourcePage = sourcePage,
+
+                AboutUsImages = aboutUs.AboutUsImages.Select(i => new AboutUsImageViewModel
+                {
+                    Id = i.id,
+                    Image = i.image
+                }).ToList()
             };
 
             return View(viewModel);
@@ -926,43 +979,44 @@ namespace eProject3.Controllers
                         }
                     }
 
-                    if (viewModel.Images != null && viewModel.Images.Count > 0)
+                    // Edit image
+                    if (viewModel.AboutUsImages != null)
                     {
-                        var existingImages = _context.AboutUsImages.Where(a => a.about_id == aboutUs.id).ToList();
-                        foreach (var image in existingImages)
+                        foreach (var imageViewModel in viewModel.AboutUsImages)
                         {
-                            var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageAboutUs", image.image);
-                            if (System.IO.File.Exists(filePath))
+                            var existingImage = aboutUs.AboutUsImages.FirstOrDefault(i => i.id == imageViewModel.Id);
+                            if (existingImage != null)
                             {
-                                System.IO.File.Delete(filePath);
-                            }
-                        }
-                        _context.AboutUsImages.RemoveRange(existingImages);
-
-                        foreach (var formFile in viewModel.Images)
-                        {
-                            if (formFile.Length > 0)
-                            {
-                                string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(formFile.FileName);
-                                var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "imageAboutUs", uniqueFileName);
-                                using (var stream = new FileStream(filePath, FileMode.Create))
+                                if (imageViewModel.NewImage != null)
                                 {
-                                    await formFile.CopyToAsync(stream);
+                                    string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "imageAboutUs");
+
+                                    if (!Directory.Exists(uploadPath))
+                                    {
+                                        Directory.CreateDirectory(uploadPath);
+                                    }
+
+                                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + Path.GetFileName(imageViewModel.NewImage.FileName);
+                                    string filePath = Path.Combine(uploadPath, uniqueFileName);
+
+                                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                                    {
+                                        await imageViewModel.NewImage.CopyToAsync(fileStream);
+                                    }
+
+                                    if (!string.IsNullOrEmpty(existingImage.image))
+                                    {
+                                        var oldFilePath = Path.Combine(uploadPath, existingImage.image);
+                                        if (System.IO.File.Exists(oldFilePath))
+                                        {
+                                            System.IO.File.Delete(oldFilePath);
+                                        }
+                                    }
+
+                                    existingImage.image = uniqueFileName;
                                 }
-
-                                var aboutUsImage = new AboutUsImage
-                                {
-                                    image = uniqueFileName,
-                                    about_id = aboutUs.id
-                                };
-
-                                _context.AboutUsImages.Add(aboutUsImage);
                             }
                         }
-                    }
-                    else
-                    {
-                        // Không làm gì thêm về hình ảnh
                     }
 
                     await _context.SaveChangesAsync();
