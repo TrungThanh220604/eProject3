@@ -3,6 +3,7 @@
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.412);
+    width: 90%;
 }
 
     .mainBody h1 {
@@ -30,6 +31,7 @@
     display: flex;
     justify-content: right;
     margin-right: 25px;
+    text-decoration: none;
 }
 
     .btn a {
@@ -40,6 +42,7 @@
         font-weight: 600;
         border: none;
         border-radius: 5px;
+        text-decoration: none;
     }
 
         .btn a i {

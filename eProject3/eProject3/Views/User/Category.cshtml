@@ -1,0 +1,56 @@
+﻿@{
+    ViewData["Title"] = "Category";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserCategory.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/Project</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="category">
+        <div class="input-search">
+            <!-- <p class="searchTitle">Search</p> -->
+        </div>
+        <div class="list-categories">
+            <a href="@Url.Action("Category", new { id = (int?)null })">All</a>
+            @foreach (var cate in ViewBag.Category)
+            {
+                <a href="@Url.Action("Category", new { id = cate.id })">@cate.name</a>
+            }
+        </div>
+    </div>
+    <div class="containerProducts">
+        <h1>@ViewBag.CategoryTitle</h1>
+        <div class="products">
+            @if (ViewBag.Projects != null)
+            {
+                foreach (var project in ViewBag.Projects as List<eProject3.Models.Entities.Project>)
+                {
+                    <a href="@Url.Action("ProductDetail", "User", new { id = project.id })" class="product-card" >
+                        <div class="image">
+                            <img src="@Url.Content("~/imageProjects/" + (project.Galleries?.FirstOrDefault()?.image ?? "default.jpeg"))" alt="...">
+                            <span class="label">@project.Cause?.name</span>
+                        </div>
+                        <div class="details">
+                            <p class="title">@project.owner</p>
+                            <h3>@project.name</h3>
+                            <div class="target">
+                                <p>Time start: <span class="time">@project.timestart.ToString("dd-MM-yyyy")</span></p>
+                                <p>Time end: <span class="time">@project.timeend.ToString("dd-MM-yyyy")</span></p>
+                            </div>
+                        </div>
+                    </a>
+                }
+            }
+            else
+            {
+                <p>No projects found</p>
+            }
+        </div>
+        <ul class="listPage">
+            <!-- Pagination will be handled in the controller and passed to the view if needed -->
+        </ul>
+    </div>
+</div>

@@ -16,12 +16,12 @@
 </style>
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>DASHBOARD</h1>
+        <h1>OUR TEAM</h1>
         <p style="color: gray; padding-left: 5px;">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px;">Dashboard</span>
+        <span style="padding-left: 4px;">Our Team</span>
     </div>
 </div>
 
@@ -35,16 +35,25 @@
 <div class="mainBody">
     <h1>Founding team</h1>
     <div class="teamMember">
-        @foreach (var child in Model.AboutUsImages)
+        @for (int i = 0; i < ViewBag.AboutUs.Count - 1; i++)
         {
             <div class="teamMember-item">
-                <img src="~/imageAboutUs/@child.image" alt="Image" />
-                <p>Member</p>
+                @if (ViewBag.AboutUsImage != null && i < ViewBag.AboutUsImage.Count && ViewBag.AboutUsImage[i] != null)
+                {
+                    <img src="~/imageAboutUs/@ViewBag.AboutUsImage[i].image" alt="">
+                }
+                <p>@ViewBag.AboutUs[i].content</p>
             </div>
         }
-        
+    </div>
+    <h1>Legal advisor</h1>
+    <div class="teamMember">
+        <div class="teamMember-item">
+            <img src="~/imageAboutUs/@ViewBag.AboutUsImage[ViewBag.AboutUs.Count-1].image" alt="">
+            <p>@ViewBag.AboutUs[ViewBag.AboutUs.Count - 1].content</p>
+        </div>
     </div>
 </div>
 <div class="btn">
-    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs3" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
+    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs3" class="actionBtn editBtn" style="text-decoration: none"><i class="fas fa-edit"></i>Edit</a>
 </div>

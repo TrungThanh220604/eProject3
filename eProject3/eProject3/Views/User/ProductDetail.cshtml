@@ -1,0 +1,186 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Project Detail";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+    string emailHint = "Please use an email address ending with @gmail.com";
+}
+<link rel="stylesheet" href="~/css/UserProductDetail.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/UserLayout.css" asp-append-version="true" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"  />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"  />
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' >
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/Project/</span><span>@ViewBag.Projects.name</span>
+</div>
+<!--  -->
+<div class="main2">
+    <div class="productInf product-card">
+        <div class="image">
+            <img src="~/imageProjects/@ViewBag.Galleries[0].image" alt="...">
+            <span class="label">@ViewBag.Projects.Cause?.name</span>
+        </div>
+        <div class="details">
+            <h3>@ViewBag.Projects.name </h3>
+            <div class="logoPartner">
+                <div style="display: flex; align-items: center;">
+                    <img src="~/image/dvdh3.png" alt=""
+                         style="width: 40px; height: 40px; border-radius: 50%; margin-right: 10px;">
+                    <p class="title">@ViewBag.Projects.owner</p>
+                </div>
+                <span class="status-label still-working">@ViewBag.Projects.status</span>
+            </div>
+            <div class="flexBox">
+                <p class="target">Owner Tel: </p>
+                <p class="tel">@ViewBag.Projects.ownerTel</p>
+            </div>
+            <div class="flexBox">
+                <p class="target">Achieved</p>
+                <p class="amount">@ViewBag.TotalAmount $</p>
+            </div>
+            <div class="time">
+                <p style="display: flex; justify-content: space-between;">Time Start: <span>@ViewBag.Projects.timestart.ToString("dd-MM-yyyy")</span></p>
+                <p style="display: flex; justify-content: space-between;">Time End: <span>@ViewBag.Projects.timeend.ToString("dd-MM-yyyy")</span></p>
+            </div>
+            <!-- <div class="scale-full">
+                <div class="scale-real" id="scale-real"></div>
+            </div> -->
+            <!-- <div style="display: flex; justify-content: flex-end;">
+                <span class="status-label still-working">Still Working</span>
+            </div> -->
+            <div class="btn">
+                <button class="btnICon" id="btnICon" data-project-id="@ViewBag.Projects.id">
+                    <i class='bx bx-heart' style="@(ViewBag.IsLikedByCurrentUser ? "display: none;" : "display: inline;")"></i>
+                    <i class='bx bxs-heart' style="@(ViewBag.IsLikedByCurrentUser ? "display: inline;" : "display: none;")"></i>
+                </button>
+                <a asp-controller="User" asp-action="Payment" asp-route-id="@ViewBag.Projects.id"><button class="btnText">Support now</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="proContent">
+        <div class="btnBar">
+            <button class="btnContent active">Content</button>
+            <button class="btnSup">Support list</button>
+        </div>
+        <div class="content-main">
+            <div class="Content active">
+                <p>
+                    @ViewBag.Projects.description
+                </p>
+            </div>
+            <div class="supportList">
+                <table id="example" class="display" style="width:100%; align-items:center; justify-content: center">
+                    <thead>
+                        <tr style="align-items:center; justify-content: center">
+                            <th>Name</th>
+                            <th>Amount</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var amount in ViewBag.Donations)
+                        {
+                            <tr style="align-items:center; justify-content: center">
+                                <td style="align-items:center; justify-content: center">@(amount.User != null ? amount.User.UserName : "Unknown User")</td>
+                                <td style="align-items:center; justify-content: center">@amount.amount $</td>
+                                <td style="align-items:center; justify-content: center">
+                                    @amount.message
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="contentInf">
+                <div class="slider-container">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper main">
+                            @for (int i = 0; i < ViewBag.Projects.Galleries.Count; i++)
+                            {
+                                <div class="swiper-slide">
+                                    <img src="~/imageProjects/@ViewBag.Galleries[i].image" alt="Image" />
+                                </div>
+                            }
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper mySwiper thumbnail-slider">
+                        <div class="swiper-wrapper">
+                            @for (int i = 0; i < ViewBag.Projects.Galleries.Count; i++)
+                            {
+                                <div class="swiper-slide">
+                                    <img src="~/imageProjects/@ViewBag.Galleries[i].image" alt="Image" />
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="share-link">
+        <p style="font-weight: 700;">Share project</p>
+        <div class="btnShare">
+            <a href="https://www.facebook.com" style="background: rgb(45, 45, 255);">
+                <i class='bx bxl-facebook-circle'></i>
+                <span>Facebook</span>
+            </a>
+            <a class="invite-btn" style="background: rgb(6, 178, 1);">
+                <i class='bx bxs-share-alt'></i>
+                <span>Invite</span>
+            </a>
+            <div class="overlay" id="overlay"></div>
+            <div class="inviteBox" id="inviteBox">
+                <form asp-controller="User" asp-action="Send" method="post">
+                    <input type="hidden" name="projectId" value="@ViewBag.Projects.id" />
+                    <div>
+                        <p for="email">Email of the person you want to invite</p>
+                        <input type="email" id="To" name="To" placeholder="@emailHint" required>
+                    </div>
+                    <button style="cursor:pointer" type="submit">Invite</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="containerProducts">
+        <h1 style="margin: 20px;">Other projects</h1>
+        <div class="products">
+            @foreach (var otherProject in ViewBag.OtherProjects)
+            {
+                var galleryList = otherProject.Galleries as IEnumerable<eProject3.Models.Entities.Gallery>;
+                var firstGallery = galleryList?.FirstOrDefault();
+                <a href="@Url.Action("ProductDetail", new { id = otherProject.id })" class=" product-card2">
+                    <div class="image">
+                        @if (otherProject.Galleries != null)
+                        {
+                            <img src="~/imageProjects/@firstGallery.image" alt="...">
+                        }
+                        else
+                        {
+                            <img src="~/imageProjects/default.jpeg" alt="Default Image">
+                        }
+                        <span class="label">@otherProject.Cause?.name</span>
+                    </div>
+                    <div class="details">
+                        <p class="title">@otherProject.owner</p>
+                        <h3>@otherProject.name</h3>
+                        <div class="target">
+                            <p>Time start: <span class="time">@otherProject.timestart.ToString("dd-MM-yyyy")</span></p>
+                            <p>Time end: <span class="time">@otherProject.timeend.ToString("dd-MM-yyyy")</span></p>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+        <a asp-controller="User" asp-action="Category"><button class="see-more">See more</button></a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" ></script>
+<script src="~/js/UserProductDetail.js" asp-append-version="true"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>

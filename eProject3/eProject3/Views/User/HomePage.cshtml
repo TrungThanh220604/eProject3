@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Home Page";
     Layout = "~/Views/Shared/LayoutUser.cshtml";
+    var projects = ViewBag.Projects as List<ProjectViewModel>;
 }
 
 <link rel="stylesheet" href="~/css/UserLayout.css" asp-append-version="true" />
@@ -34,96 +35,41 @@
     <h1>The project is raising funds for charity</h1>
     <p style="margin-bottom: 20px;">Please choose to accompany the project that interests you</p>
     <div class="products">
-        <a href="../view/productDetail.html" class="product-card">
-            <div class="image">
-                <img src="~/image/pro1.jpg" alt="...">
-                <span class="label">Children</span>
-            </div>
-            <div class="details">
-                <p class="title">For Vietnamese Stature Foundation</p>
-                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
-                <!-- <div class="scale-full">
-                    <div class="scale-real" id="scale-real"></div>
-                </div> -->
-                <div style="display: flex; justify-content: space-between;">
-                    <p class="amount">1,700,540 vnd</p>
-                    <!-- <p class="progress">7.1%</p> -->
-                </div>
-                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
-                <div class="target">
-                    <p>Time start: <span class="time">01-01-2000</span></p>
-                    <p>Time end: <span class="time">01-01-2000</span></p>
-                </div>
-            </div>
-        </a>
-        <a href="../view/productDetail.html" class="product-card">
-            <div class="image">
-                <img src="~/image/pro2.png" alt="...">
-                <span class="label">Children</span>
-            </div>
-            <div class="details">
-                <p class="title">For Vietnamese Stature Foundation</p>
-                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
-                <!-- <div class="scale-full">
-                    <div class="scale-real" id="scale-real"></div>
-                </div> -->
-                <div style="display: flex; justify-content: space-between;">
-                    <p class="amount">1,700,540 vnd</p>
-                    <!-- <p class="progress">50.1%</p> -->
-                </div>
-                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
-                <div class="target">
-                    <p>Time start: <span class="time">01-01-2000</span></p>
-                    <p>Time end: <span class="time">01-01-2000</span></p>
-                </div>
-            </div>
-        </a>
-        <a href="../view/productDetail.html" class="product-card">
-            <div class="image">
-                <img src="~/image/pro3.jpg" alt="...">
-                <span class="label">Children</span>
-            </div>
-            <div class="details">
-                <p class="title">For Vietnamese Stature Foundation</p>
-                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
-                <!-- <div class="scale-full">
-                    <div class="scale-real" id="scale-real"></div>
-                </div> -->
-                <div style="display: flex; justify-content: space-between;">
-                    <p class="amount">1,700,540 vnd</p>
-                    <!-- <p class="progress">90.1%</p> -->
-                </div>
-                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
-                <div class="target">
-                    <p>Time start: <span class="time">01-01-2000</span></p>
-                    <p>Time end: <span class="time">01-01-2000</span></p>
-                </div>
-            </div>
-        </a>
-        <a href="../view/productDetail.html" class="product-card">
-            <div class="image">
-                <img src="~/image/vung-cao-5-12320354.jpg" alt="...">
-                <span class="label">Children</span>
-            </div>
-            <div class="details">
-                <p class="title">For Vietnamese Stature Foundation</p>
-                <h3>Bringing a medical miracle to baby Manh Hung's heart</h3>
-                <!-- <div class="scale-full">
-                    <div class="scale-real" id="scale-real"></div>
-                </div> -->
-                <div style="display: flex; justify-content: space-between;">
-                    <p class="amount">1,700,540 vnd</p>
-                    <!-- <p class="progress">7.1%</p> -->
-                </div>
-                <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
-                <div class="target">
-                    <p>Time start: <span class="time">01-01-2000</span></p>
-                    <p>Time end: <span class="time">01-01-2000</span></p>
-                </div>
-            </div>
-        </a>
+        @if (ViewBag.Projects != null)
+        {
+            foreach( var project in projects)
+            {
+                var firstImage = project.Galleries?.FirstOrDefault()?.image;
+                <a href="@Url.Action("ProductDetail",  "User",new { id = project.id })" class="product-card">
+                    <div class="image">
+                        <img src="~/imageProjects/@(firstImage ?? "default.jpeg")" alt="...">
+                        <span class="label">@project.Cause?.name</span>
+                    </div>
+                    <div class="details">
+                        <p class="title">@project.owner</p>
+                        <h3>@project.name</h3>
+                        <!-- <div class="scale-full">
+                            <div class="scale-real" id="scale-real"></div>
+                        </div> -->
+                        <div style="display: flex; justify-content: space-between;">
+                            <p class="amount">@project.TotalAmount $</p>
+                            <!-- <p class="progress">7.1%</p> -->
+                        </div>
+                        <!-- <p class="target">With target <br> 15,000,000 vnd</p> -->
+                        <div class="target">
+                            <p>Time start: <span class="time">@project.timestart.ToString("dd-MM-yyyy")</span></p>
+                            <p>Time end: <span class="time">@project.timeend.ToString("dd-MM-yyyy")</span></p>
+                        </div>
+                    </div>
+                </a>
+            }
+        }
+        else
+        {
+            <p>No project found</p>
+        }
     </div>
-    <a href="../view/category.html"><button class="see-more">See more</button></a>
+    <a asp-controller="User" asp-action="Category"><button class="see-more">See more</button></a>
 </div>
 
 <div class="containerNumber">
@@ -198,24 +144,24 @@
 <div class="contactUs">
     <h2 style="font-size: 30px; font-weight: 900; text-align: center; padding-bottom: 20px;">Contact Us</h2>
     <div class="contactUs-content">
-        <form action="">
+        <form asp-action="AddContactUs" method="post">
             <div style="display: flex;">
                 <div class="fullname" style="padding-right: 20px;">
                     <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname">
+                    <input type="text" id="fullname" name="name" required>
                 </div>
                 <div class="email">
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email" required>
                 </div>
             </div>
             <div class="phone">
                 <label for="phone">Phone</label>
-                <input type="text" id="phone">
+                <input type="text" id="phone" name="phone"  required>
             </div>
             <div class="message">
                 <label for="message">Message</label>
-                <textarea name="" id="message"></textarea>
+                <textarea  id="message" name="Message"  required></textarea>
             </div>
             <button type="submit">SEND MESSAGE</button>
         </form>
@@ -224,17 +170,15 @@
             <ul style="line-height: 35px;">
                 <li>
                     <i class="icon-color fa-solid fa-location-dot"
-                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>175 Tay Son, Trung Liet, Dong
-                    Da, Ha
-                    Noi
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[0].description
                 </li>
                 <li>
                     <i class="icon-color fa-solid fa-phone"
-                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>(+84) 33579920
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[1].description
                 </li>
                 <li>
                     <i class="icon-color fa-regular fa-envelope"
-                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>ThuyLoi@e.tlu.edu.vn
+                       style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[2].description
                 </li>
             </ul>
         </div>
@@ -242,3 +186,10 @@
 
 </div>
 <script src="~/js/UserLayOut.js" asp-append-version="true"></script>
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        alert('@TempData["SuccessMessage"]');
+    </script>
+}
+

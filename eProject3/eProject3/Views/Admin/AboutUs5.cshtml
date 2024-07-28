@@ -17,12 +17,12 @@
 </style>
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>DASHBOARD</h1>
+        <h1>OUR ACHIEVEMENTS</h1>
         <p style="color: gray; padding-left: 5px;">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px;">Dashboard</span>
+        <span style="padding-left: 4px;">Our Achievements</span>
     </div>
 </div>
 
@@ -33,10 +33,15 @@
     </div>
 }
 
-<div class="mainBody">
+<div class="mainBody" style="margin-bottom: 30px">
     <h1>Our achievements</h1>
     <div class="content">
-       
+        <p class="content-text">
+            At NGO.vn, we are proud of our achievements in our journey of supporting the
+            community and bringing hope to people in difficult circumstances. The memorable milestones below are
+            testament to our continuous efforts and the trust of the community.
+        </p>
+        <img src="~/imageAboutUs/@ViewBag.AboutUsImage[0].image"  style="width: 100%"/>
         <h5>Awards and Recognition</h5>
         <ul class="list-text">
             @foreach (var child in Model.AboutUsChilds)
@@ -53,5 +58,5 @@
     </div>
 </div>
 <div class="btn">
-    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs5" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
+    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs5" class="actionBtn editBtn" style="text-decoration: none"><i class="fas fa-edit"></i>Edit</a>
 </div>

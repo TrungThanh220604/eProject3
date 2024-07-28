@@ -19,7 +19,7 @@
 </div>
 <div class="mainContent">
     <div class="add">
-        <a asp-action="AddPartners">Add</a>
+        <a asp-action="AddPartners" style="text-decoration:none">Add</a>
     </div>
 
     @if (TempData["SuccessMessage"] != null)
@@ -48,7 +48,7 @@
                         <td>@item.name</td>
                         <td><img src="~/imagePartners/@item.logo" alt="Logo"></td>
                         <td class="description-cell">@item.description</td>
-                        <td>
+                        <td style="display: flex; justify-content: center; align-items: center">
                             <a asp-action="EditPartner" asp-route-id="@item.id" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
                             <form asp-action="DeletePartner" asp-route-id="@item.id" method="post"
                                   onsubmit="return confirm('Are you sure you want to delete this item?');">

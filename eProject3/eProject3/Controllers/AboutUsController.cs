@@ -24,6 +24,8 @@ namespace eProject3.Controllers
 
             ViewBag.AboutUs = aboutUs;
             ViewBag.AboutUsImage = aboutUs.AboutUsImages.FirstOrDefault();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -41,6 +43,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -58,6 +62,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -75,6 +81,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -92,6 +100,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -109,6 +119,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
 
@@ -126,6 +138,8 @@ namespace eProject3.Controllers
             ViewBag.AboutUsImage = await dbContext.AboutUsImages
                 .Where(ai => ai.about_id == aboutUs.id)
                 .ToListAsync();
+            var contactUsEdit = await dbContext.ContactUsEdits.ToListAsync();
+            ViewBag.ContactUsEdit = contactUsEdit.ToList();
             return View();
         }
     }

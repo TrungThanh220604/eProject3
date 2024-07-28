@@ -35,6 +35,7 @@ namespace eProject3.Controllers
             ViewBag.Amount = amount;
             ViewBag.NumOfProj = numOfProj;
             ViewBag.NumOfDonation = numOfDonation;
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View();
         }
 
@@ -42,6 +43,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> Categories()
         {
             var categories = await _context.Causes.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(categories);
         }
 
@@ -60,6 +62,7 @@ namespace eProject3.Controllers
                 TempData["SuccessMessage"] = "Added category successfully!";
                 return RedirectToAction(nameof(Categories));
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(cause);
         }
 
@@ -75,6 +78,7 @@ namespace eProject3.Controllers
             _context.Causes.Remove(category);
             await _context.SaveChangesAsync();
             TempData["SuccessMessage"] = "Deleted category successfully!";
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return RedirectToAction(nameof(Categories));
         }
 
@@ -90,6 +94,7 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(category);
         }
 
@@ -103,6 +108,7 @@ namespace eProject3.Controllers
                 TempData["SuccessMessage"] = "Update category successfully!";
                 return RedirectToAction(nameof(Categories));
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(cause);
         }
 
@@ -137,7 +143,7 @@ namespace eProject3.Controllers
                     Roles = string.Join(", ", roles)
                 });
             }
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(userRoles);
         }
 
@@ -145,6 +151,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> UserContactUs()
         {
             var contactus = await _context.ContactUses.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(contactus);
         }
 
@@ -152,6 +159,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> ContactUs_Inf()
         {
             var contactus_inf = await _context.ContactUsEdits.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(contactus_inf);
         }
 
@@ -167,6 +175,7 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(contactus);
         }
 
@@ -180,6 +189,7 @@ namespace eProject3.Controllers
                 TempData["SuccessMessage"] = "Update ContactUs_info successfully!";
                 return RedirectToAction(nameof(ContactUs_Inf));
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(contactUsEdit);
         }
 
@@ -187,6 +197,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> Partners()
         {
             var partners = await _context.Partners.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(partners);
         }
 
@@ -248,6 +259,7 @@ namespace eProject3.Controllers
                     ModelState.AddModelError("", "Vui lòng chọn một file.");
                 }
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(model);
         }
 
@@ -291,7 +303,7 @@ namespace eProject3.Controllers
                 description = partner.description,
                 ExistingLogo = partner.logo
             };
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(model);
         }
 
@@ -343,6 +355,7 @@ namespace eProject3.Controllers
                 TempData["SuccessMessage"] = "Edit Partners successfull!";
                 return RedirectToAction(nameof(Partners));
             }
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(model);
         }
 
@@ -350,6 +363,7 @@ namespace eProject3.Controllers
         public async Task<IActionResult> Donations()
         {
             var categories = await _context.Causes.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(categories);
         }
 
@@ -398,7 +412,7 @@ namespace eProject3.Controllers
 
                 projectViewModels.Add(projectViewModel);
             }
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(projectViewModels);
         }
 
@@ -436,7 +450,7 @@ namespace eProject3.Controllers
             .Where(d => d.project_id == proId)
             .Include(d => d.User)
             .ToListAsync();
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(projectViewModel);
         }
 
@@ -459,12 +473,14 @@ namespace eProject3.Controllers
         public async Task<IActionResult> Projects()
         {
             var projects = await _context.Projects.Include(p => p.Cause).ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(projects);
         }
 
         public async Task<IActionResult> AddProject()
         {
             ViewBag.Categories = await _context.Causes.ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View();
         }
 
@@ -536,6 +552,7 @@ namespace eProject3.Controllers
             }
 
             ViewBag.Categories = _context.Causes.ToList();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(model);
         }
 
@@ -600,6 +617,7 @@ namespace eProject3.Controllers
             };
 
             ViewBag.Categories = _context.Causes.ToList();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(model);
         }
 
@@ -786,6 +804,7 @@ namespace eProject3.Controllers
             var firstImage = aboutUs.AboutUsImages.FirstOrDefault();
 
             ViewBag.FirstImage = firstImage;
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -800,10 +819,16 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.AboutUs = await _context.AboutUsChilds
+                .Where(ac => ac.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.AboutUsImage = await _context.AboutUsImages
+                .Where(ai => ai.about_id == aboutUs.id)
+                .ToListAsync();
             var firstImage = aboutUs.AboutUsImages.FirstOrDefault();
 
             ViewBag.FirstImage = firstImage;
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -817,7 +842,13 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.AboutUs = await _context.AboutUsChilds
+                .Where(ac => ac.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.AboutUsImage = await _context.AboutUsImages
+                .Where(ai => ai.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -831,7 +862,13 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.AboutUs = await _context.AboutUsChilds
+                .Where(ac => ac.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.AboutUsImage = await _context.AboutUsImages
+                .Where(ai => ai.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -845,7 +882,10 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.AboutUsImage = await _context.AboutUsImages
+                .Where(ai => ai.about_id == aboutUs.id)
+                .ToListAsync();
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -862,8 +902,11 @@ namespace eProject3.Controllers
             }
 
             var firstContent = aboutUs.AboutUsChilds.FirstOrDefault();
-
+            ViewBag.AboutUs = await _context.AboutUsChilds
+               .Where(ac => ac.about_id == aboutUs.id)
+               .ToListAsync();
             ViewBag.FirstContent = firstContent;
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -877,7 +920,7 @@ namespace eProject3.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(aboutUs);
         }
 
@@ -939,7 +982,7 @@ namespace eProject3.Controllers
                     Image = i.image
                 }).ToList()
             };
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(viewModel);
         }
 
@@ -1040,6 +1083,11 @@ namespace eProject3.Controllers
             public DateTime? LastMessageTime { get; set; }
             public string? Status { get; set; }
         }
+        public async Task<int> GetCountOfConversationsWithStatusZeroAsync()
+        {
+            return await _context.Conversations
+                .CountAsync(c => c.status == "0");
+        }
 
         public async Task<IActionResult> HelpCenter()
         {
@@ -1058,7 +1106,7 @@ namespace eProject3.Controllers
                 Status = c.status
             }).ToList();
             viewModel = viewModel.OrderByDescending(vm => vm.LastMessageTime).ToList();
-
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View(viewModel);
         }
 
@@ -1127,6 +1175,8 @@ namespace eProject3.Controllers
             ViewBag.Messages = viewModel2;
             ViewBag.ConversationId = id;
             ViewBag.Status = conversation.status;
+            ViewBag.UserName = conversation.User.UserName;
+            ViewBag.CountStatusZero = await GetCountOfConversationsWithStatusZeroAsync();
             return View("HelpCenter", viewModel);
         }
 

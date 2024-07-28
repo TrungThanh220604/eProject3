@@ -17,12 +17,12 @@
 </style>
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>DASHBOARD</h1>
+        <h1>OUR MISSION</h1>
         <p style="color: gray; padding-left: 5px;">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px;">Dashboard</span>
+        <span style="padding-left: 4px;">Our Mission</span>
     </div>
 </div>
 
@@ -36,24 +36,26 @@
 <div class="mainBody">
     <h1>Our mission</h1>
     <div class="content">
+        <h5>@ViewBag.AboutUs[0].title</h5>
+        <div class="content-2">
+            <div class="content-text">
+                <p>
+                    @ViewBag.AboutUs[0].content
+                </p>
+            </div>
+
+            <img src="~/imageAboutUs/@ViewBag.AboutUsImage[0].image" alt="">
+        </div>
         <h5>My chalenger</h5>
         <div class="content-2">
-            @if (ViewBag.FirstImage != null)
-            {
-                <img src="~/imageAboutUs/@ViewBag.FirstImage.image" alt="Image" />
-            }
-            else
-            {
-                <p>No images available.</p>
-            }
-
+            <img src="~/imageAboutUs/@ViewBag.AboutUsImage[1].image" alt="">
             <ul>
-                @foreach (var child in Model.AboutUsChilds)
+                @for (int i = 1; i < ViewBag.AboutUs.Count; i++)
                 {
-                    <li class="list-content-parent">@child.title:</li>
+                    <li class="list-content-parent">@ViewBag.AboutUs[i].title</li>
                     <ul>
                         <li class="list-content-child" style="list-style: inside;">
-                            @child.content
+                            @ViewBag.AboutUs[i].content;
                         </li>
                     </ul>
                 }
@@ -65,5 +67,5 @@
     </div> -->
 </div>
 <div class="btn">
-    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs2" class="actionBtn editBtn"><i class="fas fa-edit"></i>Edit</a>
+    <a asp-action="EditAboutUs" asp-route-id="@Model.id" asp-route-sourcePage="AboutUs2" class="actionBtn editBtn" style="text-decoration: none"><i class="fas fa-edit"></i>Edit</a>
 </div>

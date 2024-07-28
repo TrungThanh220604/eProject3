@@ -1,0 +1,178 @@
+﻿.card-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+    .card-container h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+.form-container{
+    margin: 80px;
+}
+.form-container form {
+    width: 100%;
+    margin: 10px;
+    padding: 30px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+    .input-group input {
+        width: 100%;
+        font-size: 20px;
+        border-radius: 5px;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .input-group .input-item {
+        width: 100%;
+    }
+
+input:not([type=submit]):not([type=file]) {
+    border: 1px solid #cecece;
+    -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.1), 0 0 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.card-input {
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid #cecece;
+    ;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+    .card-input input {
+        border: none !important;
+    }
+
+    .card-input .card-logo {
+        margin-top: 4px;
+    }
+
+.jp-card .jp-card-front .jp-card-logo {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+
+.submit-button {
+    text-align: center;
+}
+
+    .submit-button button {
+        width: 100%;
+        margin-top: 30px;
+        padding: 15px 0;
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #52c556;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .submit-button button:hover {
+            background-color: #4ba950;
+        }
+
+.checkbox-group,
+.checkbox-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+    .checkbox-item input {
+        margin-right: 10px;
+    }
+
+    .checkbox-item label {
+        user-select: none;
+        margin-top: 10px;
+    }
+
+    .checkbox-item label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+    }
+
+        .checkbox-item label::after,
+        .checkbox-item label::before {
+            content: "";
+            display: inline-block;
+        }
+
+        .checkbox-item label::before {
+            margin-right: 10px;
+            width: 14px;
+            height: 14px;
+            background: rgba(206, 206, 206, 0.881);
+            border-radius: 4px;
+        }
+
+    .checkbox-item [type="checkbox"]:checked ~ label::before {
+        background: rgb(28, 225, 2);
+    }
+
+    .checkbox-item [type="checkbox"]:checked ~ label::after {
+        width: 8px;
+        height: 4px;
+        border-left: 2px solid #ffffff;
+        border-bottom: 2px solid #ffffff;
+        rotate: -45deg;
+    }
+
+    .checkbox-item label::after {
+        position: absolute;
+        top: 7px;
+        left: 2.5px;
+    }
+
+    .checkbox-item i {
+        font-size: 20px;
+        color: #45ca4b;
+        margin-top: 10px;
+    }
+
+
+.card-img {
+    margin-bottom: 15px;
+}
+
+    .card-img img {
+        width: 60px;
+        height: 40px;
+        border-radius: 5px;
+        margin-right: 10px;
+        object-fit: contain;
+        border: 1px solid #acacac;
+    }

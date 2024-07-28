@@ -1,0 +1,94 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Payment";
+    Layout = "~/Views/Shared/LayoutUser.cshtml";
+}
+<link rel="stylesheet" href="~/css/UserPayment.css" asp-append-version="true" />
+<div class="slideInf">
+    <h1 style="font-size: 35px; margin-bottom: 10px;">Project</h1>
+    <span>Home/Payment</span>
+</div>
+<!--  -->
+<div class="main">
+    <div class="card-container">
+        <h1>Donation</h1>
+        <div class="form-container">
+            <form asp-action="Payment" asp-controller="User" method="post" onsubmit="validateForm(event)">
+                <div class="input-group">
+                    <label for="toward">Project name</label>
+                    <input type="text" id="toward" name="toward" value="@ViewBag.Project.name" readonly>
+                    <input type="hidden" name="prjId" value="@ViewBag.Project.id">
+                </div>
+                <div class="input-group" style="display: flex;">
+                    <div class="input-item">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" style="width: 95%;" value="@ViewBag.User.UserName" readonly>
+                    </div>
+                    <div class="input-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" value="@ViewBag.User.Email" readonly>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="message">Money (USD)</label>
+                    <input type="number" id="money" name="money" required>
+                </div>
+
+                <div class="input-group cardNumber">
+                    <label for="number">Card Number</label>
+                    <div class="card-input">
+                        <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number" required>
+                        <div class="card-logo"></div>
+                        <input type="hidden" id="the" name="the" value="">
+                    </div>
+                </div>
+
+                <div class="card-img">
+                    <img src="~/image/visa.jpg" alt="" class="active">
+                    <img src="~/image/mastercard.png" alt="">
+                    <img src="~/image/american.svg" alt="">
+                    <img src="~/image/discover.png" alt="">
+                </div>
+
+                <div class="input-group" style="display: flex;">
+                    <div class="input-item">
+                        <label for="expiry">Expiry Date</label>
+                        <input placeholder="MM/YY" type="text" name="expiry" id="expiry" class="secondRow" style="width: 95%;">
+                    </div>
+                    <div class="input-item">
+                        <label for="cvc">Security Code</label>
+                        <input placeholder="XXX" type="text" name="cvc" class="secondRow incorrectInfo">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message">
+                </div>
+
+                <!-- Button Pay -->
+                <div class="submit-button">
+                    <button type="submit">
+                        <i class='bx bxs-lock-alt'></i>
+                        Submit Donation
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="~/js/UserPayment.js" asp-append-version="true"></script>
+@if (TempData["ErrorMessage"] != null)
+{
+    <script>
+        alert('@TempData["ErrorMessage"]');
+
+    </script>
+}<script>
+     document.getElementById('expiry').addEventListener('input', function () {
+         console.log(this.value);
+     });
+</script>
+

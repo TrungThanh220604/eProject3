@@ -16,16 +16,16 @@
     <div class="form-add-cate">
         <form asp-action="EditContactUs" method="post">
             <input type="hidden" asp-for="id" />
-            <label asp-for="title">Địa chỉ</label>
+            <label asp-for="title">Title</label>
             <input asp-for="title" class="inputAddCate" type="text" />
             <span asp-validation-for="title" style="color: red"></span>
 
-            <label asp-for="description">Hà Nội</label>
+            <label asp-for="description">Description</label>
             <input asp-for="description" class="inputAddCate" type="text" />
             <span asp-validation-for="description" style="color: red"></span>
 
             <input class="btnAddCate" type="submit" value="Update" />
-            <a asp-action="ContactUs_Inf" class="btn btn-secondary">Back to List</a>
+            <a asp-action="ContactUs_Inf" class="btn btn-secondary" style="text-decoration:none">Back to List</a>
         </form>
     </div>
 </div>

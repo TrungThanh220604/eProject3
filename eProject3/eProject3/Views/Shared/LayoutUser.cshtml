@@ -29,13 +29,13 @@
                     </a>
                 </li>
                 <li class="navbar-item link">
-                    <a href="../view/category.html">
+                    <a asp-controller ="User" asp-action="Category">
                         <i class='bx bx-money'></i>
                         <p>Donate</p>
                     </a>
                 </li>
                 <li class="navbar-item link">
-                    <a href="../view/helpsCenter.html">
+                    <a asp-controller ="User" asp-action="HelpCenter">
                         <i class='bx bx-help-circle'></i>
                         <p>Help Center</p>
                     </a>
@@ -57,7 +57,7 @@
                     </ul>
                 </li>
                 <li class="navbar-item link">
-                    <a asp-action="OurPartner">
+                    <a asp-controller="User"  asp-action="OurPartner">
                         <i class='bx bx-group'></i>
                         <p>Our Partners</p>
                     </a>
@@ -139,16 +139,15 @@
                 <ul style="line-height: 35px;">
                     <li>
                         <i class="icon-color fa-solid fa-location-dot"
-                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>175 Tay Son, Trung Liet, Dong Da, Ha
-                        Noi
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[0].description
                     </li>
                     <li>
                         <i class="icon-color fa-solid fa-phone"
-                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>(+84) 33579920
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[1].description
                     </li>
                     <li>
                         <i class="icon-color fa-regular fa-envelope"
-                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>ThuyLoi@e.tlu.edu.vn
+                           style="color: rgb(1, 32, 90); padding-right: 10px;"></i>@ViewBag.ContactUsEdit[2].description
                     </li>
                 </ul>
             </div>

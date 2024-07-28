@@ -39,16 +39,16 @@
 
 <div class="mainHead">
     <div class="tilteLeft">
-        <h1>DASHBOARD</h1>
+        <h1>DONATION STATISTICS</h1>
         <p style="color: gray; padding-left: 5px;">Version 2.0</p>
     </div>
     <div class="tilteRight">
         <span>Home ></span>
-        <span style="padding-left: 4px;">Donation </span>
+        <span style="padding-left: 4px;">Donation statistics </span>
     </div>
 </div>
 
-<a asp-action="Donations" class="btn btn-primary back-button">Back</a>
+<a asp-action="Donations" class="btn btn-primary back-button" style="text-decoration: none">Back</a>
 <div class="mainbody">
     <span>Project types: </span> <span>@ViewBag.CauseName</span>
     @if (ViewBag.Message != null)
@@ -60,14 +60,14 @@
         <div class="listCard">
             @foreach (var item in Model)
             {
-                <a asp-action="DonationDetail" asp-route-proId="@item.Id" class="product-card">
+                <a asp-action="DonationDetail" asp-route-proId="@item.Id" class="product-card" style="height:400px">
                     <div class="image">
                         <img src="~/imageProjects/@item.FirstImage" alt="...">
                         <span class="label">@ViewBag.CauseName</span>
                     </div>
                     <div class="details">
-                        <p class="title">@item.Name</p>
-                        <h3>@item.Description</h3>
+                        <p class="title">@item.Owner</p>
+                        <h3>@item.Name</h3>
 
                         <div style="display: flex; justify-content: space-between;">
                             <p class="amount">@item.Amount $</p>

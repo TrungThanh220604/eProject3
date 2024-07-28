@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MJsi58SbxGw53Fn9uWgHC3aAqkMbBAl7wewRA1JpjK8AClLLzMaUrXd0GvqPdSL+a9ZGSSa3yLFJ9mnurhFoTQ==",
+  "dgSpecHash": "ZFR/9oVCcE7pcMNbIutSh9Y70OzCu2CwvlFnkzoOWEg1E/d5wyqHbbY0g/LjRF3/cJOvZda490yafyt3ECv7cg==",
   "success": true,
   "projectFilePath": "D:\\eProject3\\eProject3\\eProject3\\eProject3.csproj",
   "expectedPackageFiles": [
@@ -145,6 +145,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\nuget.projectmodel\\6.9.1\\nuget.projectmodel.6.9.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\nuget.protocol\\6.9.1\\nuget.protocol.6.9.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\nuget.versioning\\6.9.1\\nuget.versioning.6.9.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\quickmailer\\1.0.0.1\\quickmailer.1.0.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.6\\sqlitepclraw.bundle_e_sqlite3.2.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.core\\2.1.6\\sqlitepclraw.core.2.1.6.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.6\\sqlitepclraw.lib.e_sqlite3.2.1.6.nupkg.sha512",

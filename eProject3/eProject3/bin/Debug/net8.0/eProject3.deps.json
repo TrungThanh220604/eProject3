@@ -15,7 +15,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.7",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.7",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.3",
+          "QuickMailer": "1.0.0.1"
         },
         "runtime": {
           "eProject3.dll": {}
@@ -1839,6 +1840,14 @@
           }
         }
       },
+      "QuickMailer/1.0.0.1": {
+        "runtime": {
+          "lib/net5.0/QuickMailer.dll": {
+            "assemblyVersion": "1.0.0.1",
+            "fileVersion": "1.0.0.1"
+          }
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
         "dependencies": {
           "SQLitePCLRaw.lib.e_sqlite3": "2.1.6",
@@ -3246,6 +3255,13 @@
       "sha512": "sha512-ypnSvEtpNGo48bAWn95J1oHChycCXcevFSbn53fqzLxlXFSZP7dawu8p/7mHAfGufZQSV2sBpW80XQGIfXO8kQ==",
       "path": "nuget.versioning/6.9.1",
       "hashPath": "nuget.versioning.6.9.1.nupkg.sha512"
+    },
+    "QuickMailer/1.0.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AMKcB545uqkrC7vUmLap0rOBtma8ozsWEOxv+Q/kVDGySxQah984wkJnADrh2Th1YHoJG9G/EuLVjlmS2tQL3g==",
+      "path": "quickmailer/1.0.0.1",
+      "hashPath": "quickmailer.1.0.0.1.nupkg.sha512"
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.6": {
       "type": "package",

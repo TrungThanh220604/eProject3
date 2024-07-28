@@ -299,10 +299,10 @@
     background: #f0f0f0;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
-
+ .chat_input form{
+     width: 100%;
+ }
     .chat_input i {
         cursor: pointer;
         font-size: 1.2em;
@@ -310,13 +310,12 @@
     }
 
         .chat_input i:nth-child(1) {
-            margin-right: 15px;
+            
         }
 
     .chat_input input {
         position: relative;
-        width: 90%;
-        margin: 0 20px;
+        width: 100%;
         padding: 10px 20px;
         border: none;
         outline: none;

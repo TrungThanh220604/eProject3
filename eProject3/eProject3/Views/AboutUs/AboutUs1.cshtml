@@ -35,7 +35,14 @@
                     @aboutUs1.content
                 </p>
             }
-            <img src="~/imageAboutUs/@ViewBag.AboutUsImage.image" alt="">
+            @if (ViewBag.AboutUsImage != null)
+            {
+                <img src="~/imageAboutUs/@ViewBag.AboutUsImage.image" alt="">
+            }
+            else
+            {
+                <p>No images available.</p>
+            }
         </div>
     </div>
 

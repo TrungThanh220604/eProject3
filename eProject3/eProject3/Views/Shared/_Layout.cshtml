@@ -17,10 +17,6 @@
             <i class="fa-solid fa-user-tie"></i>
             <span class="logo_name">ADMIN</span>
         </div>
-        <div class="inputSearch">
-            <input type="text" placeholder="Search...">
-            <button class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
         <p>MAIN NAVIGATION</p>
         <ul class="nav-links">
             <li>
@@ -71,7 +67,7 @@
                 </div>
                 <ul class="sub-menu">
                     <li><a class="link_name" href="#">About Us</a></li>
-                    <li><a asp-action="AboutUs1" asp-route-id="1">What we đo ?</a></li>
+                    <li><a asp-action="AboutUs1" asp-route-id="1">What we do ?</a></li>
                     <li><a asp-action="AboutUs2" asp-route-id="2">Our Mission</a></li>
                     <li><a asp-action="AboutUs3" asp-route-id="3">Our Team</a></li>
                     <li><a asp-action="AboutUs4" asp-route-id="4">Career With Us</a></li>
@@ -125,32 +121,26 @@
             <li>
                 <div class="profile-details">
                     <div class="profile-content">
-                        <img src="~/image/Screenshot 2024-07-02 092340.png" alt="">
+                        <a asp-area="Identity" asp-page="/Account/Manage/Index" style="text-decoration:none"><img src="~/image/Screenshot 2024-07-02 092340.png" alt=""></a>
                     </div>
                     <div class="name-job">
                         <span class="profile_name">Admin</span>
-                        <span class="status">Online</span>
                     </div>
-                    <i class='bx bx-log-out'></i>
+                    <a asp-area="Identity" asp-page="/Account/Logout" style="text-decoration: none"><i class='bx bx-log-out'></i></a>
                 </div>
             </li>
         </ul>
     </div>
     <section class="home-section">
-        <div class="home-content">
+        <div class="home-content" style="margin-bottom: 10px">
             <i class='bx bx-menu'></i>
             <div class="nontifycation">
+                <a asp-action="HelpCenter" style="text-decoration:none">
                 <button type="button" class="icon-button">
-                    <i class="fa-regular fa-envelope"></i>
-                    <span class="icon-button__badge">2</span>
+                        <i class="fa-regular fa-envelope"></i>
+                        <span class="icon-button__badge">@ViewBag.CountStatusZero</span>
                 </button>
-                <button class="icon-button">
-                    <i class="fa-regular fa-bell"></i>
-                </button>
-                <button class="icon-button">
-                    <i class="fa-regular fa-flag"></i>
-                    <span class="icon-button__badge">10</span>
-                </button>
+                </a>
             </div>
         </div>
         <!-- Body -->
