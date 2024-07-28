@@ -201,7 +201,40 @@ a {
     transition: all 1s ease;
     width: 100%;
 }
+#example {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    border: 1px solid #dddddd;
+}
 
+    #example thead {
+        background-color: #f2f2f2;
+    }
+
+    #example th, #example td {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #example th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #example tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    #example tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    #example td {
+        word-wrap: break-word;
+    }
     .content-main .Content.active,
     .content-main .supportList.active {
         display: block;

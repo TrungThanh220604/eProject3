@@ -75,7 +75,7 @@
             <div class="supportList">
                 <table id="example" class="display" style="width:100%; align-items:center; justify-content: center">
                     <thead>
-                        <tr style="align-items:center; justify-content: center">
+                        <tr >
                             <th>Name</th>
                             <th>Amount</th>
                             <th>Message</th>
@@ -84,10 +84,10 @@
                     <tbody>
                         @foreach (var amount in ViewBag.Donations)
                         {
-                            <tr style="align-items:center; justify-content: center">
-                                <td style="align-items:center; justify-content: center">@(amount.User != null ? amount.User.UserName : "Unknown User")</td>
-                                <td style="align-items:center; justify-content: center">@amount.amount $</td>
-                                <td style="align-items:center; justify-content: center">
+                            <tr>
+                                <td>@(amount.User != null ? amount.User.UserName : "Unknown User")</td>
+                                <td>@amount.amount $</td>
+                                <td>
                                     @amount.message
                                 </td>
                             </tr>
